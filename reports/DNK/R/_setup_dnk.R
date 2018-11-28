@@ -1,6 +1,8 @@
 # Setup -------------------------------------------------------------------
 
 library(dplyr)
+library(eurostat)
+
 if(!exists(c("country", "year"))) {
   stop("Please specify country and year.")
 }
@@ -43,7 +45,7 @@ silc.hd <- left_join(silc.h, silc.d)
 
 silc.hp <- left_join(silc.pd, silc.hd)
 
-# 
+# >20 MUSS NOCH RAUSGERECHNET WERDEN
 # # Create total personal income --------------------------------------------
 # 
 # # Find string "py" (i.e. income variables) for summing up total personal income. 
@@ -72,6 +74,26 @@ names(silc.hp$ptni) <- "Pre-tax net income"
 # Post-tax disposable income
 silc.hp <- silc.hp %>% mutate(ptdi = ptfi + ptni + py110g + py120g + py130g + py140g + hy050g + hy060g + hy070g + hy080g - hy120g - hy130g - hy140g)
 names(silc.hp$ptdi) <- "Post-tax disposable income"
+
+# PPP adjustment ----------------------------------------------------------------
+# Eurostat ----------------------------------------------------------------
+
+ppp <- get_eurostat(id = "prc_ppp_ind")
+
+# Filter relevant values
+
+ppp <- ppp %>% filter(aggreg == "A01" &
+                        na_item == "PPP_EU28")
+
+ppp <- ppp %>% filter(geo == "DK")
+
+# adapt column time to year only
+#ppp$time <- substring(toString(ppp$time), 0, 4)
+#nur Jahr, große datensatz mergen, bereinigen alle einkommensvariablen,
+
+#Grundgesamtheit
+
+
 
 # Fin ---------------------------------------------------------------------
 
