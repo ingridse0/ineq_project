@@ -16,7 +16,7 @@ silc.p <- tbl(pg, "pp") %>%
 
 silc.h <- tbl(pg, "hh") %>%
   filter(hb020 %in% country & hb010 %in% year) %>%
-  select(hb010, hb020, hb030, hy010, hy040g, hy050g, hy060g, hy070g, hy080g, hy090g, hy120g, hy130g, hy140g, hx010, hx040, hx050) %>%
+  select(hb010, hb020, hb030, hy010, hy040g, hy050g, hy060g, hy070g, hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx010, hx040, hx050) %>%
   collect(n = Inf)
 
 silc.d <- tbl(pg, "dd") %>%

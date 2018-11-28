@@ -1,8 +1,6 @@
 # ------------------------------------------------------------------------
 #
 # Indicators R-Script
-# Autoren: Engelen & Kuschnig
-# Datum: 2018-11-08
 #
 # -------------------------------------------------------------------------
 
@@ -10,7 +8,7 @@ library(dplyr)
 library(survey)
 library(convey)
 
-country <- "CZ"
+country <- "DK"
 year <- 2013
 
 # Source the Setup scripts to provide merged household and personal data
