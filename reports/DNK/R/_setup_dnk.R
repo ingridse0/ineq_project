@@ -41,6 +41,8 @@ silc.pd <- left_join(silc.p, silc.d %>% select(id_h, db020, db090))
 
 silc.hd <- left_join(silc.h, silc.d)
 
+silc.hp <- left_join(silc.pd, silc.hd)
+
 # 
 # # Create total personal income --------------------------------------------
 # 
@@ -56,6 +58,20 @@ income <- c("pb010", "pb020", "pb030", "pb040", "pb150", "py010g", "py021g", "py
 for (x in income){
   silc.pd <- silc.pd %>% mutate(x = ifelse(is.na(x), 0, x))
 }
+
+# create variables for different income concepts
+
+# Pre-tax factor income
+silc.hp <- silc.hp %>% mutate(ptfi = py010g + py050g + hy090g, hy110g, hy040g, hy090g, py080g)
+names(silc.hp$ptfi) <- "Pre-tax factor income"
+
+# Pre-tax net income
+silc.hp <- silc.hp %>% mutate(ptni = ptfi + py090g + py100g)
+names(silc.hp$ptni) <- "Pre-tax net income"
+
+# Post-tax disposable income
+silc.hp <- silc.hp %>% mutate(ptdi = ptfi + ptni + py110g + py120g + py130g + py140g + hy050g + hy060g + hy070g + hy080g - hy120g - hy130g - hy140g)
+names(silc.hp$ptdi) <- "Post-tax disposable income"
 
 # Fin ---------------------------------------------------------------------
 
