@@ -51,7 +51,11 @@ silc.hd <- left_join(silc.h, silc.d)
 
 # replace NAs with 0
 
+income <- c("pb010", "pb020", "pb030", "pb040", "pb150", "py010g", "py021g", "py050g", "py050n", "py080g", "py090g", "py100g", "py110g", "py120g", "py130g", "py140g", "px010", "px030")
 
+for (x in income){
+  silc.pd <- silc.pd %>% mutate(x = ifelse(is.na(x), 0, x))
+}
 
 # Fin ---------------------------------------------------------------------
 
