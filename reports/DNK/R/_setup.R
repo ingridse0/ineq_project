@@ -1,9 +1,6 @@
 # Setup -------------------------------------------------------------------
 
 library(dplyr)
-library(eurostat)
-library(lubridate)
-
 if(!exists(c("country", "year"))) {
   stop("Please specify country and year.")
 }
@@ -44,9 +41,7 @@ silc.pd <- left_join(silc.p, silc.d %>% select(id_h, db020, db090))
 
 silc.hd <- left_join(silc.h, silc.d)
 
-silc.hp <- left_join(silc.pd, silc.hd)
-
-# >20 MUSS NOCH RAUSGERECHNET WERDEN
+# 
 # # Create total personal income --------------------------------------------
 # 
 # # Find string "py" (i.e. income variables) for summing up total personal income. 
@@ -56,44 +51,6 @@ silc.hp <- left_join(silc.pd, silc.hd)
 
 # replace NAs with 0
 
-income <- c("pb010", "pb020", "pb030", "pb040", "pb150", "py010g", "py021g", "py050g", "py050n", "py080g", "py090g", "py100g", "py110g", "py120g", "py130g", "py140g", "px010", "px030")
-
-for (x in income){
-  silc.pd <- silc.pd %>% mutate(x = ifelse(is.na(x), 0, x))
-}
-
-# create variables for different income concepts
-
-# Pre-tax factor income
-silc.hp <- silc.hp %>% mutate(ptfi = py010g + py050g + hy090g, hy110g, hy040g, hy090g, py080g)
-names(silc.hp$ptfi) <- "Pre-tax factor income"
-
-# Pre-tax net income
-silc.hp <- silc.hp %>% mutate(ptni = ptfi + py090g + py100g)
-names(silc.hp$ptni) <- "Pre-tax net income"
-
-# Post-tax disposable income
-silc.hp <- silc.hp %>% mutate(ptdi = ptfi + ptni + py110g + py120g + py130g + py140g + hy050g + hy060g + hy070g + hy080g - hy120g - hy130g - hy140g)
-names(silc.hp$ptdi) <- "Post-tax disposable income"
-
-# PPP adjustment ----------------------------------------------------------------
-# Eurostat ----------------------------------------------------------------
-
-ppp <- get_eurostat(id = "prc_ppp_ind")
-
-# Filter relevant values
-
-ppp <- ppp %>% filter(aggreg == "A01" &
-                        na_item == "PPP_EU28")
-
-ppp <- ppp %>% filter(geo == "DK")
-
-ppp <- ppp %>%
-  mutate(time= year(time))
-
-
-#Große datensatz mergen, bereinigen alle einkommensvariablen,
-#Grundgesamtheit
 
 
 # Fin ---------------------------------------------------------------------
