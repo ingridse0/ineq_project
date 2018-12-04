@@ -13,7 +13,7 @@ year <- 2013
 
 # Source the Setup scripts to provide merged household and personal data
 source("R/_connection.R")
-source("R/_setup.R")
+source("R/_setup_dnk.R")
 
 
 # Subsetting --------------------------------------------------------------

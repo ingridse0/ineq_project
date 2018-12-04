@@ -14,8 +14,9 @@ if(!exists(c("country", "year"))) {
 # Download data
 silc.p <- tbl(pg, "pp") %>%
   filter(pb020 %in% country & pb010 %in% year) %>%
-  select(pb010, pb020, pb030, pb040, pb150, py010g, py021g, py050g, py050n, py080g, py090g, py100g, py110g, py120g, py130g, py140g, px010, px030) %>%
+  select(pb010, pb020, pb030, pb040, pb150, py010g, py050g, py050n, py080g, py090g, py100g, py110g, py120g, py130g, py140g, px010, px030) %>%
   collect(n = Inf)
+#py021g not found
 
 silc.h <- tbl(pg, "hh") %>%
   filter(hb020 %in% country & hb010 %in% year) %>%
@@ -46,20 +47,19 @@ silc.hd <- left_join(silc.h, silc.d)
 
 silc.hp <- left_join(silc.pd, silc.hd)
 
-# >20 MUSS NOCH RAUSGERECHNET WERDEN
 # # Create total personal income --------------------------------------------
-# 
-# # Find string "py" (i.e. income variables) for summing up total personal income. 
-# silc.pd <- silc.pd %>% 
-#   mutate(total.inc = rowSums(silc.pd[, grep("py", colnames(silc.pd))], 
-#                              na.rm = TRUE)) 
+
+# only include all individuals aged >=20 years
+
+##################MISSING
 
 # replace NAs with 0
 
-income <- c("pb010", "pb020", "pb030", "pb040", "pb150", "py010g", "py021g", "py050g", "py050n", "py080g", "py090g", "py100g", "py110g", "py120g", "py130g", "py140g", "px010", "px030")
+income <- c("py010g", "py021g", "py050g", "hy110g", "hy040g", "hy090g", "py080g", "py090g", "py100g", "py110g", "py120g", "py130g", "py140g", "hy050g", "hy060g", "hy070g", "hy080g", "hy120g", "hy130g", ""
+            "py050n", "py080g", "py090g", "py100g", "py110g", "py120g", "py130g", "py140g", "px010", "px030")
 
 for (x in income){
-  silc.pd <- silc.pd %>% mutate(x = ifelse(is.na(x), 0, x))
+  silc.hp <- silc.hp %>% mutate(x = ifelse(is.na(x), 0, x))
 }
 
 # create variables for different income concepts
@@ -77,7 +77,7 @@ silc.hp <- silc.hp %>% mutate(ptdi = ptfi + ptni + py110g + py120g + py130g + py
 names(silc.hp$ptdi) <- "Post-tax disposable income"
 
 # PPP adjustment ----------------------------------------------------------------
-# Eurostat ----------------------------------------------------------------
+# Eurostat ----------------------------------------------------------------------
 
 ppp <- get_eurostat(id = "prc_ppp_ind")
 

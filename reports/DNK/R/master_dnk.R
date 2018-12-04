@@ -10,6 +10,3 @@ year <- c(startyear:endyear)
 
 source("reports/DNK/_setup_dnk.R")
 
-
-# Drop if age < 20
-
