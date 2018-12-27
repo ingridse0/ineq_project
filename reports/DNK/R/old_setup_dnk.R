@@ -14,14 +14,15 @@ if(!exists(c("country", "year"))) {
 # Download data
 silc.p <- tbl(pg, "pp") %>%
   filter(pb020 %in% country & pb010 %in% year) %>%
-  select(pb010, pb020, pb030, pb040, pb150, py010g, py050g, py050n, py080g, py090g, py100g, py110g, py120g, py130g, py140g, px010, px030) %>%
+  select(pb010, pb020, pb030, pb040, pb150, pl060, pl100, py010g, py050g, py050n, py080g, py090g, py100g, py110g, py120g, py130g, py140g, px010, px030) %>%
   collect(n = Inf)
-#py021g not found
+#correct for py021g - mail humer?
 
 silc.h <- tbl(pg, "hh") %>%
   filter(hb020 %in% country & hb010 %in% year) %>%
-  select(hb010, hb020, hb030, hy010, hy040g, hy050g, hy060g, hy070g, hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx010, hx040, hx050) %>%
+  select(hb010, hb020, hb030, hy010, hy040g, hy050g, hy060g, hy070g, hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx010, hx040, hx050, hy020) %>%
   collect(n = Inf)
+#check hx040 <-> hx050
 
 silc.d <- tbl(pg, "dd") %>%
   filter(db020 %in% country & db010 %in% year) %>%
@@ -30,7 +31,7 @@ silc.d <- tbl(pg, "dd") %>%
 
 silc.r <- tbl(pg, "rr") %>% 
   filter(rb020 %in% country & rb010 %in% year) %>%
-  select(rb010, rb020, rb030, rb050) %>%
+  select(rb010, rb020, rb030, rb050, rx030) %>%
   collect(n = Inf)
 
 # Create unique IDs for merging

@@ -9,7 +9,7 @@ library(survey)
 library(convey)
 
 country <- "DK"
-year <- 2013
+year <- 2009:2013
 
 # Source the Setup scripts to provide merged household and personal data
 source("R/_connection.R")
