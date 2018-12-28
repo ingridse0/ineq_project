@@ -52,7 +52,7 @@ silc.prh <- silc.prh %>%
                            - hy120g - hy130g - hy140g) / hx050))
 
 # CHECK -----------------------------------------------------------------------
-silc.rph$hy020/silc.rph$hx050 
+silc.prh$hy020/silc.prh$hx050 
 
 
 

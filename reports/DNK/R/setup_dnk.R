@@ -135,25 +135,27 @@ silc.p <- silc.p %>% mutate(personal_id = paste0(pb030, pb010))
 silc.r <- silc.r %>% mutate(personal_id = paste0(rb030, rb010))
 
 # Merge p and r
-silc.pr <- left_join(silc.r, silc.p)
+silc.pr <- left_join(silc.p, silc.r, 
+                     by = c("pb030" = "rb030", "pb010" = "rb010"))
 
 # Create unique ids (household level)
 silc.pr <- silc.pr %>% 
-  mutate(age = rb010 - rb080,
+  mutate(age = pb010 - rb080,
          gender = factor(rb090, labels = c('Male','Female')),
-         id_h = paste0(rx030, rb010)) 
+         id_h = paste0("rx030", "pb010"))
+
 silc.h <- silc.h %>% mutate(id_h = paste0(hb030, hb010))
 silc.d <- silc.d %>% mutate(id_h = paste0(db030, db010))
 
+#silc.pr <- silc.pr %>% mutate(id_h = paste0("rx030", "rb010"))
+
+
 # Merge pr and h
-silc.prh <- left_join(silc.pr, silc.h, by = c("id_h", "rb010" = "hb010", 
-                                              "rb020" = "hb020", 
-                                              "rx030" = "hb030"))
+silc.prh <- left_join(silc.pr, silc.h, by = c("id_h"))
+                                              
+# Clean up prh dataframe ------------------------------------------------------
 
-# Clean up rph dataframe ------------------------------------------------------
 
-#Task open
-#r, p: exclude observations with personal id = NA
 #silc.p <- silc.p %>% drop_na(pb030)
 #??????? vor dem overall dataframe? check r und p bevor joining!
 
