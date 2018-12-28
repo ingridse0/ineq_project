@@ -59,6 +59,46 @@ table(silc.prh$hy020/silc.prh$hx050 == silc.prh$i13)
 # all.equal(silc.prh$hy020, silc.prh$i13) 
 # only small differences: "Mean relative difference: 0.4621546"
 
+# remove unnecessary columns
+silc.prh <- silc.prh %>% 
+  select(-c(pi11, sum_pi11, pi12, sum_pi12, pi13, sum_pi13))
+
+
+# FINISH P1 -------------------------------------------------------------------
+
+# include only positive incomes
+
+silc.p1 <- silc.prh %>% filter(i11 > 0, i12 > 0, i13 > 0)
+
+
+# P2 --------------------------------------------------------------------------
+# WID.WORLD
+# Nur Personen >= 20 Jahre & partial sharing of resources 
+
+# ATTENTION: filter household member >= 20 years 
+# n number of household member that remain
+# new dataframe silc.prh20
+
+silc.prh20 <- silc.prh %>% 
+  filter(age >= 20) %>% add_count(id_h)
+
+# i21 - (1) Pre-tax factor income ---------------------------------------------
+silc.prh20 <- silc.prh20 %>%
+  mutate(i21 = py010g + py021g + py050g + py080g + 
+           (hy110g + hy040g + hy090g)/n)
+
+# i22 - (2) Pre-tax national income -------------------------------------------
+silc.prh20 <- silc.prh20 %>%
+  mutate(i22 = i21 + py090g + py100g)
+
+# i23 - (3) Post-tax disposable income ----------------------------------------
+silc.prh20 <- silc.prh20 %>%
+  mutate(i23 = i22 + py110g + py120g + py130g + py140g + 
+           (hy050g + hy060g + hy070g + hy080g - hy120g - hy130g - hy140g)/n)
+
+
+# FINISH P2 -------------------------------------------------------------------
+silc.p2 <- silc.prh20 %>% filter(i21 > 0, i22 > 0, i23 > 0)
 
 
 # Fin -------------------------------------------------------------------------
