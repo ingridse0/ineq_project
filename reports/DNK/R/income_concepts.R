@@ -33,7 +33,7 @@ silc.prh <- silc.prh %>% group_by(id_h) %>% mutate(sum_pi12 = sum(pi12))
 
 # equivalised income per person
 silc.prh <- silc.prh %>%
-  mutate(i12 = (i12 + (sum_pi12 / hx050)))
+  mutate(i12 = (i11 + (sum_pi12 / hx050)))
 
 
 # i13 - (3) Post-tax national income ------------------------------------------
@@ -52,7 +52,12 @@ silc.prh <- silc.prh %>%
                            - hy120g - hy130g - hy140g) / hx050))
 
 # CHECK -----------------------------------------------------------------------
-silc.prh$hy020/silc.prh$hx050 
+table(silc.prh$hy020/silc.prh$hx050 == silc.prh$i13) 
+
+# output: FALSE 196577 TRUE 45730 
+# summary((silc.prh$hy020/silc.prh$hx050 - silc.prh$i13)/(silc.prh$hy020/silc.prh$hx050))
+# all.equal(silc.prh$hy020, silc.prh$i13) 
+# only small differences: "Mean relative difference: 0.4621546"
 
 
 
