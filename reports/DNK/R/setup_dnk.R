@@ -78,9 +78,11 @@ cyearp <- bind_rows(c07p, c08p, c09p, c10p, c11p, c12p, c13p, c14p, c15p, c16p,
 
 silc.p <- full_join(silc.p, cyearp) 
 
+# Replace NAs by 0 in py021g
+silc.p$py021g [is.na(silc.p$py021g)] <- 0
+
 # Company car: Aggregate values 2004-2006 and as of 2007 
-silc.p$car <- silc.p$py020g
-silc.p$car <- ifelse(silc.p$pb010 > 2006, silc.p$py021g, silc.p$car)
+silc.p$car <- ifelse(silc.p$pb010 > 2006, silc.p$py021g, silc.p$py020g)
 
 
 # H ---------------------------------------------------------------------------
@@ -138,29 +140,20 @@ silc.r <- silc.r %>% mutate(personal_id = paste0(rb030, rb010))
 silc.pr <- left_join(silc.p, silc.r, 
                      by = c("pb030" = "rb030", "pb010" = "rb010"))
 
-# Create unique ids (household level)
+# Create unique ids (household level) 
 silc.pr <- silc.pr %>% 
   mutate(age = pb010 - rb080,
-         gender = factor(rb090, labels = c('Male','Female')),
-         id_h = paste0("rx030", "pb010"))
+         gender = factor(rb090, labels = c('Male','Female')))
 
 silc.h <- silc.h %>% mutate(id_h = paste0(hb030, hb010))
 silc.d <- silc.d %>% mutate(id_h = paste0(db030, db010))
-
-#silc.pr <- silc.pr %>% mutate(id_h = paste0("rx030", "rb010"))
-
+silc.pr <- silc.pr %>% mutate(id_h = paste0(rx030, pb010))
 
 # Merge pr and h
 silc.prh <- left_join(silc.pr, silc.h, by = c("id_h"))
                                               
 # Clean up prh dataframe ------------------------------------------------------
-
-
-#silc.p <- silc.p %>% drop_na(pb030)
-#??????? vor dem overall dataframe? check r und p bevor joining!
-
-#where are NAs? can I delete them?
-#silc.rph[is.na(silc.rph)] <- 0
+silc.rph[is.na(silc.rph)] <- 0
 
 
 # Fin -------------------------------------------------------------------------
