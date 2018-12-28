@@ -149,11 +149,11 @@ silc.h <- silc.h %>% mutate(id_h = paste0(hb030, hb010))
 silc.d <- silc.d %>% mutate(id_h = paste0(db030, db010))
 silc.pr <- silc.pr %>% mutate(id_h = paste0(rx030, pb010))
 
-# Merge pr and h
+# Merge pr and h file
 silc.prh <- left_join(silc.pr, silc.h, by = c("id_h"))
                                               
 # Clean up prh dataframe ------------------------------------------------------
-silc.rph[is.na(silc.rph)] <- 0
+silc.prh[is.na(silc.prh)] <- 0
 
 
 # Fin -------------------------------------------------------------------------
