@@ -11,7 +11,7 @@
 # Download
 silc.p <- tbl(pg, "pp") %>%
   filter(pb020 %in% country) %>%
-  select(pb010, pb030, py010g, py020g, py050g, py080g, py090g, py100g, py110g, 
+  select(pb010, pb030, pb040, py010g, py020g, py050g, py080g, py090g, py100g, py110g, 
          py120g, py130g, py140g) %>%
   collect(n = Inf)
 # ATTENTION: use py020g only 2004-2006
