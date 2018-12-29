@@ -31,7 +31,6 @@ source("reports/DNK/setup_dnk.R")
 source("reports/DNK/income_concepts.R")
 
 # indicators
-#source("reports/DNK/indicators_base.R")
-#source("reports/DNK/indicators_laeken.R")
+source("reports/DNK/indicators_dnk")")
 
 # Fin -------------------------------------------------------------------------
