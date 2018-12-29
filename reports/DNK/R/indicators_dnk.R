@@ -106,22 +106,6 @@ i23_8020 <- data.frame(svyby(~i23, ~pb010, silc.p2.svy, svyqsr))
 #MISSING
 i23_10 <- 23 
 
-# SUMMARY ---------------------------------------------------------------------
-
-measures <-c('Mean', 'Median', 'Gini','P80/P20','Top 10% share')
-
-income_concept <- c('Pre-tax factor income','Pre-tax national income', 
-                    'Post-tax disposable income')
-
-# P1: EQUAL SHARING, WHOLE SAMPLE
-p1_summary <- data.frame(round(c(i11_mean, i11_median, i11_gini, i11_8020, i11_10), digits = 4),
-                     round(c(i12_mean, i12_median, i12_gini, i12_8020, 
-                             i12_10), digits = 4), 
-                     round(c(i13_mean, i13_median, i13_gini, i13_8020, 
-                             i13_10), digits = 4), row.names = measures)
-
-# P2: PARTIAL SHARING, RESTRICTED SAMPLE
-
 
 # Fin -------------------------------------------------------------------------
 
