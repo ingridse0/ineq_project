@@ -26,8 +26,15 @@ i11_gini <- data.frame(svyby(~i11, ~pb010, silc.p1.svy, svygini))
 
 i11_8020 <- data.frame(svyby(~i11, ~pb010, silc.p1.svy, svyqsr))
 
-#MISSING
-i11_10 <- 11
+
+i11_t10s <- data.frame(
+  svyby(~i11, ~pb010, 
+        subset(silc.p1.svy, i11 >=
+                 svyby(~i11, ~pb010, silc.p1.svy, svyquantile, quantile = 0.9,
+                       keep.var = FALSE), 
+               svytotal, keep.var = FALSE),
+        svytotal, keep.var = FALSE) / 
+  svyby(~i11, ~pb010, silc.p1.svy, svytotal, keep.var = FALSE))
 
 
 # i12 (2) Pre-tax national income ---------------------------------------------
@@ -42,7 +49,14 @@ i12_gini <- data.frame(svyby(~i12, ~pb010, silc.p1.svy, svygini))
 i12_8020 <- data.frame(svyby(~i12, ~pb010, silc.p1.svy, svyqsr))
 
 #MISSING
-i12_10 <- 12 
+i12_t10s <- data.frame(
+  svyby(~i12, ~pb010, 
+        subset(silc.p1.svy, i12 >=
+                 svyby(~i12, ~pb010, silc.p1.svy, svyquantile, quantile = 0.9,
+                       keep.var = FALSE), 
+               svytotal, keep.var = FALSE),
+        svytotal, keep.var = FALSE) / 
+    svyby(~i12, ~pb010, silc.p1.svy, svytotal, keep.var = FALSE))
 
 # i13 - (3) Post-tax national income ------------------------------------------
 i13_mean <- data.frame(svyby(~i13, ~pb010, silc.p1.svy, svymean))
@@ -54,8 +68,14 @@ i13_gini <- data.frame(svyby(~i13, ~pb010, silc.p1.svy, svygini))
 
 i13_8020 <- data.frame(svyby(~i13, ~pb010, silc.p1.svy, svyqsr))
 
-#MISSING
-i13_10 <-13 
+i13_t10s <- data.frame(
+  svyby(~i13, ~pb010, 
+        subset(silc.p1.svy, i13 >=
+                 svyby(~i13, ~pb010, silc.p1.svy, svyquantile, quantile = 0.9,
+                       keep.var = FALSE), 
+               svytotal, keep.var = FALSE),
+        svytotal, keep.var = FALSE) / 
+    svyby(~i13, ~pb010, silc.p1.svy, svytotal, keep.var = FALSE))
 
 # P2 --------------------------------------------------------------------------
 
@@ -76,8 +96,14 @@ i21_gini <- data.frame(svyby(~i21, ~pb010, silc.p2.svy, svygini))
 
 i21_8020 <- data.frame(svyby(~i21, ~pb010, silc.p2.svy, svyqsr))
 
-#MISSING
-i21_10 <- 21
+i21_t10s <- data.frame(
+  svyby(~i21, ~pb010, 
+        subset(silc.p2.svy, i21 >=
+                 svyby(~i21, ~pb010, silc.p2.svy, svyquantile, quantile = 0.9,
+                       keep.var = FALSE), 
+               svytotal, keep.var = FALSE),
+        svytotal, keep.var = FALSE) / 
+    svyby(~i21, ~pb010, silc.p2.svy, svytotal, keep.var = FALSE))
 
 # i22 (2) Pre-tax national income ---------------------------------------------
 
@@ -90,8 +116,14 @@ i22_gini <- data.frame(svyby(~i22, ~pb010, silc.p2.svy, svygini))
 
 i22_8020 <- data.frame(svyby(~i22, ~pb010, silc.p2.svy, svyqsr))
 
-#MISSING
-i12_10 <- 22 
+i22_t10s <- data.frame(
+  svyby(~i22, ~pb010, 
+        subset(silc.p2.svy, i22 >=
+                 svyby(~i22, ~pb010, silc.p2.svy, svyquantile, quantile = 0.9,
+                       keep.var = FALSE), 
+               svytotal, keep.var = FALSE),
+        svytotal, keep.var = FALSE) / 
+    svyby(~i22, ~pb010, silc.p2.svy, svytotal, keep.var = FALSE))
 
 # i23 - (3) Post-tax national income ------------------------------------------
 i23_mean <- data.frame(svyby(~i23, ~pb010, silc.p2.svy, svymean))
@@ -103,8 +135,14 @@ i23_gini <- data.frame(svyby(~i23, ~pb010, silc.p2.svy, svygini))
 
 i23_8020 <- data.frame(svyby(~i23, ~pb010, silc.p2.svy, svyqsr))
 
-#MISSING
-i23_10 <- 23 
+i23_t10s <- data.frame(
+  svyby(~i23, ~pb010, 
+        subset(silc.p2.svy, i23 >=
+                 svyby(~i23, ~pb010, silc.p2.svy, svyquantile, quantile = 0.9,
+                       keep.var = FALSE), 
+               svytotal, keep.var = FALSE),
+        svytotal, keep.var = FALSE) / 
+    svyby(~i23, ~pb010, silc.p2.svy, svytotal, keep.var = FALSE))
 
 
 # Fin -------------------------------------------------------------------------
