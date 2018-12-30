@@ -4,7 +4,7 @@
 other/
 data/
 *.Rproj
-danros_sketches.R
+/danros_sketches.R
 
 # Do not ignore
 !projects/_template/_template.pdf
