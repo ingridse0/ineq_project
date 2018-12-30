@@ -9,6 +9,7 @@ library(eurostat)
 library(dplyr)
 library(survey)
 library(convey)
+library(laeken) # needed for at risk of poverty rate
 
 # eduroam/vpn
 source("R/_connection.R")
