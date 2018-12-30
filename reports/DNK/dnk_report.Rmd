@@ -53,7 +53,7 @@ $$\hat{\beta} = (X'X)^{-1}X'Y$$
 
 Zitieren aus *BibTeX*:
 
-- [@marmot2010fair; @lancee2012income]
+- [@humer2013bedeutung; @humer2013bedeutung]
 - [@humer2013bedeutung, p. 571]
 - @humer2013bedeutung
 
@@ -99,51 +99,102 @@ Horizontale Linien:
 
 \newpage
 
-# To do:
-Calculate at-risk of poverity rate
-Get Statbank data
-Data visualisation
+# TO DO
+read stat bank data
+visualisation
+tabellen für gini, mean, median, 80/20, top 10 - prio 1 
+
+# Einführung
+Die Strategie Europa 2020 ist die Agenda der EU zur Förderung von Wachstum und Beschäftigung des gegenwärtigen Jahrzehntes. In den Bereichen Beschäftigung, Forschung und Entwicklung, Klimawandel und Energie, Bildung und Armut und soziale Ausgrenzung wurden nationale Ziele zur Umsetzung der gemeinsamen europäischen Ziele festgelegt, die jährlich im Rahmen von Fortschrittsberichten überwacht werden. Insbesondere soll die soziale Eingliederung durch eine Verringerung der Armut gefördert werden, wobei angestrebt wird, mindestens 20 Millionen der betroffenen Personen vor dem Risiko der Armut zu bewahren [@europe2020].
+
+EU zeigt Relevanz und auch warum es interessant ist dies genauer zu betrachten
+Eine Auswertung von Dänemark ist von besonderem Interesse, da XXXXXX
+Dänemark wird oft als Land dargestellt, dass Wirtschaftlichkeit und soziale Sicherheit erfolgrecih umsetzt. Im EU-Vergleich sieht man Dänemark auch als Spitzenreiter - EUROSTAT zitieren, und auch höchste Einkommen WITD datenabnk. Dies führt natürlich zu der Frage, ob es in der Vergangenheit zu einer erheblichen Verringerung der Ungleichheit gekommen ist und wenn ja, in welchen Dimensionen.
+
+
+Um die Einkommensungleichheit und in diesem Zusammenhang die Entwicklung von Armut und sozialer Ausgrenzung in Dänemark sichtbar zu machen, wird eine beurteilende Analyse verschiedener Indikatoren auf Basis von ausgewählten EU-SILC (European Union Statistics on Income and Living Conditions) Daten im Rahmen dieses Artikels vorgenommen.
+
+Die  EU-SILC Erhebung XXXXXXXXX
+https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:EU_statistics_on_income_and_living_conditions_(EU-SILC)/de
+usw. auf API eingehen...- Humer Paper
+
+# Entwicklungen in Dänemark 
+social welfare system
+
+ab Seite 11 auch welfare benefits
+https://www.dst.dk/Site/Dst/Udgivelser/GetPubFile.aspx?id=21501&sid=denmark%20in%20figures%202017%20net
+Immigrants  and  their  descendants  make  up  12.9  per cent of  the  population,  corresponding  to  738,002 persons.  In 2016, the  majority  of  immigrants  came  from  Syria, United  States,  Romania,  an d Germany . Syrian nationals account for most immigrations with 9,020 in 201 6, which is a little less  than the year before. In  recent  years,  both  immigration and  emigration have grown.Dies spiegelt sich auch aktuell am Rechtsdruck in Dänemark wieder.
+
+
+# Indikatoren
+Über die Bedeutung von Kapitaleinkommen Humer
+Angelehnt an die Einkommenskonzepte der Canberra Group (2011) un-
+terscheiden wir im Folgenden zwischen Vermögens- und Erwerbseinkom-
+men  (Zuflüsse  aus  unselbstständiger  und  selbstständiger  Arbeit).  Des
+Weiteren führen wir das Primäreinkommen von Erwerbstätigen als zusätz-
+liche Kategorie ein. Dies ist die Summe aus Vermögens- und Erwerbsein-
+kommen dieser Haushalte. Nicht erwerbstätige Haushalte (z. B. ein Ehe-
+paar im Ruhestand) und deren Vermögenseinkommen werden in dieser
+Kategorie im Hinblick auf die Forschungsfrage nicht berücksichtigt
+
+Trotz der annähernd gleichen Konzepte und Definitionen der Zielpopula
+-tion und Einkommensvariablen in beiden Umfrageerhebungen ergeben
+sich teilweise beträchtliche Unterschiede in den beschreibenden Statisti
+- ken der beiden Einkommensverteilungen. 
+
+Ein maßgeblicher Teil der Differenz  resultiert  aus  den  divergierenden  Haushaltszusammensetzungen der beiden Befragungen, die aus den ungleichen Haushaltsdefinitionen
+resultieren. Darüber hinaus wird auch die Wahl der Erhebungsmethode
+(CAPI oder CATI) als weiterer Grund für die Unterschiede in den Einkom -
+mensverteilungen genannt. Nach Fessler, Kasy und Lindner (2012) nei-
+gen Haushalte, die telefonisch befragt werden, eher zu Antwortverweige
+-rungen und der Verschleierung der tatsächlichen Einkommenshöhe als in
+einem persönlichen Interview. Dies spiegelt sich laut den Autoren auch in
+den  Ungleichheitsmaßen  wider.
+
+Für    die    Beurteilung    der    Verteilungsge-
+rechtigkeit    innerhalb    einer    Gesellschaft    
+ist  –  unabhängig  von  der  konkreten  Ver
+- teilungsnorm  –  im  Wesentlichen  nicht  die  
+Ungleichheit vor sondern nach Steuern und 
+Transfers  relevant.  So  werden  Bezieher  ho-
+her  Einkommen  in  den  meisten  entwickel
+- ten  Ländern  stärker  zur  Finanzierung  des  
+Staates herangezogen. Daher kann auch nur 
+anhand   der   Einkommensverteilung   nach   
+Steuern   und   Transfers   die   Verteilungsge-
+rechtigkeit sinnvoll beurteilt werden.
+http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Ministerium/Geschaeftsbereich/Wissenschaftlicher_Beirat/Gutachten_und_Stellungnahmen/Ausgewaehlte_Texte/2017-02-28-einkommensungleichheit-und-soziale-mobilitaet-anlage.pdf?__blob=publicationFile&v=5
 
 
 
-# Ökonomischer Überblick Dänemark
-max. halbe Seite
+Um    die    umverteilende    Wirkung    des Staates  zu  illustrieren,
 
-# Einkommensverteilung in Dänemark
-max halbe Seite
-Atkinson Paper, wie hat sich die Einkommensverteilung im Zeitverlauf geändert. Steht Fänemark schon immer so gut dar wie man schnell annimmt
 
-## Ungleichheitsindikatoren
-Woher kommen die Daten. EU SILC und bisschen erklären.
-Übersichtstabellen basteln
+## Armutsgefährdungsquote
+Relevanz für EU2020, beschreiben was der Indikator aussagt
+
+##Plots die wir machen wollen
+people at risk of poverty über den zeitverlauf
+bewegt sich dänemakr richtung des zeiles von eu2020
+
+silc.p2 vergeich i21 i23 risk of poverty
+
+danach i23 risk of poverty auf gender aufteilen (2 Jahre vergleichen)
+
+danach i23 risk of poverty auf highest education verteilen (eventuell 2 oder 1 Jahr nur betrachten)
+
+visulalieren 80/20 ratio über den zeitverlauf
+
 
 ## Diskussion
-mindestens 1-2
-Zusammenfasse, wie ist ie Entwicklung? Was macht es aus wenn ich welches Einkommen verwende? i11? i12 i13? Welche Auswirkungen sehe ich? Lässt sich das auf Reformen schließen? oder kein großer Trend erkennbar
-
-# Die Stellung der Frau am Arbeitsmarkt
-
-
-## Status Quo
-was gibt es bisher dazu?
-
-## Egebnisse
-
-Tabelle etc.
-2004 2017
-wie viele Frauen arbeiten Vollzeit/Teilzeit
-Fokus Mütter
-verheiratete Frauen am Arbeitsmarkt
-numbers of hours usually worked by week - pl060
-pl089
-
-## Diskussion
+Zusammenfassen, wie ist die Entwicklung? Was macht es aus wenn ich welches Einkommen verwende? i11? i12 i13? Welche Auswirkungen sehe ich? Lässt sich das auf Reformen schließen? oder kein großer Trend erkennbar
 Parentalleave policies 
 child care policies
 
+Dahinter  verbergen  sich  indes  unterschiedliche  Entwicklungen.  
 
 # Conclusio
-beides Hauptthemen Einkommensverteilung in Dänemark und Spezialfrage zusammenfassen reflektieren
+zusammenfassen reflektieren
 
 # Literatur
 
