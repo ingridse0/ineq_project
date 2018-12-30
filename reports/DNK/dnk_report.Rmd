@@ -99,6 +99,13 @@ Horizontale Linien:
 
 \newpage
 
+# To do:
+Calculate at-risk of poverity rate
+Get Statbank data
+Data visualisation
+
+
+
 # Ökonomischer Überblick Dänemark
 max. halbe Seite
 
