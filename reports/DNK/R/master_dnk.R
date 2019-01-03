@@ -5,7 +5,7 @@
 #
 # -----------------------------------------------------------------------------
 
-library(eurostat)
+library(eurostat) # I think we don't need this. Delete?
 library(dplyr)
 library(survey)
 library(convey)
@@ -26,7 +26,7 @@ if(!exists(c("country"))) {
 #year <- c(startyear:endyear)
 
 # data collection - transformation
-source("reports/DNK/setup_dnk.R")
+source("reports/DNK/R/setup_dnk.R")
 
 # income concepts
 source("reports/DNK/income_concepts.R")
