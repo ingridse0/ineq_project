@@ -21,9 +21,9 @@ if(!exists(c("country"))) {
   stop("please specify country and year")
 }
 
-#startyear <- 2004
-#endyear <- 2013
-#year <- c(startyear:endyear)
+startyear <- 2004
+endyear <- 2017
+year <- c(startyear:endyear)
 
 # data collection - transformation
 source("reports/DNK/R/setup_dnk.R")
