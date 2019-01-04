@@ -100,9 +100,7 @@ Horizontale Linien:
 \newpage
 
 # TO DO
-read stat bank data
 visualisation
-tabellen für gini, mean, median, 80/20, top 10 - prio 1 
 
 # Einführung
 Die Strategie Europa 2020 ist die Agenda der EU zur Förderung von Wachstum und Beschäftigung des gegenwärtigen Jahrzehntes. In den Bereichen Beschäftigung, Forschung und Entwicklung, Klimawandel und Energie, Bildung und Armut und soziale Ausgrenzung wurden nationale Ziele zur Umsetzung der gemeinsamen europäischen Ziele festgelegt, die jährlich im Rahmen von Fortschrittsberichten überwacht werden. Insbesondere soll die soziale Eingliederung durch eine Verringerung der Armut gefördert werden, wobei angestrebt wird, mindestens 20 Millionen der betroffenen Personen vor dem Risiko der Armut zu bewahren [@europe2020].
@@ -195,6 +193,9 @@ Dahinter  verbergen  sich  indes  unterschiedliche  Entwicklungen.
 
 # Conclusio
 zusammenfassen reflektieren
+
+
+
 
 # Literatur
 
