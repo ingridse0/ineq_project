@@ -21,12 +21,10 @@ silc.p1.svy <- svydesign(ids =  ~ id_h,
 
 i11_mean <- data.frame(svyby(~i11, ~pb010, silc.p1.svy, svymean))
 
-
 # Median
 
 i11_median <- data.frame(svyby(~i11, by=~pb010, silc.p1.svy, 
                                svyquantile, quantiles=0.5, keep.var = FALSE))
-
 
 # Gini
 
