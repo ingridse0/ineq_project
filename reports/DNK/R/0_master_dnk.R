@@ -10,6 +10,8 @@ library(dplyr)
 library(survey)
 library(convey)
 library(laeken) # needed for at risk of poverty rate
+library(ggplot2)
+library(xtable)
 
 # eduroam/vpn
 source("R/_connection.R")
@@ -26,12 +28,12 @@ endyear <- 2017
 year <- c(startyear:endyear)
 
 # data collection - transformation
-source("reports/DNK/R/setup_dnk.R")
+source("reports/DNK/R/2_setup_dnk.R")
 
 # income concepts
-source("reports/DNK/income_concepts.R")
+source("reports/DNK/3_income_concepts.R")
 
 # indicators
-source("reports/DNK/indicators_dnk")")
+source("reports/DNK/4_indicators_dnk")")
 
 # Fin -------------------------------------------------------------------------
