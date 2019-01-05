@@ -113,17 +113,31 @@ inflation <- inflation %>% filter(unit == "INX_A_AVG", coicop == "CP00",
 #inflation <- inflation %>% rename('pb010' = 'time')
 #inflation <- inflation %>% rename('infl' = 'values')
 
-# CORRECT FOR INFLATION -------------------------------------------------------
 
+###########################
 
-# Create unique ids
-#silc.p1 <- silc.p1 %>% mutate(personal_id = paste0(pb010))
-#inflation <- inflation %>% mutate(personal_id = paste0(pb010))
-#silc.p1 <- left_join(silc.p1, inflation, by = c("personal_id"))
-#silc.p1$i11 <- silc.p1$i11/inflation$infl*100
-#silc.p1$i12 <- silc.p1$i12/inflation$infl*100
-#silc.p1$i13 <- silc.p1$i13/inflation$infl*100
+# Load inflation data
+inflation <- read.csv("reports/DNK/R/inflation.csv")
 
-#git
+# Transform data
+inflation <- data.frame(pb010 = inflation$pb010, infl = inflation$infl/100)
+
+# Join with p1
+silc.p1 <- left_join(silc.p1, inflation, by = "pb010")
+
+# Adjust income data
+silc.p1$i11 <- silc.p1$i11/silc.p1$infl
+silc.p1$i12 <- silc.p1$i12/silc.p1$infl
+silc.p1$i13 <- silc.p1$i13/silc.p1$infl
+
+# Join with p2
+silc.p2 <- left_join(silc.p2, inflation, by = "pb010")
+
+# Adjust data
+silc.p2$i21 <- silc.p2$i21/silc.p2$infl
+silc.p2$i22 <- silc.p2$i22/silc.p2$infl
+silc.p2$i23 <- silc.p2$i23/silc.p2$infl
+
+##############################
 
 # Fin -------------------------------------------------------------------------
