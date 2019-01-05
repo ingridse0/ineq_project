@@ -101,4 +101,29 @@ silc.prh20 <- silc.prh20 %>%
 silc.p2 <- silc.prh20 %>% filter(i21 > 0, i22 > 0, i23 > 0)
 
 
+
+# PREPARE INFLATION -----------------------------------------------------------
+
+inflation <- get_eurostat("prc_hicp_aind", time_format = "raw")
+
+inflation <- inflation %>% filter(unit == "INX_A_AVG", coicop == "CP00", 
+                                  geo == "DK", time %in% 2004:2017) %>% 
+  select(time, values) %>% arrange(time)
+
+#inflation <- inflation %>% rename('pb010' = 'time')
+#inflation <- inflation %>% rename('infl' = 'values')
+
+# CORRECT FOR INFLATION -------------------------------------------------------
+
+
+# Create unique ids
+#silc.p1 <- silc.p1 %>% mutate(personal_id = paste0(pb010))
+#inflation <- inflation %>% mutate(personal_id = paste0(pb010))
+#silc.p1 <- left_join(silc.p1, inflation, by = c("personal_id"))
+#silc.p1$i11 <- silc.p1$i11/inflation$infl*100
+#silc.p1$i12 <- silc.p1$i12/inflation$infl*100
+#silc.p1$i13 <- silc.p1$i13/inflation$infl*100
+
+#git
+
 # Fin -------------------------------------------------------------------------
