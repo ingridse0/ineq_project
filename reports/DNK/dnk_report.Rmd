@@ -11,7 +11,13 @@ output:
     includes: 
       in_header: header.tex
 bibliography: references.bib
+lang: de-DE 
 ---
+
+
+
+
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -100,8 +106,9 @@ Horizontale Linien:
 \newpage
 
 # TO DO
-visualisation
-Markdown Tabellen
+Visualisation - von unseren Ergebnisen laut 
+Markdown Tabellen mit unseren Ergebnissem - für den Anhang
+Schreiben Schreiben 
 
 # Einführung
 Die Strategie Europa 2020 ist die Agenda der EU zur Förderung von Wachstum und Beschäftigung des gegenwärtigen Jahrzehntes. In den Bereichen Beschäftigung, Forschung und Entwicklung, Klimawandel und Energie, Bildung und Armut und soziale Ausgrenzung wurden nationale Ziele zur Umsetzung der gemeinsamen europäischen Ziele festgelegt, die jährlich im Rahmen von Fortschrittsberichten überwacht werden. Insbesondere soll die soziale Eingliederung durch eine Verringerung der Armut gefördert werden, wobei angestrebt wird, mindestens 20 Millionen der betroffenen Personen vor dem Risiko der Armut zu bewahren [@europe2020].
@@ -110,13 +117,24 @@ Im Rahmen dieser Startegie setzt die EU ein klares Zeichen zur Bekämpfung von A
 
 Klar ist effiziente nationale Politik kann Disparitäten entgegensteuern und Steuern und Transfers bleiben eine wichtige Säule der Umverteilung. Dänemark wird oft als Land dargestellt, dass Wirtschaftlichkeit und soziale Sicherheit erfolgreich umsetzt, das dänische Model des Wohlfahrtstaates. Um die Einkommensungleichheit und in diesem Zusammenhang die Entwicklung von Armut und sozialer Ausgrenzung in Dänemark sichtbar zu machen, wird eine beurteilende Analyse verschiedener Indikatoren auf Basis von ausgewählten Daten aus der European Union Statistics on Income and Living Conditions (EU-SILC) Erhebung im Rahmen dieses Artikels vorgenommen.
 
+
+# Das dänische Model - Dänemarks egebnisse
+https://www.cbs.dk/files/cbs.dk/new_papers_4.pdf
+Paper Atkinson?
+Reformen?
+Poverty and welfare in Denmark Abrahamson I
+https://en.wikipedia.org/wiki/Income_inequality_in_Denmark
+Das System sozialer Sicherung in Dänemark: Ein kleiner skandinavischer Wohlfahrtsstaat Schmid
+Dänemark und Schweden: Der „skandinavische Wohlfahrtsstaat“ auf Reformkurs Peter A. Köhler 
+Inequality in Denmark through the Looking Glass
+
+
 # Methodologie
 Die  EU-SILC Erhebung XXXXXXXXX
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:EU_statistics_on_income_and_living_conditions_(EU-SILC)/de
 usw. auf API eingehen...- Humer Paper
 
 
-# Indikatoren
 Über die Bedeutung von Kapitaleinkommen Humer
 Angelehnt an die Einkommenskonzepte der Canberra Group (2011) un-
 terscheiden wir im Folgenden zwischen Vermögens- und Erwerbseinkom-
@@ -157,51 +175,39 @@ http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Ministerium/Ges
 
 
 Um    die    umverteilende    Wirkung    des Staates  zu  illustrieren,
+## Konzepte
 
 
-## Armutsgefährdungsquote
-Relevanz für EU2020, beschreiben was der Indikator aussagt
 
-##Plots die wir machen wollen
-people at risk of poverty über den zeitverlauf
-bewegt sich dänemakr richtung des zeiles von eu2020
-
+# Ungleichheitsindikatoren
+Im folgenden
 silc.p2 vergeich i21 i23 risk of poverty
 
-danach i23 risk of poverty auf gender aufteilen (2 Jahre vergleichen)
+## Mittelwert
+plot über den Zeitverlauf
 
-danach i23 risk of poverty auf highest education verteilen (eventuell 2 oder 1 Jahr nur betrachten)
+## Median
+plot über den Zeitverlauf
 
-visulalieren 80/20 ratio über den zeitverlauf
+## Gini
+plot über den Zeitverlauf
 
+## P80/P20
+plot über den Zeitverlauf
 
-# Entwicklungen in Dänemark 
-social welfare system
+## Top 10% Anteil
+plot über den Zeitverlauf
 
-ab Seite 11 auch welfare benefits
-https://www.dst.dk/Site/Dst/Udgivelser/GetPubFile.aspx?id=21501&sid=denmark%20in%20figures%202017%20net
-Immigrants  and  their  descendants  make  up  12.9  per cent of  the  population,  corresponding  to  738,002 persons.  In 2016, the  majority  of  immigrants  came  from  Syria, United  States,  Romania,  an d Germany . Syrian nationals account for most immigrations with 9,020 in 201 6, which is a little less  than the year before. In  recent  years,  both  immigration and  emigration have grown.Dies spiegelt sich auch aktuell am Rechtsdruck in Dänemark wieder.
+## Armutsgefährdungsquote
+Relevanz eu2020 - bewegen wir uns in die Richtung?
+plot über den Zeitverlauf und einmal nach gender (i23 auf 2 jahre vergleichen)
+vielleicht i23 risk of poverty auf highest education verteilen (eventuell 2 oder 1 Jahr nur betrachten)
 
-
-
-Denmark  and  France,  for  example,  both  have  universal  
-childcare  systems,  but  childcare  provision  in  Denmark  contributes  more  to  poverty  
-reduction  than  in  France  due  to  a  progressive  fee  structure.  C
-
-## Diskussion
-Zusammenfassen, wie ist die Entwicklung? Was macht es aus wenn ich welches Einkommen verwende? i11? i12 i13? Welche Auswirkungen sehe ich? Lässt sich das auf Reformen schließen? oder kein großer Trend erkennbar
-Parentalleave policies 
-child care policies
-
-Dahinter  verbergen  sich  indes  unterschiedliche  Entwicklungen.  
 
 # Conclusio
 zusammenfassen reflektieren
-
-
-
+-> in den Anhang alle Tabellen
 
 # Literatur
 
-# Anhang
 <!-- Leer lassen -->
