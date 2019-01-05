@@ -2,7 +2,7 @@
 title: "Einkommensverteilung in Dänemark"
 subtitle: "2063 - Ökonomie der Verteilung"
 author: "Daniel Rosenlechner & Ingrid Setz"
-abstract: "Im Rahmen dieser Arbeit wird die Einkommensverteilung in Dänemark anhand von mehreren Indikaotren für den Zeitraum 2004-2017 analysiert und Aufschluss über die Ungleichheit des Landes gegeben. Es wird gezeigt, dass XXXX."
+abstract: "Im Rahmen dieser Arbeit wird die Einkommensverteilung in Dänemark anhand von mehreren Indikatoren für den Zeitraum 2004-2017 analysiert und Aufschluss über die Ungleichheit des Landes gegeben. Es wird gezeigt, dass XXXX."
 keywords: "Einkommensverteilung, Einkommensungleichheit, EU-SILC, Verteiung, Dänemark"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 output: 
@@ -106,19 +106,20 @@ Horizontale Linien:
 \newpage
 
 # TO DO
-Visualisation - von unseren Ergebnisen laut 
+Visualisation - von unseren Ergebnisen  
 Markdown Tabellen mit unseren Ergebnissem - für den Anhang
-Schreiben Schreiben 
+Schreiben Schreiben Schreiben
 
 # Einführung
 Die Strategie Europa 2020 ist die Agenda der EU zur Förderung von Wachstum und Beschäftigung des gegenwärtigen Jahrzehntes. In den Bereichen Beschäftigung, Forschung und Entwicklung, Klimawandel und Energie, Bildung und Armut und soziale Ausgrenzung wurden nationale Ziele zur Umsetzung der gemeinsamen europäischen Ziele festgelegt, die jährlich im Rahmen von Fortschrittsberichten überwacht werden. Insbesondere soll die soziale Eingliederung durch eine Verringerung der Armut gefördert werden, wobei angestrebt wird, mindestens 20 Millionen der betroffenen Personen vor dem Risiko der Armut zu bewahren [@europe2020].
 
-Im Rahmen dieser Startegie setzt die EU ein klares Zeichen zur Bekämpfung von Armut und hebt in diesem Zug die Relevanz der Einkommensungleichheit deutlich hervor. Die OECD thematisiert bereits mehrere Jahren die Spreizung der Einkommen hin [@oecd2008growing, @oecd2015together]. In dem Report „Growing unequal? Income distribution and poverty in OECD countries“ befasst sich die @oecd2008growing mit der Entwicklung der Disparität von Einkommen von 30 Industriestaaten und zeigt auf, dass mindestens seit der Mitte der 1980er eine geringe, jedoch kontinuierliche Erhöhung der Ungleichheit stattgefunden hat. Wird dieser Zeitaum näher betrachtet stellt sich heraus, dass die jeweiligen Regierungen zwar ihre Ausgaben und Steuern erhöht haben, um dieser Dynamik entgegenzuwirken, jedoch der gewünschte Umverteilungseffekt nur bis Mitte der 1990er Jahre gedämpft werden konnte. In den darauf folgenden Jahren richtete sich die Umverteilungspolitik weniger gezielt auf ärmere Haushalte und führte zu einer wesentlich höheren Zunahme der Ungleichheit. Es wird darauf hingewiesen, dass dies, sowohl gesehen als effiziente Umvertwilung oder nachhaltige Investition in die Fähigkeiten der Bevölkerung, unter anderem ausschlaggebend für die unteschiedlichen Ausprägungen von Ungleichheit in den jeweiligen Ländern sei [@oecd2008growing]. 
+Im Rahmen dieser Startegie setzt die EU ein klares Zeichen zur Bekämpfung von Armut und hebt in diesem Zug die Relevanz der Einkommensungleichheit deutlich hervor. Die OECD thematisiert bereits mehrere Jahren die Spreizung der Einkommen hin [@oecd2008growing; @oecd2015together]. In dem Report „Growing unequal? Income distribution and poverty in OECD countries“ befasst sich die @oecd2008growing mit der Entwicklung der Disparität von Einkommen von 30 Industriestaaten und zeigt auf, dass mindestens seit der Mitte der 1980er eine geringe, jedoch kontinuierliche Erhöhung der Ungleichheit stattgefunden hat. Wird dieser Zeitaum näher betrachtet stellt sich heraus, dass die jeweiligen Regierungen zwar ihre Ausgaben und Steuern erhöht haben, um dieser Dynamik entgegenzuwirken, jedoch der gewünschte Umverteilungseffekt nur bis Mitte der 1990er Jahre gedämpft werden konnte. In den darauf folgenden Jahren richtete sich die Umverteilungspolitik weniger gezielt auf ärmere Haushalte und führte zu einer wesentlich höheren Zunahme der Ungleichheit. Es wird darauf hingewiesen, dass dies, sowohl gesehen als effiziente Umvertwilung oder nachhaltige Investition in die Fähigkeiten der Bevölkerung, unter anderem ausschlaggebend für die unteschiedlichen Ausprägungen von Ungleichheit in den jeweiligen Ländern sei [@oecd2008growing]. 
 
 Klar ist effiziente nationale Politik kann Disparitäten entgegensteuern und Steuern und Transfers bleiben eine wichtige Säule der Umverteilung. Dänemark wird oft als Land dargestellt, dass Wirtschaftlichkeit und soziale Sicherheit erfolgreich umsetzt, das dänische Model des Wohlfahrtstaates. Um die Einkommensungleichheit und in diesem Zusammenhang die Entwicklung von Armut und sozialer Ausgrenzung in Dänemark sichtbar zu machen, wird eine beurteilende Analyse verschiedener Indikatoren auf Basis von ausgewählten Daten aus der European Union Statistics on Income and Living Conditions (EU-SILC) Erhebung im Rahmen dieses Artikels vorgenommen.
 
 
 # Das dänische Model - Dänemarks egebnisse
+Literaturüberblick den wir abgegeben haben
 https://www.cbs.dk/files/cbs.dk/new_papers_4.pdf
 Paper Atkinson?
 Reformen?
@@ -130,6 +131,9 @@ Inequality in Denmark through the Looking Glass
 
 
 # Methodologie
+Für eine Analyse der Verteilung der Einkommen aus Erwerbstätigkeit in  Dänemark liefert die  europäische  Erhebungen  „European  Union  Statistics  on  Income  and  Living
+Conditions“ (SILC) hinreichend detaillierte Daten. Ausschließlich für die Inflationsbereinigung werden Daten von EUROSTAT herangezogen.
+
 Die  EU-SILC Erhebung XXXXXXXXX
 https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:EU_statistics_on_income_and_living_conditions_(EU-SILC)/de
 usw. auf API eingehen...- Humer Paper
