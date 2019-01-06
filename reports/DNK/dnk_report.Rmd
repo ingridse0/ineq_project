@@ -14,13 +14,11 @@ bibliography: references.bib
 ---
 
 
-
-
-
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
 
 \newpage
 
@@ -97,11 +95,6 @@ Horizontale Linien:
 ---
 
 \newpage
-
-# TO DO
-Visualisation - von unseren Ergebnisen  
-Markdown Tabellen mit unseren Ergebnissem - für den Anhang
-Schreiben Schreiben Schreiben
 
 # Einführung
 Die Strategie Europa 2020 ist die Agenda der EU zur Förderung von Wachstum und Beschäftigung des gegenwärtigen Jahrzehntes. In den Bereichen Beschäftigung, Forschung und Entwicklung, Klimawandel und Energie, Bildung und Armut und soziale Ausgrenzung wurden nationale Ziele zur Umsetzung der gemeinsamen europäischen Ziele festgelegt, die jährlich im Rahmen von Fortschrittsberichten überwacht werden. Insbesondere soll die soziale Eingliederung durch eine Verringerung der Armut gefördert werden, wobei angestrebt wird, mindestens 20 Millionen der betroffenen Personen vor dem Risiko der Armut zu bewahren [@europe2020].
@@ -229,12 +222,6 @@ Zusammenfassen reflektieren. -> in den Anhang alle Tabellen
 \newpage
 
 # Appendix
-
-```{r echo=FALSE, }
-# Read CSV data, "../../" to look two levels upwards
-table <- read.csv("tables/gini.csv")
-knitr::kable(table, caption = "Gini)
-```
 
 \newpage
 # Literatur
