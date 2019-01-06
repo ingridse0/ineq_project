@@ -130,86 +130,101 @@ Inequality in Denmark through the Looking Glass
 
 
 # Methodologie
-Für eine Analyse der Verteilung der Einkommen aus Erwerbstätigkeit in  Dänemark liefert die  europäische  Erhebungen  „European  Union  Statistics  on  Income  and  Living
+## Daten 
+Für eine Analyse der Verteilung der Einkommen aus Erwerbstätigkeit in  Dänemark liefert die   Erhebungen  „European  Union  Statistics  on  Income  and  Living
 Conditions“ (SILC) hinreichend detaillierte Daten. Ausschließlich für die Inflationsbereinigung werden Daten von EUROSTAT herangezogen.
 
-Die  EU-SILC Erhebung XXXXXXXXX
-https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:EU_statistics_on_income_and_living_conditions_(EU-SILC)/de
-usw. auf API eingehen...- Humer Paper
+Erstmals wurde die EU-SILC Erhebung 2003, basierend auf einer freiwilligen Vereinbarung zwischen Eurostat und sechs Mitgliedstaaten (Belgien, Dänemark, Griechenland, Irland, Luxemburg und Österreich) sowie Norwegen durchgeführt. Inzwischen beteiligen sich neben den EU-Mitgliedsstaaten auch Norwegen, Island, die Türkei, die Schweiz, Mazedonien und Serbien an der harmonisierten tichprobenerhebung von privaten Haushalten [@eurostatweb]. Mit dem Ziel Armut und sozialer Ausgrenzung zu beobachten, dient die Erhebung in diesem Zusammenhang zur Überwachung der Strategie Europa 2020. 
+
+Die EU-SILC Erhebung umfasst multidimensionale Mikrodaten zu Einkommen, Armut, sozialer Ausgrenzung, Wohnraum, Arbeit, Bildung und Gesundheit und liefert zwei Arten von jährlichen Daten [@silcmanual]:
+
+- Querschnittdaten, die einen bestimmten Zeitpunkt beziehungsweise Zeitspanne betreffen und
+- Längsschnittdaten über Veränderungen im Zeitablauf auf individueller Ebene.
+
+Anzumerken ist, dass aufgrund der engen Definition von Haushalten, Personen, die in Anstaltshaushalten oder Gemeinschaftsunterkünften leben oder ohne festen Wohnsitz sind, nicht erfasst werden.
+
+Wie bereits ersichtlich, nimmt Dänemark seit der Erstherbung teil. Hervorzuheben ist, dass Dänemark sowie die restlichen nordishen Länder, Holland und Slowenien zu den einzigen Ländern gehören, in welchen die Einkommensstatistiken auf vollständigen Registern basieren [@statdenm]. Die von Statistics Denmark durchgeführte primärstatistische Erhebung wird sowohl mit Hilfe von persönlichen (CAPI - Computer Assisted Personal Interview) und telefonischen (CATI - Computer Assisted Telephone Interview) Interviews als auch computergestützte (CAWI - Computer Assisted Web Interviews) Webinterviews realisiert. In 2012 präsentierte Statistics Denmark erstmals seine Erfahrung mit der Verwendung von CAWI für subjektive Variablen (objektive Inforamtionen werden aus Registern abgerufen) in EU-SILC [@cawi]. Vorteilhaft an diesem Modus der Datenerhebung ist, dass diese kosteneffizienter sein kann und die Befragten gemäß ihrer eigenen Geschwindigkeit antworten können, was wiederum zu höheren Antwortquoten führen kann. Auf der anderen Seite, kann dieses selbstverwaltende System natürlich zu missverstandenen Antworten führen, da keine Möglichkeit nach Nachfrage besteht. Für diese Arbeit sind diese erhobenen Daten jedoch nicht relevant, da sie in der Pilotphase nur PW010, HS120, HS040 und HS060 betroffen haben [@cawistat].
+
+## Einkommenskonzepte
+Im Rahmen der Analyse der Einkommensverteilung in Dänemark werden folgende drei Einkommenskonzepte verwendet, um etwaige Unterschiede in der Entwicklung der Indikatoren besser zu verfolgen und Rückschlüsse auf die Herkunft etwaiger Veränderungen der Lebensbedingungen zu ziehen:
+
+**1. Faktoreinkommen vor Steuern**
+Das Faktoreinkommen vor Steuern setzt sich aus der Summme aus Arbeitseinkommen inklusive Selbstständiger (PY010G, PY021G, PY050G, HY110G) und Vermögenseinkommen (HY040G, HY090G, PY080G) zusammen. Dieses Einkommenskonzept erfasst nur die Einkommen aus aktiver Produktion beziehungsweise wird hier die direkte Verbindung zu den Arbeitsmärkten beobachtet, da angenommen wird, dass es kein Transfersystem gibt. 
 
 
-Über die Bedeutung von Kapitaleinkommen Humer
-Angelehnt an die Einkommenskonzepte der Canberra Group (2011) un-
-terscheiden wir im Folgenden zwischen Vermögens- und Erwerbseinkom-
-men  (Zuflüsse  aus  unselbstständiger  und  selbstständiger  Arbeit).  Des
-Weiteren führen wir das Primäreinkommen von Erwerbstätigen als zusätz-
-liche Kategorie ein. Dies ist die Summe aus Vermögens- und Erwerbsein-
-kommen dieser Haushalte. Nicht erwerbstätige Haushalte (z. B. ein Ehe-
-paar im Ruhestand) und deren Vermögenseinkommen werden in dieser
-Kategorie im Hinblick auf die Forschungsfrage nicht berücksichtigt
-
-Trotz der annähernd gleichen Konzepte und Definitionen der Zielpopula
--tion und Einkommensvariablen in beiden Umfrageerhebungen ergeben
-sich teilweise beträchtliche Unterschiede in den beschreibenden Statisti
-- ken der beiden Einkommensverteilungen. 
-
-Ein maßgeblicher Teil der Differenz  resultiert  aus  den  divergierenden  Haushaltszusammensetzungen der beiden Befragungen, die aus den ungleichen Haushaltsdefinitionen
-resultieren. Darüber hinaus wird auch die Wahl der Erhebungsmethode
-(CAPI oder CATI) als weiterer Grund für die Unterschiede in den Einkom -
-mensverteilungen genannt. Nach Fessler, Kasy und Lindner (2012) nei-
-gen Haushalte, die telefonisch befragt werden, eher zu Antwortverweige
--rungen und der Verschleierung der tatsächlichen Einkommenshöhe als in
-einem persönlichen Interview. Dies spiegelt sich laut den Autoren auch in
-den  Ungleichheitsmaßen  wider.
-
-Für    die    Beurteilung    der    Verteilungsge-
-rechtigkeit    innerhalb    einer    Gesellschaft    
-ist  –  unabhängig  von  der  konkreten  Ver
-- teilungsnorm  –  im  Wesentlichen  nicht  die  
-Ungleichheit vor sondern nach Steuern und 
-Transfers  relevant.  So  werden  Bezieher  ho-
-her  Einkommen  in  den  meisten  entwickel
-- ten  Ländern  stärker  zur  Finanzierung  des  
-Staates herangezogen. Daher kann auch nur 
-anhand   der   Einkommensverteilung   nach   
-Steuern   und   Transfers   die   Verteilungsge-
-rechtigkeit sinnvoll beurteilt werden.
-http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Ministerium/Geschaeftsbereich/Wissenschaftlicher_Beirat/Gutachten_und_Stellungnahmen/Ausgewaehlte_Texte/2017-02-28-einkommensungleichheit-und-soziale-mobilitaet-anlage.pdf?__blob=publicationFile&v=5
+**2. Nationaleinkommen vor Steuern**
+Das Nationaleinkommen vor Steuern inkludiert neben den Komponenten des Faktoreinkommens vor Steuern incomes noch Pensionen (PY100G) und Arbeitslosengeld (PY090G). In diesem Einkommenskonzept werden nur arbeitsrelevante Transferzahlungen hinzugezogen, um eine etwaige Verzerung aufgrund von Veränderungen in der Altersstrukturen (Personen in Pension mit keinem beziehungsweise geringem Faktoreinkommen) zu berücksichtigen. Unterschiede in der Entwicklung von Faktoreinkommen vor Steuern und Nationaleinkommen vor Steuern legen Reformen im Bereich der Arbeitslosen- beziehungsweise öffentlichen Pensionsversicherung nahe. 
 
 
-Um    die    umverteilende    Wirkung    des Staates  zu  illustrieren,
-## Konzepte
+**3. Verfügbares Einkommen nach Steuern**
+Das verfügbare Einkommen nach Steuern inkludiert neben den Komponenten des Nationaleinkommens vor Steuern alle anderen erhaltenen Transferzahlungen (PY110G, PY120G, PY130G, PY140G, HY050G, HY060G, Hy070G, Hy080G) abzüglich aller direkten Steuern und Sozialversicherungsabgaben (HY120G, HY130G, HY140G). Schließlich zeigt das verfügbare Einkommen nach Steuern wie der Staat die Höhe und Verteilung der verfügbaren Einkommen durch (weitere) monetäre Transfers beeinflussen kann. 
 
+&nbsp;
+
+Wie aus den oberen Konzepten erkenntlich ist, gibt es sowohl Variablen auf Personen- (PY010G) als auch Haushaltsebene (HY110G). Die Einkommenskomponenten, die nur auf Haushaltsebene verfügbar sind, werden auf die jeweiligen Haushaltsmitgleider verteilt. Die Zuteilung erfolgt nach folgenden zwei Varianten:
+
+**- P1 Eurostat **
+Hierbei werden alle Einkommen eines Haushaltes in einem gleichem Maß auf die äquivalten Haushaltsmitglieder aufgeteilt.
+
+**- P2 wid.world **
+Im Gegensatz zu der vorhergehenden Variante, werden hier nicht mehr alle in einem Haushalt lebenden Personen in das Sample genommen. Hier erfolgt eine Ausschließung von Personen unter 20 Jahren. Außerdem wird lediglich die Einkommensvariable, die nur auf Haushaltsebene verfügbar ist durch die Anzahl der Haushaltsmitglieder (>20) gleichmäßig auf alle Haushaltsmitgleider aufgeteilt; die persönlichen Einkommen bleiben den jeweiligen Personen vorbehalten. 
 
 
 # Ungleichheitsindikatoren
-Im folgenden
-silc.p2 vergeich i21 i23 risk of poverty
+Im Folgenden wird die Einkommensverteilung in Dänemark  anhand von mehreren Indikatoren für den Zeitraum 2004-2017 analysiert, um Rückschlüsse über die Ungleichheit des Landes gegeben zu geben. 
+
+HIER vl nochmal outcomes anschauen für ein jahr P1 P2
+
+Trotz der annähernd gleichen Konzepte und Definitionen der Zielpopulation und Einkommensvariablen in beiden Umfrageerhebungen ergeben sich teilweise beträchtliche Unterschiede in den beschreibenden Statistiken der beiden Einkommensverteilungen.
+
+In diesem Abschnitt liegt der Fokus der Auswertung auf P1 Eurostat. Begründet wird dies dadurch, dass die Daten über Steuern nur auf Haushaltsebene verfügbar sind. Würden wir die Variante P2 heranziehen, wenn wir eine Hausfrau mit reicherem Mann betrachten, stellt sich heraus, dass diese zwar ihr (wenn nur geringfügiges) Einkommen hat, jedoch die Steuerlast ihres Mannes in der Einkommensverteilung mitträgt. Dieses Ergebnis wäre im Vergleich zu P1 weniger zufriedenstellend, um die Geschlechterunterschiede zu analysieren. Eine vollständige Auswertung samt der Ergebnisse P2 wid.world befindet sich im Anhang.
 
 ## Mittelwert
-plot über den Zeitverlauf
+Mittelwert und Median geben Aufschluss über die Schiefe der Verteilungsfunktion. 
+Die    umverteilende    Wirkung    des Staates  zu  illustrieren ....
 
 ## Median
-plot über den Zeitverlauf
+Stagnieren oder nur moderat zunehmen
 
-## Gini
-plot über den Zeitverlauf
+## Gini 
+Die  bisherigen  Ausführungen  fokusieren nur einen Teil der Einkommenshierarchie. Ein Maß, 
+das  die  Ungleichheit  über  die  gesamte  Einkommensskala  hinweg  misst,  ist  der  Gini-
+Koeffizient. Entspricht der Gii einem Wert von null, liegt komplette Gleichverteilung vor, nimmt er 1 an, so gehört einer Person das ganze Vermögen in der Gesellschaft. 
 
-## P80/P20
-plot über den Zeitverlauf
+Unter Berücksichtigung der staatlichen Umverteilung,....
+
+Es  fällt  sofort  ins  Auge,  dass  die  staatlichen Steuer- und Transfersysteme die  
+Einkommensungleichheit...
+
+## P80/P20 Verhältnis
+Die P80/20-Verhältnis zeigt das wie viel Fache an Einkommen die oberen 20% relativ zu den unteren 80% haben. 
+
 
 ## Top 10% Anteil
-plot über den Zeitverlauf
+In diesem Abschnitt klärt sich die Frage, ob die Einkommen an der Spitze davon laufen. Der Top 10% Anteil gibt Auskunft über das Einkommen der reichsten der Gesellschaft. Um dies bestmöglich darzustellen, werden alle drei Einkommenskonzepte verwendet.
+
+Die Top-Verdiener...
 
 ## Armutsgefährdungsquote
+Beschreibung fehlt
+
+Zur Messung der Armutsgefährungsquote wird das verfügbare Einkommen nach Steuern herangezogen.
+
 Relevanz eu2020 - bewegen wir uns in die Richtung?
 plot über den Zeitverlauf und einmal nach gender (i23 auf 2 jahre vergleichen)
 vielleicht i23 risk of poverty auf highest education verteilen (eventuell 2 oder 1 Jahr nur betrachten)
 
+Die Zerlegung der Armutsgefährdungsquote nach Geschlecht ermöglicht eine tiefere Analyse
+
+
+
+
+## Unterstützend:
+hilfreich: da stehen auch Ansatzpunkte für Verteilungspolitik:
+http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Ministerium/Geschaeftsbereich/Wissenschaftlicher_Beirat/Gutachten_und_Stellungnahmen/Ausgewaehlte_Texte/2017-02-28-einkommensungleichheit-und-soziale-mobilitaet-anlage.pdf?__blob=publicationFile&v=5
 
 # Conclusio
-zusammenfassen reflektieren
--> in den Anhang alle Tabellen
+Zusammenfassen reflektieren. -> in den Anhang alle Tabellen
 
 # Literatur
 

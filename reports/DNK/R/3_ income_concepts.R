@@ -110,6 +110,8 @@ inflation <- inflation %>% filter(unit == "INX_A_AVG", coicop == "CP00",
                                   geo == "DK", time %in% 2004:2017) %>% 
   select(time, values) %>% arrange(time)
 
+inflation
+
 #inflation <- inflation %>% rename('pb010' = 'time')
 #inflation <- inflation %>% rename('infl' = 'values')
 
