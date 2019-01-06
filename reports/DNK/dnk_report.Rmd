@@ -14,8 +14,9 @@ bibliography: references.bib
 ---
 
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message = F}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 
 
@@ -90,6 +91,16 @@ plot(rnorm(50), rnorm(50))
 
 Potentiell weniger simple Tabellen:
 
+
+```{r echo=FALSE, }
+# Read CSV data, "../../" to look two levels upwards
+table <- read.csv("tables/_template-table.csv")
+knitr::kable(table, caption = "Mit Optionen")
+```
+
+Horizontale Linien:
+
+Horizontale Linien:
 Horizontale Linien:
 
 ---
@@ -165,7 +176,7 @@ In diesem Abschnitt liegt der Fokus der Auswertung auf P1 Eurostat. Begründet w
 ## Mittelwert und Median
 Für einen ersten Eindruck, werden Mittelwert und Median Einkommen näher betrachtet, da diese Aufschluss über die Schiefe der Verteilungsfunktion geben. Die Abbildung 1 zeigt und die Entwicklung des Median und mittleren verfügbaren Einkomens nach Steuern, Einkommenskonzept 3, seit 2004.
 
-![Median und mittleres Einkommen, 2004-2017](img/medmit.png){width=65%}
+![Median und Mittelwert, 2004-2017](img/medmit.png){width=65%}
 
 Es  fällt  sofort  ins  Auge, dass beide Werte über den Zeitverlauf immens gestiegen sind. Die Betrachtung des durchschnittlichen Jahreseinkommen zeigt von 2004 bis 2017 eine Erhöhung von rund 28.371 Dänische Kronen (DKD) auf 33.776 DKK, was fast 20% entspricht. Für das mittlere Einkommen beträgt die Erhöhung in diesem Fall lediglich 15%. Da das Durchschnittseinkommen deutlich unter dem Medianeinkommen liegt, kann man daraus schließen, dass eine linksschiefe Einkommensverteilung vorliegt. Aus der Grafik ist gut ersichtlich, dass Dänemark nicht unverschohnt von der Wirtschafts- und Finanzkrise 2008 geblieben ist und sich diese auf die Einkomme privater Haushalte negativ ausgewirkt hat. Im Vergleich des BIP-Wachstums wird auch ersichtlich, dass Dänemark die Folgen der Krise langsamer kompensiert hat als dessen Nachbarländer [@statdenm2].  
 
@@ -222,6 +233,72 @@ Zusammenfassen reflektieren. -> in den Anhang alle Tabellen
 \newpage
 
 # Appendix
+**Legende**
+
+- i11:  Faktoreinkommen vor Steuern nach P1 Eurostat
+- i12:  Nationaleinkommen vor Steuern nach P1 Eurostat
+- i13:  Verfügbares Einkommen nach Steuern nach P1 Eurostat
+- i21:  Faktoreinkommen vor Steuern nach P2 wid.world
+- i22:  Nationaleinkommen vor Steuern nach P2 wid.world
+- i23:  Verfügbares Einkommen nach Steuern nach P2 wid.world
+- DS:  Denmark Statistics
+
+&nbsp;
+
+**Gesamtübersicht Mittelwert**
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/mean.csv")
+table <- table %>%
+  rename(Jahr = X1) %>% select(-c(Statbank_prim_a, Statbank_prim_b, Statbank_disp_a, Statbank_disp_b, Statbank_pre_tax_a, Statbank_pre_tax_b))
+knitr::kable(table, caption = "Gesamtübersicht Mittelwert")
+```
+
+**Gesamtübersicht Median**
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/median.csv")
+table <- table %>%
+  rename(Jahr = X1, DS = Statbank, i11 = statistic, i12 = statistic.1, i13 = statistic.2, i21 = statistic.3,i22 = statistic.4, i23 = statistic.5)
+knitr::kable(table, caption = "Gesamtübersicht Median")
+```
+
+**Gesamtübersicht Gini-Koeffizienten**
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/gini.csv")
+table <- table %>%
+  rename(Jahr = X1, DS = Statbank)
+knitr::kable(table, caption = "Gesamtübersicht Gini-Koeffizienten")
+```
+
+**Gesamtübersicht P80/P20 Verhältnis**
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/8020.csv")
+table <- table %>%
+  rename(Jahr = X1, DS = Statbank)
+knitr::kable(table, caption = "Gesamtübersicht P80/P20 Verhältnis")
+```
+
+**Gesamtübersicht Top 10% Anteil**
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/t10.csv")
+table <- table %>%
+  rename(Year = X1, i11 = statistic, i12 = statistic.1, i13 = statistic.2, i21 = statistic.3,i22 = statistic.4, i23 = statistic.5)
+knitr::kable(table, caption = "Gesamtübersicht Top 10% Anteil")
+```
+
+**Gesamtübersicht Armutsgefährdungsquote**
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/arpr.csv")
+table <- table %>%
+  rename(Year = X1, DS = Statbank, i11 = i11_arpr, i12 = i12_arpr, i13 = i13_arpr, i21 = i21_arpr,i22 = i22_arpr, i23 = i23_arpr)
+knitr::kable(table, caption = "Gesamtübersicht Armutsgefährdungsquote")
+```
+
 
 \newpage
 # Literatur
