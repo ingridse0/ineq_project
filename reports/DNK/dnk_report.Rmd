@@ -92,12 +92,6 @@ plot(rnorm(50), rnorm(50))
 
 Potentiell weniger simple Tabellen:
 
-```{r echo=FALSE, }
-# Read CSV data, "../../" to look two levels upwards
-table <- read.csv("tables/_template-table.csv")
-knitr::kable(table, caption = "Mit Optionen")
-```
-
 Horizontale Linien:
 
 ---
@@ -117,7 +111,7 @@ Im Rahmen dieser Startegie setzt die EU ein klares Zeichen zur Bekämpfung von A
 Klar ist effiziente nationale Politik kann Disparitäten entgegensteuern und Steuern und Transfers bleiben eine wichtige Säule der Umverteilung. Dänemark wird oft als Land dargestellt, dass Wirtschaftlichkeit und soziale Sicherheit erfolgreich umsetzt, das dänische Model des Wohlfahrtstaates. Um die Einkommensungleichheit und in diesem Zusammenhang die Entwicklung von Armut und sozialer Ausgrenzung in Dänemark sichtbar zu machen, wird eine beurteilende Analyse verschiedener Indikatoren auf Basis von ausgewählten Daten aus der European Union Statistics on Income and Living Conditions (EU-SILC) Erhebung im Rahmen dieses Artikels vorgenommen.
 
 
-# Das dänische Model - Dänemarks egebnisse
+# Institutionelle und theoretische Grundlagen
 Literaturüberblick den wir abgegeben haben
 https://www.cbs.dk/files/cbs.dk/new_papers_4.pdf
 Paper Atkinson?
@@ -132,7 +126,7 @@ Inequality in Denmark through the Looking Glass
 # Methodologie
 ## Daten 
 Für eine Analyse der Verteilung der Einkommen aus Erwerbstätigkeit in  Dänemark liefert die   Erhebungen  „European  Union  Statistics  on  Income  and  Living
-Conditions“ (SILC) hinreichend detaillierte Daten. Ausschließlich für die Inflationsbereinigung werden Daten von EUROSTAT herangezogen.
+Conditions“ (SILC) hinreichend detaillierte Daten. Ausschließlich für die Inflationsbereinigung werden Daten von EUROSTAT für die Berechnung herangezogen.
 
 Erstmals wurde die EU-SILC Erhebung 2003, basierend auf einer freiwilligen Vereinbarung zwischen Eurostat und sechs Mitgliedstaaten (Belgien, Dänemark, Griechenland, Irland, Luxemburg und Österreich) sowie Norwegen durchgeführt. Inzwischen beteiligen sich neben den EU-Mitgliedsstaaten auch Norwegen, Island, die Türkei, die Schweiz, Mazedonien und Serbien an der harmonisierten tichprobenerhebung von privaten Haushalten [@eurostatweb]. Mit dem Ziel Armut und sozialer Ausgrenzung zu beobachten, dient die Erhebung in diesem Zusammenhang zur Überwachung der Strategie Europa 2020. 
 
@@ -171,55 +165,60 @@ Im Gegensatz zu der vorhergehenden Variante, werden hier nicht mehr alle in eine
 
 
 # Ungleichheitsindikatoren
-Im Folgenden wird die Einkommensverteilung in Dänemark  anhand von mehreren Indikatoren für den Zeitraum 2004-2017 analysiert, um Rückschlüsse über die Ungleichheit des Landes gegeben zu geben. 
+Im Folgenden wird die Einkommensverteilung in Dänemark  anhand von mehreren standardisierten Indikatoren für den Zeitraum 2004-2017 analysiert, um Rückschlüsse über die Ungleichheit des Landes gegeben zu geben. 
 
-HIER vl nochmal outcomes anschauen für ein jahr P1 P2
+In diesem Abschnitt liegt der Fokus der Auswertung auf P1 Eurostat. Begründet wird dies dadurch, dass die Daten über Steuern nur auf Haushaltsebene verfügbar sind. Würden wir beispielsweise die Variante P2 heranziehen, wenn wir eine Hausfrau mit reicherem Mann betrachten, stellt sich heraus, dass diese zwar ihr (wenn nur geringfügiges) Einkommen hat, jedoch die Steuerlast ihres Mannes in der Einkommensverteilung mitträgt. Eine vollständige Auswertung samt der Ergebnisse P2 wid.world befindet sich im Appendix.
 
-Trotz der annähernd gleichen Konzepte und Definitionen der Zielpopulation und Einkommensvariablen in beiden Umfrageerhebungen ergeben sich teilweise beträchtliche Unterschiede in den beschreibenden Statistiken der beiden Einkommensverteilungen.
+## Mittelwert und Median
+Für einen ersten Eindruck, werden Mittelwert und Median Einkommen näher betrachtet, da diese Aufschluss über die Schiefe der Verteilungsfunktion geben. Die Abbildung 1 zeigt und die Entwicklung des Median und mittleren verfügbaren Einkomens nach Steuern, Einkommenskonzept 3, seit 2004.
 
-In diesem Abschnitt liegt der Fokus der Auswertung auf P1 Eurostat. Begründet wird dies dadurch, dass die Daten über Steuern nur auf Haushaltsebene verfügbar sind. Würden wir die Variante P2 heranziehen, wenn wir eine Hausfrau mit reicherem Mann betrachten, stellt sich heraus, dass diese zwar ihr (wenn nur geringfügiges) Einkommen hat, jedoch die Steuerlast ihres Mannes in der Einkommensverteilung mitträgt. Dieses Ergebnis wäre im Vergleich zu P1 weniger zufriedenstellend, um die Geschlechterunterschiede zu analysieren. Eine vollständige Auswertung samt der Ergebnisse P2 wid.world befindet sich im Anhang.
+![Median und mittleres Einkommen, 2004-2017](img/medmit.png){width=65%}
 
-## Mittelwert
-Mittelwert und Median geben Aufschluss über die Schiefe der Verteilungsfunktion. 
-Die    umverteilende    Wirkung    des Staates  zu  illustrieren ....
-
-## Median
-Stagnieren oder nur moderat zunehmen
+Es  fällt  sofort  ins  Auge, dass beide Werte über den Zeitverlauf immens gestiegen sind. Die Betrachtung des durchschnittlichen Jahreseinkommen zeigt von 2004 bis 2017 eine Erhöhung von rund 28.371 Dänische Kronen (DKD) auf 33.776 DKK, was fast 20% entspricht. Für das mittlere Einkommen beträgt die Erhöhung in diesem Fall lediglich 15%. Da das Durchschnittseinkommen deutlich unter dem Medianeinkommen liegt, kann man daraus schließen, dass eine linksschiefe Einkommensverteilung vorliegt. Aus der Grafik ist gut ersichtlich, dass Dänemark nicht unverschohnt von der Wirtschafts- und Finanzkrise 2008 geblieben ist und sich diese auf die Einkomme privater Haushalte negativ ausgewirkt hat. Im Vergleich des BIP-Wachstums wird auch ersichtlich, dass Dänemark die Folgen der Krise langsamer kompensiert hat als dessen Nachbarländer [@statdenm2].  
 
 ## Gini 
 Die  bisherigen  Ausführungen  fokusieren nur einen Teil der Einkommenshierarchie. Ein Maß, 
 das  die  Ungleichheit  über  die  gesamte  Einkommensskala  hinweg  misst,  ist  der  Gini-
 Koeffizient. Entspricht der Gii einem Wert von null, liegt komplette Gleichverteilung vor, nimmt er 1 an, so gehört einer Person das ganze Vermögen in der Gesellschaft. 
 
-Unter Berücksichtigung der staatlichen Umverteilung,....
+![Gini-Index, 2004-2017](img/gini.png){width=65%}
 
-Es  fällt  sofort  ins  Auge,  dass  die  staatlichen Steuer- und Transfersysteme die  
-Einkommensungleichheit...
+Die Abbildung 2 zeigt und die Entwicklung des Gini Koeffizienten nach den Einkommenskonzepten seit 2004. Es  fällt  sofort  ins  Auge,  dass  die  staatlichen Steuer- und Transfersysteme die  
+Einkommensungleichheit beginnend beim Faktoreinkommen knapp 20% sinken lässt. Außerdem zeigt sich hier jetzt, dass der Anstieg des Einkommens Dänemark im Durchschnitt ungleicher gemacht hat. Tatsächlich sprechen wir hier jedoch nur von einer Veränderung von 0.03%.
+
+Generell ist hier auch gut ersichtlich, dass P1 den Gini besser abbildet. In der Auflistung im Appendix sieht man, dass die Werte des Gini für das verfügbare Einkommen nach Steuern, ähnlicher den jeweiligen Gini-Werten von Denmarkt Statistics sind.
 
 ## P80/P20 Verhältnis
 Die P80/20-Verhältnis zeigt das wie viel Fache an Einkommen die oberen 20% relativ zu den unteren 80% haben. 
 
+![P80/P20 Verhältnis, 2004-2017](img/8020.png){width=65%}
+
+Um das P80/P20 Verhältnis für Dänemark darzustellen, werden die drei verschiedenen Einkommenskonzepte verwendet.
 
 ## Top 10% Anteil
 In diesem Abschnitt klärt sich die Frage, ob die Einkommen an der Spitze davon laufen. Der Top 10% Anteil gibt Auskunft über das Einkommen der reichsten der Gesellschaft. Um dies bestmöglich darzustellen, werden alle drei Einkommenskonzepte verwendet.
 
-Die Top-Verdiener...
+
+![Top 10% Anteil nach P1 und P2, 2004-2017](img/top10.png){width=100%}
+
+Über den gesamten Betrachtungszeitraum zeigt sich kein Anstieg des Anteils der Top 10%, unabhängig vom Einkommenskonzept. Die Einkommenskonzepte Nationaleinkommen vor Steuern und das verfügbare Einkommen nach sind in beiden Varianten P1 und P2, wie zu erwarten, nahezu ident. Die Differenz (im Falle P2 höher) zeigt klar, dass das Steuer- und Transfersystem Dänemark Top-Verdiener pusht. Auch in diesem Vergleich sieht man wieder klar, dass die Aufsplittung der Steuern auf Haushaltsebene die Endresultate beeinflussen.
+
+# Armut in Dänemark
+Um im folgenden ein Bild zur Armut in Dänemark zu bekommen, wird die Armutsgefährdungsqupte zur Hilfe gezogen.
 
 ## Armutsgefährdungsquote
-Beschreibung fehlt
+Die Armutsgefährdungsquote zeigt den Anteil der Personen, die aufgrund ihres relativ geringen Einkommens von Armut und sozialer Ausgrenzung bedroht sind. Gemäß dem EU-Standard ist die Armutsgefährdungsquote definiert als der Anteil der Personen, deren Äquivalenzeinkommen weniger als 60% des Medians der Äquivalenzeinkommen der Bevölkerung (in Privathaushalten) beträgt. 
 
-Zur Messung der Armutsgefährungsquote wird das verfügbare Einkommen nach Steuern herangezogen.
 
-Relevanz eu2020 - bewegen wir uns in die Richtung?
-plot über den Zeitverlauf und einmal nach gender (i23 auf 2 jahre vergleichen)
-vielleicht i23 risk of poverty auf highest education verteilen (eventuell 2 oder 1 Jahr nur betrachten)
+![Armutsgefährdungsquote, 2004-2017](img/arpr.png){width=90%}
 
+Die Armutsgefährdungsquote 
+Zwar kann Dänemark im EU-Vergleich eine gerine Armutsgefährdungsquote per se aufweisen, dennoch bewegt sich das Land noch nicht in die richtige Richtung für die Strategie Europa2020.
+
+Für zwei Jahre:
 Die Zerlegung der Armutsgefährdungsquote nach Geschlecht ermöglicht eine tiefere Analyse
-
-
-
+Die Zerlegung der Armutsgefährdungsquote nach Bildung ermöglicht eine tiefere Analyse
 Die Zerlegung der Armutsgefährdungsquote nach Alter ermöglicht eine tiefere Analyse
-
 
 ## Unterstützend:
 hilfreich: da stehen auch Ansatzpunkte für Verteilungspolitik:
@@ -227,7 +226,16 @@ http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Ministerium/Ges
 
 # Conclusio
 Zusammenfassen reflektieren. -> in den Anhang alle Tabellen
+\newpage
 
+# Appendix
+
+```{r echo=FALSE, }
+# Read CSV data, "../../" to look two levels upwards
+table <- read.csv("tables/gini.csv")
+knitr::kable(table, caption = "Gini)
+```
+
+\newpage
 # Literatur
-
 <!-- Leer lassen -->
