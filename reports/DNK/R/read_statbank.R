@@ -1,4 +1,10 @@
-# This script reads the statbank data
+# -----------------------------------------------------------------------------
+#
+# STATISTICS DENMARK
+# Group DNK
+# 2004 - 2017
+#
+# -----------------------------------------------------------------------------
 
 # 80/20 quantile share ratio for equalized disposable income
 
