@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 #
-# TABLES FOR VISUALISING
+# TABLES ANHANG
 # Group DNK
 # 2004 - 2017
 #
@@ -26,7 +26,7 @@ frame_arpr <- round(frame_arpr, digits = 2)
 
 # Gini
 
-frame_gini <- data.frame(year, i11_gini[2], i12_gini[2], i13_gini[2],
+frame_gini <- data.frame(i11_gini[2], i12_gini[2], i13_gini[2],
                          i21_gini[2], i22_gini[2], i23_gini[2],
                          statbank_gini/100
 )
