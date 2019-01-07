@@ -132,11 +132,11 @@ plot_8020
 
 #P1
 plot_101 <- ggplot() +
-  geom_point(mapping = aes(y = frame_t10s$statistic,x = frame_t10s$year,
+  geom_line(mapping = aes(y = frame_t10s$statistic,x = frame_t10s$year,
                           color = "Faktoreinkommen vor Steuern"), size = 1 ) +
-  geom_point(mapping = aes(y = frame_t10s$statistic.1,x = frame_t10s$year,
+  geom_line(mapping = aes(y = frame_t10s$statistic.1,x = frame_t10s$year,
                           color = "Nationaleinkommen vor Steuern"), size = 1) +
-  geom_point(mapping = aes(y = frame_t10s$statistic.2,x = frame_t10s$year,
+  geom_line(mapping = aes(y = frame_t10s$statistic.2,x = frame_t10s$year,
                           color = "Verfügbares Einkommen nach Steuern"), size = 1) +
   scale_color_manual(values = c('Faktoreinkommen vor Steuern' = 'darkred', 
                                 'Nationaleinkommen vor Steuern' = 'darkblue',
@@ -148,11 +148,11 @@ plot_101
 
 #P2
 plot_102 <- ggplot() +
-  geom_point(mapping = aes(y = frame_t10s$statistic.3,x = frame_t10s$year,
+  geom_line(mapping = aes(y = frame_t10s$statistic.3,x = frame_t10s$year,
                            color = "Faktoreinkommen vor Steuern"), size = 1 ) +
-  geom_point(mapping = aes(y = frame_t10s$statistic.4,x = frame_t10s$year,
+  geom_line(mapping = aes(y = frame_t10s$statistic.4,x = frame_t10s$year,
                            color = "Nationaleinkommen vor Steuern"), size = 1) +
-  geom_point(mapping = aes(y = frame_t10s$statistic.5,x = frame_t10s$year,
+  geom_line(mapping = aes(y = frame_t10s$statistic.5,x = frame_t10s$year,
                            color = "Verfügbares Einkommen nach Steuern"), size = 1) +
   scale_color_manual(values = c('Faktoreinkommen vor Steuern' = 'darkred', 
                                 'Nationaleinkommen vor Steuern' = 'darkblue',
