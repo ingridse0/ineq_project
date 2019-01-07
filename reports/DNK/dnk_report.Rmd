@@ -299,7 +299,6 @@ table <- table %>%
 knitr::kable(table, caption = "Gesamtübersicht Armutsgefährdungsquote")
 ```
 
-
 \newpage
 # Literatur
 <!-- Leer lassen -->
