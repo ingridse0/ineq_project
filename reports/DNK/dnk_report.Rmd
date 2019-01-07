@@ -108,34 +108,35 @@ Im Folgenden wird die Einkommensverteilung in Dänemark  anhand von mehreren sta
 In diesem Abschnitt liegt der Fokus der Auswertung auf P1. Begründet wird dies dadurch, dass die Daten über Steuern nur auf Haushaltsebene verfügbar sind. Würden wir beispielsweise die Variante P2 heranziehen, wenn wir eine geringverdienende Frau mit sehr gut verdienenden Mann betrachten, stellt sich heraus, dass sie neben ihrem geringen Einkommen die Steuerlast ihres Mannes in der Einkommensverteilung mitträgt. Sämtliche Gesamtübersichten der berechneten Indikatoren befinden sich für beide Allokationsvarianten, sprich P1 und P2, im Appendix.
 
 ## 4.1 Mittelwert und Median
-Für einen ersten Eindruck, werden Mittelwert und Median Einkommen näher betrachtet, da diese Aufschluss über die Schiefe der Verteilungsfunktion geben. Die Abbildung 1 zeigt und die Entwicklung des Median und mittleren verfügbaren Einkomens nach Steuern, Einkommenskonzept 3, seit 2004.
+Für einen ersten Eindruck, werden Mittelwert und Median Einkommen näher betrachtet, da diese Aufschluss über die Schiefe der Verteilungsfunktion geben. Die Abbildung 1 zeigt die Entwicklung des Median- und Durchschnittseinkommens nach Steuern (Einkommenskonzept 3) seit 2004.
 
 ![Median und Mittelwert, 2004-2017](img/medmit.png){width=65%}
 
-Es  fällt  sofort  ins  Auge, dass beide Werte über den Zeitverlauf immens gestiegen sind. Die Betrachtung des durchschnittlichen Jahreseinkommen zeigt von 2004 bis 2017 eine Erhöhung von rund 28.371 DKK auf 33.776 DKK, was fast 20% entspricht. Für das mittlere Einkommen beträgt die Erhöhung in diesem Fall lediglich 15%. Da das Durchschnittseinkommen deutlich unter dem Medianeinkommen liegt, kann man daraus schließen, dass eine linksschiefe Einkommensverteilung vorliegt. Aus der Grafik ist gut ersichtlich, dass Dänemark nicht unverschohnt von der Wirtschafts- und Finanzkrise 2008 geblieben ist und sich diese auf die Einkomme privater Haushalte negativ ausgewirkt hat. Im Vergleich des BIP-Wachstums wird auch ersichtlich, dass Dänemark die Folgen der Krise langsamer kompensiert hat als dessen Nachbarländer [@statdenm2].  
+Es  fällt  sofort  ins  Auge, dass beide Werte über den Zeitverlauf stark gestiegen sind. Die Betrachtung des durchschnittlichen Jahreseinkommen zeigt von 2004 bis 2017 eine Erhöhung von rund 28.371 DKK auf 33.776 DKK, was knapp 20% entspricht. Für das Medianeinkommen beträgt die Erhöhung in diesem Fall lediglich rund 15%. 
 
-## 4.2 Gini 
-Die  bisherigen  Ausführungen  fokusieren nur einen Teil der Einkommenshierarchie. Ein Maß, 
-das  die  Ungleichheit  über  die  gesamte  Einkommensskala  hinweg  misst,  ist  der  Gini-
-Koeffizient. Entspricht der Gii einem Wert von null, liegt komplette Gleichverteilung vor, nimmt er 1 an, so gehört einer Person das ganze Vermögen in der Gesellschaft. 
+
+Da das Durchschnittseinkommen deutlich unter dem Medianeinkommen liegt, kann man daraus schließen, dass die Einkommensverteilung eine rechtsschiefe Dichtefunktion ausweist. Dies ist charakteristisch für eine Einkommensverteilung. Aus der Grafik ist gut ersichtlich, dass Dänemark nicht unverschohnt von der Wirtschafts- und Finanzkrise 2008 geblieben ist und sich diese auf die Einkommen privater Haushalte negativ ausgewirkt hat. Diese Annahme wird durch @statdenm2 bestätigt, die auch zeigen, dass Dänemark die Folgen der Krise langsamer kompensiert hat als dessen Nachbarländer.  
+
+
+## 4.2 Gini Koeffizient
+Durch den Vergleich von Median und Mittelwert lassen sich nur beschränkt Schlüsse auf die Einkommensverteilung ziehen. Ein detaillierteres Bild liefert der Gini Koeffizient. Entspricht der Gini einem Wert von Null, liegt vollständige Gleichverteilung vor, nimmt er 1 an, so gehört einer Person das ganze Vermögen in der Gesellschaft. 
 
 ![Gini-Index, 2004-2017](img/gini.png){width=65%}
 
-Die Abbildung 2 zeigt und die Entwicklung des Gini Koeffizienten nach den Einkommenskonzepten seit 2004. Es  fällt  sofort  ins  Auge,  dass  die  staatlichen Steuer- und Transfersysteme die  
-Einkommensungleichheit beginnend beim Faktoreinkommen knapp 20% sinken lässt. Außerdem zeigt sich hier jetzt, dass der Anstieg des Einkommens Dänemark im Durchschnitt ungleicher gemacht hat. Tatsächlich sprechen wir hier jedoch nur von einer Veränderung von 0.03%.
+Abbildung 2 zeigt die Entwicklung des Gini Koeffizienten nach den drei Einkommenskonzepten seit 2004. Klar ersichtlich ist,  dass  die  staatlichen Umverteilungssysteme die  
+Einkommensungleichheit stark sinken lassen. Dies sieht man beim Vergleich des Ginis für das verfügbare Einkommen nach Steuern mit den beiden anderen Einkommenskonzepten. Sowohl Arbeitslosenunterstützung und Pensionen als auch Steuer- und Transfersysteme lassen die Ungleichheit in einem größeren Ausmaß sinken. Für das Jahr 2017 bedeutet dies eine Senkung von insgesamt 20%. Insgesamt ist im Zeitverlauf die Ungleichheit in Dänemark gestiegen. Außerdem zeigt Tabelle 3 aus dem Appendix, dass der Gini-Koeffizient nach der Berechnung P2 für alle Zeitpunkte deutlich höher ist. Dies erfolgt aus der Konstruktion der Allokationsvariante.
 
-Generell ist hier auch gut ersichtlich, dass P1 den Gini besser abbildet. In der Auflistung im Appendix sieht man, dass die Werte des Gini für das verfügbare Einkommen nach Steuern, ähnlicher den jeweiligen Gini-Werten von Denmarkt Statistics sind.
 
 ## 4.3 P80/P20 Verhältnis
-Die P80/20-Verhältnis zeigt das wie viel Fache an Einkommen die oberen 20% relativ zu den unteren 80% haben. 
+Das P80/P20 Verhältnis stellt den Mittelwert der oberen 20% relativ zu den unteren 20% der EinkommensbezieherInnen gegenüber.
 
 ![P80/P20 Verhältnis, 2004-2017](img/8020.png){width=65%}
 
-Um das P80/P20 Verhältnis für Dänemark darzustellen, werden die drei verschiedenen Einkommenskonzepte verwendet.
+Um das P80/P20 Verhältnis für Dänemark zu illustrieren, werden die drei verschiedenen Einkommenskonzepte über den Zeitrahmen 2004-2017 betrachtet. Unter der Annahme, dass der mittlere Einkommensteil in diesem Verhältnis ausgeblendet wird, ist dieses Maß wesentlich sensitives bei Veränderungen an den Rändern der Verteilung. Für die Auswertung von Dänemark sieht man, dass der Unterschied zwischen Faktoreinkommen vor Steuern und dem verfügbaren Einkommen nach Steuern zu einem größeren Teil durch das progressive Steuersystem erklärbar ist. Dieses Verteilungsmaß zeigt einen leicht steigenden Trend zu mehr Ungleichheit. Für die verfügbaren Einkommen beträgt das P80/P20 Verhältnis rund 4%. Dies bedeutet, dass eine Person aus den top 20% im Durchschnitt das vier-fache des Einkommens einer Person der unteren 20% verdient.
+
 
 ## 4.4 Top 10% Anteil
-In diesem Abschnitt klärt sich die Frage, ob die Einkommen an der Spitze davon laufen. Der Top 10% Anteil gibt Auskunft über das Einkommen der reichsten der Gesellschaft. Um dies bestmöglich darzustellen, werden alle drei Einkommenskonzepte verwendet.
-
+Der Top 10% Anteil gibt Auskunft  ob die Einkommen an der Spitze davon laufen.
 
 ![Top 10% Anteil nach P1 und P2, 2004-2017](img/top10.png){width=100%}
 
