@@ -23,110 +23,98 @@ library(tidyverse)
 
 
 \newpage
+# 1 Einführung
+Die Strategie Europa 2020 ist die Agenda der Europäischen Union zur Förderung von Wachstum und Beschäftigung des gegenwärtigen Jahrzehntes. Zu der Umsetzung dieses geimsamen europäischen Vorhaben wurden in den Bereichen Beschäftigung, Forschung, Klimawandel, Armut und soziale Ausgrenzung  nationale Ziele festgelegt, die jährlich im Rahmen von Fortschrittsberichten beobachtet werden. Insbesondere soll durch eine Verringerung der Armut, die soziale Eingliederung gefördert werden, wobei angestrebt wird, mindestens 20 Millionen Menschen vor dem Risiko der Armut zu bewahren [@europe2020].
 
-# Einführung
-Die Strategie Europa 2020 ist die Agenda der EU zur Förderung von Wachstum und Beschäftigung des gegenwärtigen Jahrzehntes. In den Bereichen Beschäftigung, Forschung und Entwicklung, Klimawandel und Energie, Bildung und Armut und soziale Ausgrenzung wurden nationale Ziele zur Umsetzung der gemeinsamen europäischen Ziele festgelegt, die jährlich im Rahmen von Fortschrittsberichten überwacht werden. Insbesondere soll die soziale Eingliederung durch eine Verringerung der Armut gefördert werden, wobei angestrebt wird, mindestens 20 Millionen der betroffenen Personen vor dem Risiko der Armut zu bewahren [@europe2020].
+Im Rahmen dieser Vorhaben setzt die EU ein klares Zeichen zur Bekämpfung von Armut. Während Armut per se sich nur auf den untersten Teil der Einkommensverteilung beschränkt, zeigt die Einkommensverteilung das Bild der gesamten betrachteten Volkswirtschaft. Die OECD weist bereits seit mehrere Jahren auf die Spreizung der Einkommen hin [@oecd2008growing; @oecd2015together]. In dem Report „Growing unequal? Income distribution and poverty in OECD countries“ befasst sich die Internationale Organisation mit der Entwicklung der Disparität der Einkommen von 30 Industriestaaten und zeigt auf, dass mindestens seit der Mitte der 1980er eine geringe, jedoch kontinuierliche Erhöhung der Ungleichheit stattgefunden hat. Wird dieser Zeitaum näher betrachtet stellt sich heraus, dass die jeweiligen Regierungen zwar ihre Ausgaben und Steuern erhöht haben, um dieser Dynamik entgegenzuwirken, wohingegen der gewünschte Umverteilungseffekt nur bis Mitte der 1990er Jahre gedämpft werden konnte. In den darauf folgenden Jahren richtete sich die Umverteilungspolitik weniger gezielt auf ärmere Haushalte und führte zu einem wesentlich Anstieg der Ungleichheit. Es wird darauf hingewiesen, dass dies unter anderem ausschlaggebend für die unteschiedlichen Ausprägungen von Ungleichheit in den jeweiligen Ländern sei [@oecd2008growing]. 
 
-Im Rahmen dieser Startegie setzt die EU ein klares Zeichen zur Bekämpfung von Armut und hebt in diesem Zug die Relevanz der Einkommensungleichheit deutlich hervor. Die OECD thematisiert bereits mehrere Jahren die Spreizung der Einkommen hin [@oecd2008growing; @oecd2015together]. In dem Report „Growing unequal? Income distribution and poverty in OECD countries“ befasst sich die @oecd2008growing mit der Entwicklung der Disparität von Einkommen von 30 Industriestaaten und zeigt auf, dass mindestens seit der Mitte der 1980er eine geringe, jedoch kontinuierliche Erhöhung der Ungleichheit stattgefunden hat. Wird dieser Zeitaum näher betrachtet stellt sich heraus, dass die jeweiligen Regierungen zwar ihre Ausgaben und Steuern erhöht haben, um dieser Dynamik entgegenzuwirken, jedoch der gewünschte Umverteilungseffekt nur bis Mitte der 1990er Jahre gedämpft werden konnte. In den darauf folgenden Jahren richtete sich die Umverteilungspolitik weniger gezielt auf ärmere Haushalte und führte zu einer wesentlich höheren Zunahme der Ungleichheit. Es wird darauf hingewiesen, dass dies, sowohl gesehen als effiziente Umvertwilung oder nachhaltige Investition in die Fähigkeiten der Bevölkerung, unter anderem ausschlaggebend für die unteschiedlichen Ausprägungen von Ungleichheit in den jeweiligen Ländern sei [@oecd2008growing]. 
+Ersichtlich ist, dass eine effiziente nationale Politik Disparitäten entgegensteuern kann und Steuern und Transfers wichtige Säule der Umverteilung sind. Dänemark wird oft als Land dargestellt, dass Wirtschaftlichkeit und soziale Sicherheit erfolgreich umsetzt. Hier stellt sich die Frage, ob sich das dänische Model des Wohlfahrtsstaates auch in der nationalen Einkommensverteilung wiederspiegelt. Um die Einkommensungleichheit und in diesem Zusammenhang die Entwicklung von Armut und sozialer Ausgrenzung in Dänemark sichtbar zu machen, wird eine beurteilende Analyse verschiedener Indikatoren auf Basis von ausgewählten Daten aus der European Union Statistics on Income and Living Conditions (EU-SILC) Erhebung im Rahmen dieses Artikels vorgenommen.
 
-Klar ist effiziente nationale Politik kann Disparitäten entgegensteuern und Steuern und Transfers bleiben eine wichtige Säule der Umverteilung. Dänemark wird oft als Land dargestellt, dass Wirtschaftlichkeit und soziale Sicherheit erfolgreich umsetzt, das dänische Model des Wohlfahrtstaates. Um die Einkommensungleichheit und in diesem Zusammenhang die Entwicklung von Armut und sozialer Ausgrenzung in Dänemark sichtbar zu machen, wird eine beurteilende Analyse verschiedener Indikatoren auf Basis von ausgewählten Daten aus der European Union Statistics on Income and Living Conditions (EU-SILC) Erhebung im Rahmen dieses Artikels vorgenommen.
+Das nachfolgende Kapitel beschäftigt sich mit den institutionellen und theoretischen Grundlagen des Landes und ermöglicht es die Auswertung der Indikatoren in einen Kontext zu betrachten. Behandelt wird in diesem Zug der dänische Arbeitsmarkt sowie das Steuer und Transfersystem. In Kapitel 3 liegt der Fokus zum einen auf der Herkunft der verwendeten Daten und deren Aufbereitung sowie den verschiedenen Einkommenskonzepten, die zur Analyse herangezogen werden. Außerdem werden hier die Varianten der Zuteilung von Einkommenskomponenten auf die Haushaltsmitglieder thematisiert. Die berechneten Ungleichheitsindikatoren sind in Kapitel 4 visualisiert. Nachdem der Leser sich nun ein Bild über die Einkommensungleichheit in Dänemark verschaffen konnte, beschäftigt sich das Kapitel 6 mit der Frage in wie weit sich Dänemark Richtung dem Ziel der Armutsbekämpfung von der Strategie Europa 2020 bewegt und ob eine positive Tendenz erkennbar ist. Zuletzt, werden alle Erkenntnisse und Ergebnisse im Rahmen des Conclusios reflektiert und zusammengefasst.
 
+# 2 Institutionelle und theoretische Grundlagen
+Im folgenden werden verteilungsrelevante Aspekte des dänischen Wohlfahrtsstaates erläutert. Diese umfassen das Flexicurity-Prinzip, die Arbeitslosenunterstützung, aktivierende Maßnahmen, bezahlte Karenz, Kollektivverträge und Einkommenssteuer.
 
-# Institutionelle und theoretische Grundlagen
-Das System sozialer Sicherung in Dänemark: Ein kleiner skandinavischer Wohlfahrtsstaat Schmid
-Dänemark und Schweden: Der „skandinavische Wohlfahrtsstaat“ auf Reformkurs Peter A. Köhler 
+## 2.1 Das Flexicurity-Prinzip
+Seit Ausbruch der Ölkrise hatte Dänemark mit anhaltend hohen Arbeitslosenquoten von rund zehn Prozent zu kämpfen. Um dem gegenzusteuern und die Arbeitslosigkeit nachhaltig zu senken, wurde das Flexicurity System schrittweise seit den 1990er Jahren implementiert [@bjorklund2000going]. Flexicurity ist ein Schachtelwort aus Flexibility und Security und ist zum einen durch einen lockeren Kündigungsschutz und andererseits absichernden Maßnahmen für ArbeitnehmerInnen charakterisiert [@oecd2016survey]. 
 
-## Das Flexicurity-Prinzip
-Die dänische Arbeitsmarktpolitik folgt dem sogenannten Flexicurity-Prinzip. Flexicurity ist ein Kofferwort aus Flexibility und Security und ist durch lockeren Kündigungsschutz einerseits und absichernde Maßnahmen für Arbeitnehmer/-innen andererseits charakterisiert [@oecd2016survey]
-Seit Ausbruch der Ölkrise hatte Dänemark mit anhaltend hohen Arbeitslosenquoten von rund zehn Prozent zu kämpfen. Das Flexicurity System wurde schrittweise seit den 1990er Jahren implementiert und hat das Ziel, die Arbeitslosigkeit nachhaltig zu senken [@bjorklund2000going].
+## 2.2 Arbeitslosenunterstützung
+Vor den Reformen der 1990er Jahre gab es in Dänemark de facto keine zeitliche Beschränkung der Arbeitslosenunterstützung. Im ersten Schritt wurde eine maximale Bezugsdauer von sieben Jahren eingeführt. Diese wurde in weiteren Schritten gesenkt. Seit dem Jahr 2016 beträgt die maximale Bezugsdauer zwei Jahre und kann im Ausnahmefall auf drei Jahre verlängert werden. Dies führte dazu, dass heute weniger Personen Arbeitslosenunterstützung beziehen. Anzumerken ist jedoch, dass gleichzeitig die Zahl der SozialhilfeempfängerInnen gestiegen ist. Arbeitslose erhalten in Dänemark einen gewissen Prozentsatz ihres bisherigen Lohnes, die sogenannte Replacement Rate, von der Versicherung ausbezahlt. Die Replacement Rate ist nach Einkommen gestaffelt und beträgt im Durchschnitt rund 60%. Der Höchstsatz für NiedrigverdienerInnen kommt auf 90% in Dänemark. Im OECD-Vergleich sind beide Prozentsätze Spitzenreiter. Die Ansprüche sind bei einer Höhe, die in etwa 60% des Durchschnitsslohns entspricht, gedeckelt und sind somit für BezieherInnen höherer Einkommen im internationalen Vergleich eher niedrig [@gaard2005two, @oecd2016survey].
 
-## Arbeitslosenunterstützung
-Vor den Reformen der 1990er Jahre gab es in Dänemark de facto keine zeitliche Beschränkung der Arbeitslosenunterstützung. Im ersten Schritt wurde eine maximale Bezugsdauer von sieben Jahren eingeführt. Diese wurde in weiteren Schritten gesenkt. Seit dem Jahr 2016 beträgt die maximale Bezugsdauer zwei Jahre und kann im Ausnahmefall auf drei Jahre verlängert werden.
-Dies führte dazu, dass heute weniger Personen Arbeitslosenunterstützung beziehen, jedoch stieg gleichzeitig die Zahl der Sozialhilfeempfänger/-innen.
-Arbeitslose erhalten in Dänemark einen gewissen Prozentsatz ihres bisherigen Lohnes von der Versicherung ausbezahlt. Dieser Prozentsatz wird Replacement Rate genannt. Die Replacement Rate ist nach Einkommen gestaffelt und beträgt im Durchschnitt gut 60% und ist somit in der OECD am höchsten. Der Höchstsatz für Niedrigverdiener/-innen beträgt 90%. Diese beiden Werte sind die höchsten im OECD-Vergleich. 
-Die Ansprüche sind bei einer Höhe gedeckelt, die in etwa 60% des Durchschnitsslohns entspricht und sind somit für Bezieher/-innen höherer Einkommen im internationalen Vergleich eher niedrig [@gaard2005two, oecd2016survey].
+## 2.3 Aktivierende Maßnahmen
+Ein weiteres Charakteristikum der Flexicurity-Politik stellen sogenannte aktivierende Maßnahmen dar. Innerhalb von drei Monaten haben Arbeitslose in Zusammenarbeit mit den Behörden einen Aktionsplan für den beruflichen Wiedereinstieg zu erstellen. Außerdem können Weiterbildungsprogramme und die Annahme vermittelter Stellen vorgeschrieben werden. Wird dies verweigert, so wird die Arbeitslosenunterstützung gekürzt oder gestrichen. Ziel dieser strikten Maßnahmen ist es die Dauer der Arbeitslosigkeit zu senken und sicherzustellen, dass die BezieherInnen bereit sind am Arbeitsmarkt zu partizipieren [@bjorklund2000going, @gaard2005two]. Insgesamt wendet Dänemark rund 1,8% des BIPs für aktive Arbeitsmarktpolitik auf. Auch in diesem Punkt ist Dänemark unter den OECD Staaten führend [@oecd2016survey].
 
-## Aktivierende Maßnahmen
-Ein weiteres Charakteristikum der Flexicurity-Politik stellen sogenannte aktivierende Maßnahmen dar. Innerhalb von drei Monaten haben Arbeitslose in Zusammenarbeit mit den Behörden einen Aktionsplan für den beruflichen Wiedereinstieg zu erstellen. Außerdem können Weiterbildungsprogramme und die Annahme vermittelter Stellen vorgeschrieben werden. Wird dies verweigert, so wird die Arbeitslosenunterstützung gekürzt oder gestrichen. Ziel dieser Maßnahmen ist es die Dauer der Arbeitslosigkeit zu senken und sicherzustellen, dass die Bezieher/-innen bereit sind am Arbeitsmarkt zu partizipieren [bjorklund2000going, @gaard2005two].
+## 2.4 Bezahlte Karenz
+Zusätzlich zu den bereits genannten Reformen wurden vergleichsweise großzügige Karenzmodelle ins Leben gerufen. So können ArbeitnehmerInnen nun bezahlte Bildungs- und Elternkarenz von bis zu einem Jahr in Anspruch nehmen. Außerdem wurde eine Sabbaticalsystem eingeführt bei dem ArbeitnehmerInnen 80% der Arbeitslosenunterstützung erhalten. Die durch Karenzen freigeworden Stellen werden nach Möglichkeit zwischenzeitlich mit Arbeitslosen besetzt. Dadurch sollen diese wieder aktiv in den Arbeitsmarkt integriert werden [@bjorklund2000going, @gaard2005two].
 
-Dänemark wendet rund 1,8% des BIP für aktive Arbeitsmarktpolitik auf. Auch in diesem Punkt ist Dänemark unter den OECD Staaten führend [@oecd2016survey].
+## 2.5 Kollektivverträge
+Verhandlungen zwischen den Sozialpartnern haben in Dänemark eine lange Tradition, jedoch wurde ihre Bedeutung im Rahmen der Flexicurity-Reformen geschwächt. Während die Kollektivvertragsverhandlungen früher auf nationaler Ebene durchgeführt wurden, finden die Verhandlungen seit Beginn der 1980er Jahre auf Branchenebene statt. In Dänemark wird außerdem zwischen einem Normal- und einem Mindestlohnsystem unterschieden. Im Normallohnsystem wird der Vertrag auf Branchenebene verhandelt und kann auf lokaler Ebene nur mehr geringfügig abgeändert werden, wohingegen das Ergebnis im Mindestlohnsystem als Untergrenze gilt. Der Anteil der vom Mindestlohnsystem abgedeckten AbeitnehmerInnen stieg im Zuge der Reformen um rund 35 Prozentpunkte und lag 1994 bei 85%. Ein gewisses Maß an Koordination blieb bei den Verhandlungen dennoch erhalten, da das verarbeitende Gewerbe üblicherweise mit den Verhandlungen beginnt und diese als Maßstab für die restlichen Verhandlungen herangezogen werden. Die Quote der gewerkschaftlich organisierten ArbeiterInnen blieb im Zuge der Reformen unverändert bei rund 75% [@bjorklund2000going].
 
-## Bezahlte Karenz
-Zusätzlich zu den bereits genannten Reformen wurden vergleichsweise großzügige Karenzmodelle ins Leben gerufen. So können Arbeitnehmer/-innen nun bezahlte Bildungs- und Elternkarenz von bis zu einem Jahr in Anspruch nehmen. Außerdem wurde eine Sabbaticalsystem eingeführt bei dem Arbeitnehmer/-innen 80% der Arbeitslosenunterstützung erhalten. Die durch Karenzen freigeworden Stellen werden nach Möglichkeit zwischenzeitlich mit Arbeitslosen besetzt. Dadurch sollen diese wieder in den Arbeitsmarkt integriert werden [@bjorklund2000going, @gaard2005two].
+## 2.6 Einkommenssteuer
+Das dänische Steuersystem unterscheidet grundsätzlich drei Einkommenskategorien:
 
-## Kollektivverträge
-Verhandlungen zwischen den Sozialpartnern haben in Dänemark eine lange Tradition, jedoch wurde ihre Bedeutung im Rahmen der Flexicurity-Reformen geschwächt. Während die Kollektivvertragsverhandlungen früher auf nationaler Ebene durchgeführt wurden, finden die Verhandlungen seit Beginn der 1980er Jahre auf Branchenebene statt. In Dänemark wird außerdem zwischen einem Normal- und einem Mindestlohnsystem unterschieden. Im Normallohnsystem wird der Vertrag auf Branchenebene verhandelt und kann auf lokaler Ebene nur mehr geringfügig abgeändert werden, wohingegen das Ergebnis im Mindestlohnsystem als Untergrenze gilt. Der Anteil der vom Mindestlohnsystem abgedeckted Abeitnehmer/-innen stieg im Zuge der Reformen um rund 35 Prozentpunkte und lag 1194 bei 85%. Ein gewisses Maß an Koordination blieb bei den Verhandlungen dennoch erhalten, da das verarbeitende Gewerbe üblicherweise mit den Verhandlungen beginnt und diese als Maßstab für die restlichen Verhandlungen herangezogen werden.
+**- Persönliches Einkommen** Löhne und Gehälter, Einkommen aus selbstständiger Tätigkeit, Pensionen, Arbeitslosenunterstützung
 
-Die Quote der gewerkschaftlich organisierten Arbeiter/-innen blieb im Zuge der Reformen unverändert hoch bei rund 75% [@bjorklund2000going].
+**- Kapitaleinkommen** Zinserträge und -zahlungen, Dividenden, imputierte Mieten (Im Falle hoher Zinsaufwendungen kann das Kapitaleinkommen negativ sein. Imputierte Mieten stellen ein hypothetisches Einkomman dar. Sie bilden die Ersparnisse ab, die sich für Personen ergeben, die in ihrem Eigentum wohnen)
 
-## Einkommenssteuer
-Das dänische Steuersystem unterscheidet drei Einkommenskategorien:
+**- Steuerpflichtiges Einkommen** Die Summe von persönlichem und Kapitaleinkommen abzüglich absetzbarer Ausgaben
 
-**- Persönliches Einkommen:** Löhne und Gehälter, Einkommen aus selbstständiger Tätigkeit, Pensionen, Arbeitslosenunterstützung
+Sämtliche ArbeitnehmerInnen in Dänemark zahlen einen Arbeitsmarktbeitrag von 8% ihres Bruttoarbeitseinkommens. Dieser wird noch vor der Berechnung des persönlichen Einkommens abgezogen.
+Die steuerpflichtigen Einkommen werden auf nationaler Ebene besteuert. Für Einkommen unter 479.600 Dänischen Kronen (DKK) gilt ein Satz von 10,8%, für jene darüber beträgt er 15%. Gemeinden sind ebenso bemächtigt, Einkommenssteuer einzuheben. Der Steuersatz der Gemeinden liegt zwischen 22% und 28%. Zusätzlich haben ArbeitgeberInnen und ArbeitnehmerInnen Sozialversicherungsbeiträge zu zahlen [@oecd2018taxing].
 
-**- Kapitaleinkommen:** Zinserträge und -zahlungen, Dividenden, imputierte Mieten (Im Falle hoher Zinsaufwendungen kann das Kapitaleinkommen negativ sein. Imputierte Mieten stellen ein hypothetisches Einkomman dar. Sie bilden die Ersparnisse ab, die sich für Personen ergeben, die in ihrem Eigentum wohnen)
+Im OECD-Vergleich werden Einkommen relativ stark besteuert [@gaard2005two], was in Kombination mit einer progressiven Steuer eine starke Umverteilungswirkung der Fiskalpolitik nahelegt. Für Kapitaleinkommen existieren jedoch zahlreiche Ausnahmen, die diesen Effekt abschwächen [@ganghof2007political]. 
 
-**- Steuerpflichtiges Einkommen:** Die Summe von persönlichem und Kapitaleinkommen abzüglich absetzbarer Ausgaben
-
-Sämtliche Arbeitnehmer/-innen in Dänemark zahlen einen Arbeitsmarktbeitrag von 8% ihres Bruttoarbeitseinkommens. Dieser wird noch vor der Berechnung des persönlichen Einkommens abgezogen.
-Die steuerpflichtigen Einkommen werden auf nationaler Ebene besteuert Steuersätze. Für Einkommen unter 479600 Kronen gilt ein Satz von 10,8%, für jene darüber beträgt er 15%. Gemeinden sind ebenso bemächtigt, Einkommenssteuer einzuheben. Der Steuersatz der Gemeinden liegt zwischen 22% und 28%. Zusätzlich haben Arbeitgeber/-innen und Arbeitnehmer/-innen Sozialversicherungsbeiträge zu zahlen [@oecd2018taxing].
-
-Im OECD-Vergleich werden Einkommen relativ stark besteuert [@gaard2005two], was in Kombination mit einer progressiven Steuer eine starke Umverteilungswirkung der Fiskalpolitik nahelegt. Für Kapitaleinkommen existieren jedoch zahlreiche Ausnahmen, wodurch dieser Effekt jedoch abgeschwächt wird [@ganghof2007political]. 
-
-# Methodologie
-## Daten 
+# 3 Methodologie
+## 3.1 Daten 
 Für eine Analyse der Verteilung der Einkommen aus Erwerbstätigkeit in  Dänemark liefert die   Erhebungen  „European  Union  Statistics  on  Income  and  Living
-Conditions“ (SILC) hinreichend detaillierte Daten. Ausschließlich für die Inflationsbereinigung werden Daten von EUROSTAT für die Berechnung herangezogen.
+Conditions“ (SILC) hinreichend detaillierte Daten. Ausschließlich für die Inflationsbereinigung werden Daten von EUROSTAT herangezogen.
 
-Erstmals wurde die EU-SILC Erhebung 2003, basierend auf einer freiwilligen Vereinbarung zwischen Eurostat und sechs Mitgliedstaaten (Belgien, Dänemark, Griechenland, Irland, Luxemburg und Österreich) sowie Norwegen durchgeführt. Inzwischen beteiligen sich neben den EU-Mitgliedsstaaten auch Norwegen, Island, die Türkei, die Schweiz, Mazedonien und Serbien an der harmonisierten tichprobenerhebung von privaten Haushalten [@eurostatweb]. Mit dem Ziel Armut und sozialer Ausgrenzung zu beobachten, dient die Erhebung in diesem Zusammenhang zur Überwachung der Strategie Europa 2020. 
+Erstmals wurde die EU-SILC Erhebung 2003, basierend auf einer freiwilligen Vereinbarung zwischen Eurostat und sechs Mitgliedstaaten (Belgien, Dänemark, Griechenland, Irland, Luxemburg und Österreich) sowie Norwegen durchgeführt. Inzwischen beteiligen sich neben den EU-Mitgliedsstaaten auch Norwegen, Island, die Türkei, die Schweiz, Mazedonien und Serbien an der harmonisierten Stichprobenerhebung von privaten Haushalten [@eurostatweb]. Mit dem Ziel Armut und sozialer Ausgrenzung zu beobachten, dient die Erhebung in diesem Zusammenhang zur Überwachung der Strategie Europa 2020. 
 
 Die EU-SILC Erhebung umfasst multidimensionale Mikrodaten zu Einkommen, Armut, sozialer Ausgrenzung, Wohnraum, Arbeit, Bildung und Gesundheit und liefert zwei Arten von jährlichen Daten [@silcmanual]:
 
 - Querschnittdaten, die einen bestimmten Zeitpunkt beziehungsweise Zeitspanne betreffen und
 - Längsschnittdaten über Veränderungen im Zeitablauf auf individueller Ebene.
 
-Anzumerken ist, dass aufgrund der engen Definition von Haushalten, Personen, die in Anstaltshaushalten oder Gemeinschaftsunterkünften leben oder ohne festen Wohnsitz sind, nicht erfasst werden.
+Anzumerken ist, dass aufgrund der engen Definition von Haushalten, Personen, die in Anstaltshaushalten oder Gemeinschaftsunterkünften leben oder ohne festen Wohnsitz sind, nicht in den Daten erfasst werden.
 
-Wie bereits ersichtlich, nimmt Dänemark seit der Erstherbung teil. Hervorzuheben ist, dass Dänemark sowie die restlichen nordishen Länder, Holland und Slowenien zu den einzigen Ländern gehören, in welchen die Einkommensstatistiken auf vollständigen Registern basieren [@statdenm]. Die von Statistics Denmark durchgeführte primärstatistische Erhebung wird sowohl mit Hilfe von persönlichen (CAPI - Computer Assisted Personal Interview) und telefonischen (CATI - Computer Assisted Telephone Interview) Interviews als auch computergestützte (CAWI - Computer Assisted Web Interviews) Webinterviews realisiert. In 2012 präsentierte Statistics Denmark erstmals seine Erfahrung mit der Verwendung von CAWI für subjektive Variablen (objektive Inforamtionen werden aus Registern abgerufen) in EU-SILC [@cawi]. Vorteilhaft an diesem Modus der Datenerhebung ist, dass diese kosteneffizienter sein kann und die Befragten gemäß ihrer eigenen Geschwindigkeit antworten können, was wiederum zu höheren Antwortquoten führen kann. Auf der anderen Seite, kann dieses selbstverwaltende System natürlich zu missverstandenen Antworten führen, da keine Möglichkeit nach Nachfrage besteht. Für diese Arbeit sind diese erhobenen Daten jedoch nicht relevant, da sie in der Pilotphase nur PW010, HS120, HS040 und HS060 betroffen haben [@cawistat].
+Wie bereits angeführt, nimmt Dänemark seit der Erstherbung teil. Hervorzuheben ist, dass Dänemark sowie die restlichen nordischen Länder, Holland und Slowenien zu den einzigen Ländern gehören, in welchen die Einkommensstatistiken auf vollständigen Registern basieren [@statdenm]. Die von Statistics Denmark durchgeführte primärstatistische Erhebung wird sowohl mit Hilfe von persönlichen (CAPI - Computer Assisted Personal Interview) und telefonischen (CATI - Computer Assisted Telephone Interview) Interviews als auch computergestützte (CAWI - Computer Assisted Web Interviews) Webinterviews realisiert. In 2012 präsentierte Statistics Denmark erstmals seine Erfahrung mit der Verwendung von CAWI für subjektive Variablen (objektive Informationen werden aus Registern abgerufen) in EU-SILC [@cawi]. Vorteilhaft an diesem Modus der Datenerhebung ist, dass dieser kosteneffizienter sein kann und die Befragten gemäß ihrer eigenen Geschwindigkeit antworten können, was wiederum zu höheren Antwortquoten führen kann. Auf der anderen Seite, kann dieses selbstverwaltende System natürlich zu missverstandenen Antworten führen, da keine Möglichkeit nach Nachfrage besteht. Für diese Arbeit sind diese erhobenen Daten jedoch nicht relevant, da sie in der Pilotphase nur PW010, HS120, HS040 und HS060 betroffen haben [@cawistat].
 
-## Einkommenskonzepte
+## 3.2 Einkommenskonzepte
 Im Rahmen der Analyse der Einkommensverteilung in Dänemark werden folgende drei Einkommenskonzepte verwendet, um etwaige Unterschiede in der Entwicklung der Indikatoren besser zu verfolgen und Rückschlüsse auf die Herkunft etwaiger Veränderungen der Lebensbedingungen zu ziehen:
 
 **1. Faktoreinkommen vor Steuern**
-Das Faktoreinkommen vor Steuern setzt sich aus der Summme aus Arbeitseinkommen inklusive Selbstständiger (PY010G, PY021G, PY050G, HY110G) und Vermögenseinkommen (HY040G, HY090G, PY080G) zusammen. Dieses Einkommenskonzept erfasst nur die Einkommen aus aktiver Produktion beziehungsweise wird hier die direkte Verbindung zu den Arbeitsmärkten beobachtet, da angenommen wird, dass es kein Transfersystem gibt. 
+Das Faktoreinkommen vor Steuern setzt sich aus der Summme aus Arbeitseinkommen inklusive Selbstständiger (PY010G, PY021G, PY050G, HY110G) und Vermögenseinkommen (HY040G, HY090G, PY080G) zusammen. Dieses Einkommenskonzept erfasst somit nur die Einkommen aus aktiver Produktion. Unter der Annahme, dass kein Transfersystem existiert, wird durch dieses Einkommenskonzept eine direkte Verbindung zu den Arbeitsmärkten geschaffen.
 
 
 **2. Nationaleinkommen vor Steuern**
-Das Nationaleinkommen vor Steuern inkludiert neben den Komponenten des Faktoreinkommens vor Steuern incomes noch Pensionen (PY100G) und Arbeitslosengeld (PY090G). In diesem Einkommenskonzept werden nur arbeitsrelevante Transferzahlungen hinzugezogen, um eine etwaige Verzerung aufgrund von Veränderungen in der Altersstrukturen (Personen in Pension mit keinem beziehungsweise geringem Faktoreinkommen) zu berücksichtigen. Unterschiede in der Entwicklung von Faktoreinkommen vor Steuern und Nationaleinkommen vor Steuern legen Reformen im Bereich der Arbeitslosen- beziehungsweise öffentlichen Pensionsversicherung nahe. 
+Das Nationaleinkommen vor Steuern inkludiert neben den Komponenten des Faktoreinkommens vor Steuern  noch Pensionen (PY100G) und Arbeitslosengeld (PY090G). In diesem Einkommenskonzept werden nur arbeitsrelevante Transferzahlungen hinzugezogen, um eine etwaige Verzerung aufgrund von Veränderungen in der Altersstrukturen (Personen in Pension mit keinem beziehungsweise geringem Faktoreinkommen) zu berücksichtigen. Unterschiede in der Entwicklung von Faktoreinkommen vor Steuern und Nationaleinkommen vor Steuern legen Reformen im Bereich der Arbeitslosen- beziehungsweise öffentlichen Pensionsversicherung nahe. 
 
 
 **3. Verfügbares Einkommen nach Steuern**
-Das verfügbare Einkommen nach Steuern inkludiert neben den Komponenten des Nationaleinkommens vor Steuern alle anderen erhaltenen Transferzahlungen (PY110G, PY120G, PY130G, PY140G, HY050G, HY060G, Hy070G, Hy080G) abzüglich aller direkten Steuern und Sozialversicherungsabgaben (HY120G, HY130G, HY140G). Schließlich zeigt das verfügbare Einkommen nach Steuern wie der Staat die Höhe und Verteilung der verfügbaren Einkommen durch (weitere) monetäre Transfers beeinflussen kann. 
+Das verfügbare Einkommen nach Steuern inkludiert neben den Komponenten des Nationaleinkommens vor Steuern alle anderen erhaltenen Transferzahlungen (PY110G, PY120G, PY130G, PY140G, HY050G, HY060G, HY070G, HY080G) abzüglich aller direkten Steuern und Sozialversicherungsabgaben (HY120G, HY130G, HY140G). Schließlich zeigt das verfügbare Einkommen nach Steuern wie der Staat die Höhe und Verteilung der verfügbaren Einkommen durch (weitere) monetäre Transfers beeinflussen kann. 
 
-&nbsp;
+## 3.3 Allokation der Haushaltskomponenten
+Wie aus den oberen Konzepten erkenntlich ist, gibt es sowohl Variablen auf Personen- (PY010G) als auch Haushaltsebene (HY110G). Die Einkommenskomponenten beziehungsweise Steuern, die nur auf Haushaltsebene verfügbar sind, werden auf die einzelnen Haushaltsmitgleider aufgeteilt. Die Allokation erfolgt nach folgenden zwei Aufschlüsselungsmethoden:
 
-Wie aus den oberen Konzepten erkenntlich ist, gibt es sowohl Variablen auf Personen- (PY010G) als auch Haushaltsebene (HY110G). Die Einkommenskomponenten, die nur auf Haushaltsebene verfügbar sind, werden auf die jeweiligen Haushaltsmitgleider verteilt. Die Zuteilung erfolgt nach folgenden zwei Varianten:
+**1. P1 Eurostat ** Hierbei werden alle Einkommen eines Haushaltes in einem gleichem Maß auf die äquivalten Haushaltsmitglieder aufgeteilt.
 
-**- P1 Eurostat **
-Hierbei werden alle Einkommen eines Haushaltes in einem gleichem Maß auf die äquivalten Haushaltsmitglieder aufgeteilt.
-
-**- P2 wid.world **
-Im Gegensatz zu der vorhergehenden Variante, werden hier nicht mehr alle in einem Haushalt lebenden Personen in das Sample genommen. Hier erfolgt eine Ausschließung von Personen unter 20 Jahren. Außerdem wird lediglich die Einkommensvariable, die nur auf Haushaltsebene verfügbar ist durch die Anzahl der Haushaltsmitglieder (>20) gleichmäßig auf alle Haushaltsmitgleider aufgeteilt; die persönlichen Einkommen bleiben den jeweiligen Personen vorbehalten. 
+**2.  P2 wid.world ** Im Gegensatz zu der vorhergehenden Variante, werden hier nicht mehr alle in einem Haushalt lebenden Personen in das Sample genommen. Hier erfolgt eine Ausschließung von Personen unter 20 Jahren. Außerdem wird lediglich die Einkommensvariable, die nur auf Haushaltsebene verfügbar ist durch die Anzahl der Haushaltsmitglieder (>20) gleichmäßig auf alle Haushaltsmitgleider aufgeteilt; die persönlichen Einkommen bleiben den jeweiligen Personen vorbehalten. 
 
 
-# Ungleichheitsindikatoren
-Im Folgenden wird die Einkommensverteilung in Dänemark  anhand von mehreren standardisierten Indikatoren für den Zeitraum 2004-2017 analysiert, um Rückschlüsse über die Ungleichheit des Landes gegeben zu geben. 
+# 4 Ungleichheitsindikatoren
+Im Folgenden wird die Einkommensverteilung in Dänemark  anhand von mehreren standardisierten Indikatoren für den Zeitraum 2004-2017 analysiert, um Rückschlüsse über die Ungleichheit des Landes zu geben. 
 
-In diesem Abschnitt liegt der Fokus der Auswertung auf P1 Eurostat. Begründet wird dies dadurch, dass die Daten über Steuern nur auf Haushaltsebene verfügbar sind. Würden wir beispielsweise die Variante P2 heranziehen, wenn wir eine Hausfrau mit reicherem Mann betrachten, stellt sich heraus, dass diese zwar ihr (wenn nur geringfügiges) Einkommen hat, jedoch die Steuerlast ihres Mannes in der Einkommensverteilung mitträgt. Eine vollständige Auswertung samt der Ergebnisse P2 wid.world befindet sich im Appendix.
+In diesem Abschnitt liegt der Fokus der Auswertung auf P1. Begründet wird dies dadurch, dass die Daten über Steuern nur auf Haushaltsebene verfügbar sind. Würden wir beispielsweise die Variante P2 heranziehen, wenn wir eine geringverdienende Frau mit sehr gut verdienenden Mann betrachten, stellt sich heraus, dass sie neben ihrem geringen Einkommen die Steuerlast ihres Mannes in der Einkommensverteilung mitträgt. Sämtliche Gesamtübersichten der berechneten Indikatoren befinden sich für beide Allokationsvarianten, sprich P1 und P2, im Appendix.
 
-## Mittelwert und Median
+## 4.1 Mittelwert und Median
 Für einen ersten Eindruck, werden Mittelwert und Median Einkommen näher betrachtet, da diese Aufschluss über die Schiefe der Verteilungsfunktion geben. Die Abbildung 1 zeigt und die Entwicklung des Median und mittleren verfügbaren Einkomens nach Steuern, Einkommenskonzept 3, seit 2004.
 
 ![Median und Mittelwert, 2004-2017](img/medmit.png){width=65%}
 
-Es  fällt  sofort  ins  Auge, dass beide Werte über den Zeitverlauf immens gestiegen sind. Die Betrachtung des durchschnittlichen Jahreseinkommen zeigt von 2004 bis 2017 eine Erhöhung von rund 28.371 Dänische Kronen (DKD) auf 33.776 DKK, was fast 20% entspricht. Für das mittlere Einkommen beträgt die Erhöhung in diesem Fall lediglich 15%. Da das Durchschnittseinkommen deutlich unter dem Medianeinkommen liegt, kann man daraus schließen, dass eine linksschiefe Einkommensverteilung vorliegt. Aus der Grafik ist gut ersichtlich, dass Dänemark nicht unverschohnt von der Wirtschafts- und Finanzkrise 2008 geblieben ist und sich diese auf die Einkomme privater Haushalte negativ ausgewirkt hat. Im Vergleich des BIP-Wachstums wird auch ersichtlich, dass Dänemark die Folgen der Krise langsamer kompensiert hat als dessen Nachbarländer [@statdenm2].  
+Es  fällt  sofort  ins  Auge, dass beide Werte über den Zeitverlauf immens gestiegen sind. Die Betrachtung des durchschnittlichen Jahreseinkommen zeigt von 2004 bis 2017 eine Erhöhung von rund 28.371 DKK auf 33.776 DKK, was fast 20% entspricht. Für das mittlere Einkommen beträgt die Erhöhung in diesem Fall lediglich 15%. Da das Durchschnittseinkommen deutlich unter dem Medianeinkommen liegt, kann man daraus schließen, dass eine linksschiefe Einkommensverteilung vorliegt. Aus der Grafik ist gut ersichtlich, dass Dänemark nicht unverschohnt von der Wirtschafts- und Finanzkrise 2008 geblieben ist und sich diese auf die Einkomme privater Haushalte negativ ausgewirkt hat. Im Vergleich des BIP-Wachstums wird auch ersichtlich, dass Dänemark die Folgen der Krise langsamer kompensiert hat als dessen Nachbarländer [@statdenm2].  
 
-## Gini 
+## 4.2 Gini 
 Die  bisherigen  Ausführungen  fokusieren nur einen Teil der Einkommenshierarchie. Ein Maß, 
 das  die  Ungleichheit  über  die  gesamte  Einkommensskala  hinweg  misst,  ist  der  Gini-
 Koeffizient. Entspricht der Gii einem Wert von null, liegt komplette Gleichverteilung vor, nimmt er 1 an, so gehört einer Person das ganze Vermögen in der Gesellschaft. 
@@ -138,14 +126,14 @@ Einkommensungleichheit beginnend beim Faktoreinkommen knapp 20% sinken lässt. A
 
 Generell ist hier auch gut ersichtlich, dass P1 den Gini besser abbildet. In der Auflistung im Appendix sieht man, dass die Werte des Gini für das verfügbare Einkommen nach Steuern, ähnlicher den jeweiligen Gini-Werten von Denmarkt Statistics sind.
 
-## P80/P20 Verhältnis
+## 4.3 P80/P20 Verhältnis
 Die P80/20-Verhältnis zeigt das wie viel Fache an Einkommen die oberen 20% relativ zu den unteren 80% haben. 
 
 ![P80/P20 Verhältnis, 2004-2017](img/8020.png){width=65%}
 
 Um das P80/P20 Verhältnis für Dänemark darzustellen, werden die drei verschiedenen Einkommenskonzepte verwendet.
 
-## Top 10% Anteil
+## 4.4 Top 10% Anteil
 In diesem Abschnitt klärt sich die Frage, ob die Einkommen an der Spitze davon laufen. Der Top 10% Anteil gibt Auskunft über das Einkommen der reichsten der Gesellschaft. Um dies bestmöglich darzustellen, werden alle drei Einkommenskonzepte verwendet.
 
 
@@ -153,10 +141,10 @@ In diesem Abschnitt klärt sich die Frage, ob die Einkommen an der Spitze davon 
 
 Über den gesamten Betrachtungszeitraum zeigt sich kein Anstieg des Anteils der Top 10%, unabhängig vom Einkommenskonzept. Die Einkommenskonzepte Nationaleinkommen vor Steuern und das verfügbare Einkommen nach sind in beiden Varianten P1 und P2, wie zu erwarten, nahezu ident. Die Differenz (im Falle P2 höher) zeigt klar, dass das Steuer- und Transfersystem Dänemark Top-Verdiener pusht. Auch in diesem Vergleich sieht man wieder klar, dass die Aufsplittung der Steuern auf Haushaltsebene die Endresultate beeinflussen.
 
-# Armut in Dänemark
+# 5 Armut in Dänemark
 Um im folgenden ein Bild zur Armut in Dänemark zu bekommen, wird die Armutsgefährdungsqupte zur Hilfe gezogen.
 
-## Armutsgefährdungsquote
+## 5.1 Armutsgefährdungsquote
 Die Armutsgefährdungsquote zeigt den Anteil der Personen, die aufgrund ihres relativ geringen Einkommens von Armut und sozialer Ausgrenzung bedroht sind. Gemäß dem EU-Standard ist die Armutsgefährdungsquote definiert als der Anteil der Personen, deren Äquivalenzeinkommen weniger als 60% des Medians der Äquivalenzeinkommen der Bevölkerung (in Privathaushalten) beträgt. 
 
 
@@ -174,8 +162,11 @@ Die Zerlegung der Armutsgefährdungsquote nach Alter ermöglicht eine tiefere An
 hilfreich: da stehen auch Ansatzpunkte für Verteilungspolitik:
 http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Ministerium/Geschaeftsbereich/Wissenschaftlicher_Beirat/Gutachten_und_Stellungnahmen/Ausgewaehlte_Texte/2017-02-28-einkommensungleichheit-und-soziale-mobilitaet-anlage.pdf?__blob=publicationFile&v=5
 
-# Conclusio
+# 6 Conclusio
 Zusammenfassen reflektieren. -> in den Anhang alle Tabellen
+Sind Ergebnisse überraschend?
+
+
 \newpage
 
 # Appendix
@@ -232,7 +223,7 @@ knitr::kable(table, caption = "Gesamtübersicht P80/P20 Verhältnis")
 # Read CSV data, "../../" to look two levels upwards
 table <- read_csv("tables/t10.csv")
 table <- table %>%
-  rename(Year = X1, i11 = statistic, i12 = statistic.1, i13 = statistic.2, i21 = statistic.3,i22 = statistic.4, i23 = statistic.5)
+  rename(Jahr = X1, i11 = statistic, i12 = statistic.1, i13 = statistic.2, i21 = statistic.3,i22 = statistic.4, i23 = statistic.5)
 knitr::kable(table, caption = "Gesamtübersicht Top 10% Anteil")
 ```
 
@@ -241,7 +232,8 @@ knitr::kable(table, caption = "Gesamtübersicht Top 10% Anteil")
 # Read CSV data, "../../" to look two levels upwards
 table <- read_csv("tables/arpr.csv")
 table <- table %>%
-  rename(Year = X1, DS = Statbank, i11 = i11_arpr, i12 = i12_arpr, i13 = i13_arpr, i21 = i21_arpr,i22 = i22_arpr, i23 = i23_arpr)
+  rename(Jahr = X1, DS = Statbank, i11 = i11_arpr, i12 = i12_arpr, i13 = i13_arpr, i21 = i21_arpr,i22 = i22_arpr, i23 = i23_arpr)
+table$Jahr <- 2004:2017
 knitr::kable(table, caption = "Gesamtübersicht Armutsgefährdungsquote")
 ```
 
