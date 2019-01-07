@@ -1,9 +1,8 @@
 ---
-title: "Einkommensverteilung in Dänemark"
-subtitle: "2063 - Ökonomie der Verteilung"
-author: "Daniel Rosenlechner & Ingrid Setz"
-abstract: "Im Rahmen dieser Arbeit wird die Einkommensverteilung in Dänemark anhand von mehreren Indikatoren für den Zeitraum 2004-2017 analysiert und Aufschluss über die Ungleichheit des Landes gegeben. Es wird gezeigt, dass XXXX."
-keywords: "Einkommensverteilung, Einkommensungleichheit, EU-SILC, Verteiung, Dänemark"
+title: ""
+subtitle: ""
+author: ""
+keywords: ""
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 output: 
   pdf_document:
@@ -14,12 +13,10 @@ bibliography: references.bib
 lang: de-DE
 ---
 
-
 ```{r setup, include=FALSE, message = F}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
-
 
 
 \newpage
@@ -124,7 +121,7 @@ Durch den Vergleich von Median und Mittelwert lassen sich nur beschränkt Schlü
 ![Gini-Index, 2004-2017](img/gini.png){width=65%}
 
 Abbildung 2 zeigt die Entwicklung des Gini Koeffizienten nach den drei Einkommenskonzepten seit 2004. Klar ersichtlich ist,  dass  die  staatlichen Umverteilungssysteme die  
-Einkommensungleichheit stark sinken lassen. Dies sieht man beim Vergleich des Ginis für das verfügbare Einkommen nach Steuern mit den beiden anderen Einkommenskonzepten. Sowohl Arbeitslosenunterstützung und Pensionen als auch Steuer- und Transfersysteme lassen die Ungleichheit in einem größeren Ausmaß sinken. Für das Jahr 2017 bedeutet dies eine Senkung von insgesamt 20%. Insgesamt ist im Zeitverlauf die Ungleichheit in Dänemark gestiegen. Außerdem zeigt Tabelle 3 aus dem Appendix, dass der Gini-Koeffizient nach der Berechnung P2 für alle Zeitpunkte deutlich höher ist. Dies erfolgt aus der Konstruktion der Allokationsvariante.
+Einkommensungleichheit stark sinken lassen. Dies sieht man beim Vergleich des Ginis für das verfügbare Einkommen nach Steuern mit den beiden anderen Einkommenskonzepten. Sowohl Arbeitslosenunterstützung und Pensionen als auch Steuer- und Transfersysteme lassen die Ungleichheit in einem größeren Ausmaß sinken. Für das Jahr 2017 bedeutet dies eine Senkung von insgesamt 20%. Insgesamt ist im Zeitverlauf die Ungleichheit in Dänemark gestiegen. Außerdem zeigt Tabelle 5 aus dem Appendix, dass der Gini-Koeffizient nach der Berechnung P2 für alle Zeitpunkte deutlich höher ist. Dies erfolgt aus der Konstruktion der Allokationsvariante.
 
 
 ## 4.3 P80/P20 Verhältnis
@@ -132,40 +129,51 @@ Das P80/P20 Verhältnis stellt den Mittelwert der oberen 20% relativ zu den unte
 
 ![P80/P20 Verhältnis, 2004-2017](img/8020.png){width=65%}
 
-Um das P80/P20 Verhältnis für Dänemark zu illustrieren, werden die drei verschiedenen Einkommenskonzepte über den Zeitrahmen 2004-2017 betrachtet. Unter der Annahme, dass der mittlere Einkommensteil in diesem Verhältnis ausgeblendet wird, ist dieses Maß wesentlich sensitives bei Veränderungen an den Rändern der Verteilung. Für die Auswertung von Dänemark sieht man, dass der Unterschied zwischen Faktoreinkommen vor Steuern und dem verfügbaren Einkommen nach Steuern zu einem größeren Teil durch das progressive Steuersystem erklärbar ist. Dieses Verteilungsmaß zeigt einen leicht steigenden Trend zu mehr Ungleichheit. Für die verfügbaren Einkommen beträgt das P80/P20 Verhältnis rund 4%. Dies bedeutet, dass eine Person aus den top 20% im Durchschnitt das vier-fache des Einkommens einer Person der unteren 20% verdient.
+Um das P80/P20 Verhältnis für Dänemark zu illustrieren, werden die drei verschiedenen Einkommenskonzepte über den Zeitrahmen 2004-2017 in Abildung 3 betrachtet. Unter der Annahme, dass der mittlere Einkommensteil in diesem Verhältnis ausgeblendet wird, ist dieses Maß wesentlich sensitives bei Veränderungen an den Rändern der Verteilung. Für die Auswertung von Dänemark sieht man, dass der Unterschied zwischen Faktoreinkommen vor Steuern und dem verfügbaren Einkommen nach Steuern zu einem größeren Teil durch das progressive Steuersystem erklärbar ist. Dieses Verteilungsmaß zeigt einen leicht steigenden Trend zu mehr Ungleichheit. Für die verfügbaren Einkommen beträgt das P80/P20 Verhältnis rund 4%. Dies bedeutet, dass eine Person aus den top 20% im Durchschnitt das vier-fache des Einkommens einer Person der unteren 20% verdient.
 
 
 ## 4.4 Top 10% Anteil
 Der Top 10% Anteil gibt Auskunft  ob die Einkommen an der Spitze davon laufen.
 
-![Top 10% Anteil nach P1 und P2, 2004-2017](img/top10.png){width=100%}
+![Top 10% Anteil nach P1 und P2, 2004-2017](img/toptenfull.png){width=100%}
 
-Über den gesamten Betrachtungszeitraum zeigt sich kein Anstieg des Anteils der Top 10%, unabhängig vom Einkommenskonzept. Die Einkommenskonzepte Nationaleinkommen vor Steuern und das verfügbare Einkommen nach sind in beiden Varianten P1 und P2, wie zu erwarten, nahezu ident. Die Differenz (im Falle P2 höher) zeigt klar, dass das Steuer- und Transfersystem Dänemark Top-Verdiener pusht. Auch in diesem Vergleich sieht man wieder klar, dass die Aufsplittung der Steuern auf Haushaltsebene die Endresultate beeinflussen.
+Abbildung 4 zeigt die Entwicklung des Top 10% Anteils nach den drei Einkommenskonzepten für beide Allokationsvarianten. Der Anteil der Top 10% ist für die jeweiligen Einkommenskonzepte im Zeitverlauf konstant. Für die verfügbaren Einkommen liegt dieser Wert für P1 im Durchschnitt bei 0,57 und bei P2 0,50. Dies bedeutet, dass die Top-Verdiener die Hälfte des Gesamteinkommens beziehen. Die Einkommenskonzepte Nationaleinkommen vor Steuern und das verfügbare Einkommen nach sind in beiden Varianten P1 und P2, wie zu erwarten, nahezu ident. 
+
 
 # 5 Armut in Dänemark
-Um im folgenden ein Bild zur Armut in Dänemark zu bekommen, wird die Armutsgefährdungsqupte zur Hilfe gezogen.
-
+Die Strategie Europa 2020 hat es sich zum Ziel gesetzt, mindestens 20 Millionen Menschen vor dem Risiko der Armut zu bewahren. Dementsprechend stehen die jeweiligen Staaten mit ihren abgestimmten nationalen Zielen vor einem großen Ziel. Im folgenden wird analysiert, in wie weit sich Dänemark Richtung dem Ziel der Armutsbekämpfung von der Strategie Europa 2020 bewegt und ob eine positive Tendenz erkennbar ist.
+ 
 ## 5.1 Armutsgefährdungsquote
-Die Armutsgefährdungsquote zeigt den Anteil der Personen, die aufgrund ihres relativ geringen Einkommens von Armut und sozialer Ausgrenzung bedroht sind. Gemäß dem EU-Standard ist die Armutsgefährdungsquote definiert als der Anteil der Personen, deren Äquivalenzeinkommen weniger als 60% des Medians der Äquivalenzeinkommen der Bevölkerung (in Privathaushalten) beträgt. 
-
+Ein wertvoller Indikator hierbei ist die Armutsgefährdungsquote. Diese zeigt den Anteil jener, die  aufgrund ihres relativ geringen Einkommens von Armut und sozialer Ausgrenzung bedroht sind. Nach dem EU-Standard entspricht diese Quote dem Anteil der Personen, deren Äquivalenzeinkommen weniger als 60% des Medians der Äquivalenzeinkommen der Bevölkerung beträgt. Daraus ist ersichtlich, dass die Armutsgefährdungsquote nur relativ betrachtet werden kann und häufig (nicht zwanghaft) auf einen niedrigen Lebensstandard der Betroffenen hin.
 
 ![Armutsgefährdungsquote, 2004-2017](img/arpr.png){width=90%}
 
-Die Armutsgefährdungsquote 
-Zwar kann Dänemark im EU-Vergleich eine gerine Armutsgefährdungsquote per se aufweisen, dennoch bewegt sich das Land noch nicht in die richtige Richtung für die Strategie Europa2020.
+Abbildung 4 zeigt die Entwicklung der Armutsgefährdungsquote nach den drei Einkommenskonzepten für P1. Insgesamt ist die Armutsgefährdungsquote über den Zeitverlauf gestiegen. Unter alleiniger Betrachtung des verfügbaren Einkommens nach Steuern ist hier ein Anstieg von 1,95% in dem Zeitraum 2004-2017 beobachtbar. Zwar kann Dänemark im EU-Vergleich eine gerine Armutsgefährdungsquote per se aufweisen, dennoch bewegt sich das Land noch nicht in die richtige Richtung für die Strategie Europa2020. Dies bedeutet, dass die 2010 von Europäischen Rat verabschiedeten Zielvorgaben die bis 2020 erfüllt werden sollten, in weitere Ferne rücken. Vergleichen wir 2010 mit den neuesten Werten von 2017 (im Detail siehe Appendix) ist kaum eine Veränderung der Rate beobachtbar.
 
-Für zwei Jahre:
-Die Zerlegung der Armutsgefährdungsquote nach Geschlecht ermöglicht eine tiefere Analyse
-Die Zerlegung der Armutsgefährdungsquote nach Bildung ermöglicht eine tiefere Analyse
-Die Zerlegung der Armutsgefährdungsquote nach Alter ermöglicht eine tiefere Analyse
+## 5.2 Zerlegung der Armutsgefährdungsquote
+Die Zerlegung der Armutsgefährdungsquote nach Geschlecht zeigt folgendes Bild:
 
-## Unterstützend:
-hilfreich: da stehen auch Ansatzpunkte für Verteilungspolitik:
-http://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Ministerium/Geschaeftsbereich/Wissenschaftlicher_Beirat/Gutachten_und_Stellungnahmen/Ausgewaehlte_Texte/2017-02-28-einkommensungleichheit-und-soziale-mobilitaet-anlage.pdf?__blob=publicationFile&v=5
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/gender_tab.csv")
+table <- table %>%
+  rename( Einkommenskonzept = X1)
+knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Geschlecht (2015)")
+```
+
+Die Zerlegung der Armutsgefährdungsquote nach Alter zeigt folgendes Bild:
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/age_tab.csv")
+table <- table %>%
+  rename( Einkommenskonzept = X1)
+knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Alter (2015)")
+```
+
+
 
 # 6 Conclusio
-Zusammenfassen reflektieren. -> in den Anhang alle Tabellen
-Sind Ergebnisse überraschend?
+kkk
 
 
 \newpage
