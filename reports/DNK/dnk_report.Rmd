@@ -137,14 +137,14 @@ Der Top 10% Anteil gibt Auskunft  ob die Einkommen an der Spitze davon laufen.
 
 ![Top 10% Anteil nach P1 und P2, 2004-2017](img/toptenfull.png){width=100%}
 
-Abbildung 4 zeigt die Entwicklung des Top 10% Anteils nach den drei Einkommenskonzepten für beide Allokationsvarianten. Der Anteil der Top 10% ist für die jeweiligen Einkommenskonzepte im Zeitverlauf konstant. Für die verfügbaren Einkommen liegt dieser Wert für P1 im Durchschnitt bei 0,57 und bei P2 0,50. Dies bedeutet, dass die Top-Verdiener die Hälfte des Gesamteinkommens beziehen. Die Einkommenskonzepte Nationaleinkommen vor Steuern und das verfügbare Einkommen nach sind in beiden Varianten P1 und P2, wie zu erwarten, nahezu ident. 
+Abbildung 4 zeigt die Entwicklung des Top 10% Anteils nach den drei Einkommenskonzepten für beide Allokationsvarianten. Der Anteil der Top 10% ist für die jeweiligen Einkommenskonzepte im Zeitverlauf konstant. Für die verfügbaren Einkommen liegt dieser Wert für P1 im Durchschnitt bei 0,57 und bei P2 0,50. Dies bedeutet, dass die Top-Verdiener die Hälfte des Gesamteinkommens beziehen. Die Einkommenskonzepte Nationaleinkommen vor Steuern und das verfügbare Einkommen nach sind in beiden Varianten P1 und P2, wie zu erwarten, nahezu ident. Da die Werte der Top-10% über den Zeitverlauf konstant erscheinen, lässt ich daraus schließen, dass die Umverteilungslast von anderen Einkommensschichten getragen wird.
 
 
 # 5 Armut in Dänemark
-Die Strategie Europa 2020 hat es sich zum Ziel gesetzt, mindestens 20 Millionen Menschen vor dem Risiko der Armut zu bewahren. Dementsprechend stehen die jeweiligen Staaten mit ihren abgestimmten nationalen Zielen vor einem großen Ziel. Im folgenden wird analysiert, in wie weit sich Dänemark Richtung dem Ziel der Armutsbekämpfung von der Strategie Europa 2020 bewegt und ob eine positive Tendenz erkennbar ist.
+Die Strategie Europa 2020 hat es sich zum Ziel gesetzt, mindestens 20 Millionen Menschen vor dem Risiko der Armut zu bewahren. Dementsprechend stehen die jeweiligen Staaten mit ihren abgestimmten nationalen Benchmarks vor einer großen gemeinschaftlichen Herausforderung . Im folgenden wird analysiert, in wie weit sich Dänemark Richtung dem Ziel der Armutsbekämpfung von der Strategie Europa 2020 bewegt und ob eine positive Tendenz erkennbar ist.
  
 ## 5.1 Armutsgefährdungsquote
-Ein wertvoller Indikator hierbei ist die Armutsgefährdungsquote. Diese zeigt den Anteil jener, die  aufgrund ihres relativ geringen Einkommens von Armut und sozialer Ausgrenzung bedroht sind. Nach dem EU-Standard entspricht diese Quote dem Anteil der Personen, deren Äquivalenzeinkommen weniger als 60% des Medians der Äquivalenzeinkommen der Bevölkerung beträgt. Daraus ist ersichtlich, dass die Armutsgefährdungsquote nur relativ betrachtet werden kann und häufig (nicht zwanghaft) auf einen niedrigen Lebensstandard der Betroffenen hin.
+Ein wertvoller Indikator hierbei ist die Armutsgefährdungsquote. Diese zeigt den Anteil jener, die  aufgrund ihres relativ geringen Einkommens von Armut und sozialer Ausgrenzung bedroht sind. Nach dem EU-Standard entspricht diese Quote dem Anteil der Personen, deren Äquivalenzeinkommen weniger als 60% des Medians der Äquivalenzeinkommen der Bevölkerung beträgt. Daraus ist ersichtlich, dass die Armutsgefährdungsquote nur relativ betrachtet werden kann und häufig (nicht zwanghaft) auf einen niedrigen Lebensstandard der Betroffenen hindeutet.
 
 ![Armutsgefährdungsquote, 2004-2017](img/arpr.png){width=90%}
 
@@ -161,6 +161,9 @@ table <- table %>%
 knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Geschlecht (2015)")
 ```
 
+Die Tabelle zeigt welcher Prozentsatz an Armutsgefährdeten nach den beide Berechnungsmethoden weiblich, bzw. männlich ist. Auch hier ist ein klarer Unterschied zwischen P1 und P2 erkennbar. Nach P2 ist die Mehrheit der Armutsgefährdeten weiblich, während das Ergbnis von P2 diesen Schluss nicht zulässt.
+
+
 Die Zerlegung der Armutsgefährdungsquote nach Alter zeigt folgendes Bild:
 ```{r echo=FALSE, message = F, warning=F}
 # Read CSV data, "../../" to look two levels upwards
@@ -170,11 +173,14 @@ table <- table %>%
 knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Alter (2015)")
 ```
 
-
+Diese Tabelle zeigt nur auf den ersten Blick ein uneindeutiges Bild. Zwar ist je nach Berechnungsmethode eine Gruppe innerhalb der Armutsgefährdeten in der Mehrheit, jedoch sind die Unter-Dreißig-Jährigen in der Grundgesamtheit stark unterrepräsentiert. Daraus können wir schließen, dass Unter-Dreißig-Jährige in Dänemark besonders von Armut gefährdet sind.
 
 # 6 Conclusio
-kkk
+Insgesamt zeigen sämtliche Ergebnisse die starke umverteilende Wirkung des dänischen Transfer- und Steuersystems. Ohne diesen Mechanismus wären die Einkommen in Dänemark deutlich ungleicher verteilt. Zusammenfassend lässt sich sagen, dass die Ungleichheit in Dänemark grundsätzlich niedrig, im speziellen Beobachtungszeitraum, 2004-2017, jedoch leicht gestiegen ist. Dieses Ergebnis ist im Einklang mit dem aktuellen Stand der Forschung und dem internationalen Trend [@oecd2016survey, @causa2016inequality]. Die genauen Ursachen für diese Entwicklung lassen sich mit den vorliegenden Daten vermutlich nicht identifizieren. Fest steht jedoch, dass die schrittweise Verschärfung der Bestimmungen zur Arbeitslosenunterstützung und damit der Rückgang der BezieherInnen von Arbeitslosenunterstützung mit einem Anstieg an SozialhilfeempfängerInnen und FrühpensionistInnen einherging [@gaard2005two, @oecd2016survey]. Für uns lässt sich daraus schließen, dass das Flexicurity-System Dänemarks, das Problem der Arbeitslosigkeit nur oberflächlich zu lösen scheint.
 
+Des weiteren konnten wir einen Anstieg der Armutsgefährungsquote in Dänemark über den Beobachtungszeitraum feststellen, wobei Frauen und Unter-Dreißig-Jährige in dieser Gruppe überrepräsentiert sind. Anzumerken ist, dass dieser Effekt für Frauen nicht eindeutig ist. Auch dieses Ergebnis deckt sich mit der bestehenden Literatur (@oecd2016society). Für die Agenda der EU, Europa2020, ist dies kein Fortschritt von Dänemark im Bereich Armutsbekämpfung.
+
+Anzumerken ist, dass die Ergebnisse dieser Arbeit nur einen kleinen Teil der Einkommensungleichheit und Armut in Dänemark repräsentieren. Für eine tiefergehende Analyse bedarf es noch mehr Forschung und zusätzliche Daten. Besonders interessant wäre in diesem Sinne eine genauere Betrachtung der Haushaltsstruktur. 
 
 \newpage
 
