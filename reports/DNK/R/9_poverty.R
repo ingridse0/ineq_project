@@ -11,7 +11,8 @@ silc.p1.15 <- subset(silc.p1, pb010 == 2015)
 weightsum.p1 <- sum(silc.p1.15$rb050)
 
 # Save arp threshold
-threshold.p1 <- arpr(inc = silc.p1.15$i13, weights = silc.p1.15$rb050)[["threshold"]]
+threshold.p1 <- arpr(inc = silc.p1.15$i13,
+                     weights = silc.p1.15$rb050)[["threshold"]]
 
 # Save arp value
 p1.15.arpr <- arpr(inc = silc.p1.15$i13, weights = silc.p1.15$rb050)[["value"]]
@@ -31,7 +32,7 @@ gender_tab_p1 <- data.frame(
   sum(subset(silc.p1.15, gender == "Male")$wxarp.p1) / sum_wxarp.p1
 )
 
-names(gender_tab_p1) <- c("Female", "Male")
+names(gender_tab_p1) <- c("Weiblich", "Männlich")
 rownames(gender_tab_p1) <- "i13"
 
 # Create age Table
@@ -40,11 +41,12 @@ age_tab_p1 <- data.frame(
   sum(subset(silc.p1.15, age >= 30)$wxarp.p1) / sum_wxarp.p1
 )
 
-names(age_tab_p1) <- c("Under 30", "Older")
+names(age_tab_p1) <- c("Unter 30", "Älter")
 rownames(age_tab_p1) <- "i13"
 
 
-# P2
+
+# P2---------------------------------------------------------------------------
 
 
 # Gender
@@ -56,10 +58,12 @@ silc.p2.15 <- subset(silc.p2, pb010 == 2015)
 weightsum.p2 <- sum(silc.p2.15$rb050)
 
 # Save arp threshold
-threshold.p2 <- arpr(inc = silc.p2.15$i23, weights = silc.p2.15$rb050)[["threshold"]]
+threshold.p2 <- arpr(inc = silc.p2.15$i23,
+                     weights = silc.p2.15$rb050)[["threshold"]]
 
 # Save arp value
-p2.15.arpr <- arpr(inc = silc.p2.15$i23, weights = silc.p2.15$rb050)[["value"]]
+p2.15.arpr <- arpr(inc = silc.p2.15$i23,
+                   weights = silc.p2.15$rb050)[["value"]]
 
 # Create Dummy for arp
 silc.p2.15$arp <- ifelse(silc.p2.15$i23 < threshold.p2, 1, 0)
@@ -75,10 +79,8 @@ gender_tab_p2 <- data.frame(
   sum(subset(silc.p2.15, gender == "Female")$wxarp.p2) / sum_wxarp.p2,
   sum(subset(silc.p2.15, gender == "Male")$wxarp.p2) / sum_wxarp.p2
 )
-names(gender_tab_p2) <- c("Female", "Male")
+names(gender_tab_p2) <- c("Weiblich", "Männlich")
 rownames(gender_tab_p2) <- "i23"
-
-
 
 # Create age Table
 age_tab_p2 <- data.frame(
@@ -86,10 +88,12 @@ age_tab_p2 <- data.frame(
   sum(subset(silc.p2.15, age >= 30)$wxarp.p2) / sum_wxarp.p2
 )
 
-names(age_tab_p2) <- c("Under 30", "Older")
+names(age_tab_p2) <- c("Unter 30", "Älter")
 rownames(age_tab_p2) <- "i23"
 
-# Combine Tables
+
+
+# Combine Tables---------------------------------------------------------------
 
 # Gender
 gender_tab <- rbind(gender_tab_p1, gender_tab_p2)
