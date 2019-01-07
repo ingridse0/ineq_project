@@ -11,6 +11,7 @@ output:
     includes: 
       in_header: header.tex
 bibliography: references.bib
+lang: de-DE
 ---
 
 
@@ -23,90 +24,6 @@ library(tidyverse)
 
 \newpage
 
-# Rmarkdown Demonstration
-
-```{r, include=FALSE}
-cat("Ausgeführt, nichts angezeigt")
-```
-
-```{r, eval=FALSE}
-cat("Nicht ausgeführt, angezeigt")
-```
-
-```{r echo=FALSE}
-cat("Ausgeführt, Output angezeigt")
-```
-
-```{r}
-cat("Ausgeführt, alles angezeigt")
-```
-
-<!-- Kommentare im Dokument -->
-
-Text *kursiv* und **fett**.
-
-R-Code im Text: `r pi`
-
-LaTeX Formeln inline: ($e = mc^2$) und:
-
-$$\hat{\beta} = (X'X)^{-1}X'Y$$
-
-![Bilder einfügen (xkcd)](img/xkcd_comparison.png){width=60%}
-
-[Links einfügen (Bildquelle)](https://what-if.xkcd.com/118/)
-
-Zitieren aus *BibTeX*:
-
-- [@humer2013bedeutung; @humer2013bedeutung]
-- [@humer2013bedeutung, p. 571]
-- @humer2013bedeutung
-
-Block-Zitate:
-
-> "Don't quote me on that."
-
-Ungeordnete Listen:
-
-- Einkommen
-- Kapital
-
-Geordnete Listen:
-
-1. Zahlen
-3. sind
-9. egal
-
-Simple Tabellen:
-<!-- Leerzeichen sind egal -->
-
-|Country  | Gini  | Theil | QSR |
-| ---     | ---   | ---   | --- |
-| AUT     | 1     | 0.5   | NA  |
-
-R-Plots:
-
-```{r fig-rnorm, echo=FALSE, fig.cap="Inklusive Optionen", fig.width=4}
-plot(rnorm(50), rnorm(50))
-```
-
-Potentiell weniger simple Tabellen:
-
-
-```{r echo=FALSE, }
-# Read CSV data, "../../" to look two levels upwards
-table <- read.csv("tables/_template-table.csv")
-knitr::kable(table, caption = "Mit Optionen")
-```
-
-Horizontale Linien:
-
-Horizontale Linien:
-Horizontale Linien:
-
----
-
-\newpage
-
 # Einführung
 Die Strategie Europa 2020 ist die Agenda der EU zur Förderung von Wachstum und Beschäftigung des gegenwärtigen Jahrzehntes. In den Bereichen Beschäftigung, Forschung und Entwicklung, Klimawandel und Energie, Bildung und Armut und soziale Ausgrenzung wurden nationale Ziele zur Umsetzung der gemeinsamen europäischen Ziele festgelegt, die jährlich im Rahmen von Fortschrittsberichten überwacht werden. Insbesondere soll die soziale Eingliederung durch eine Verringerung der Armut gefördert werden, wobei angestrebt wird, mindestens 20 Millionen der betroffenen Personen vor dem Risiko der Armut zu bewahren [@europe2020].
 
@@ -116,61 +33,33 @@ Klar ist effiziente nationale Politik kann Disparitäten entgegensteuern und Ste
 
 
 # Institutionelle und theoretische Grundlagen
-Literaturüberblick den wir abgegeben haben
-https://www.cbs.dk/files/cbs.dk/new_papers_4.pdf
-Paper Atkinson?
-Reformen?
-Poverty and welfare in Denmark Abrahamson I
-https://en.wikipedia.org/wiki/Income_inequality_in_Denmark
 Das System sozialer Sicherung in Dänemark: Ein kleiner skandinavischer Wohlfahrtsstaat Schmid
 Dänemark und Schweden: Der „skandinavische Wohlfahrtsstaat“ auf Reformkurs Peter A. Köhler 
-Inequality in Denmark through the Looking Glass
-
-
-
-# Der dänische Arbeitsmarkt
-
-
 
 ## Das Flexicurity-Prinzip
-
 Die dänische Arbeitsmarktpolitik folgt dem sogenannten Flexicurity-Prinzip. Flexicurity ist ein Kofferwort aus Flexibility und Security und ist durch lockeren Kündigungsschutz einerseits und absichernde Maßnahmen für Arbeitnehmer/-innen andererseits charakterisiert [@oecd2016survey]
-Seit Ausbruch der Ölkrise hatte Dänemark mit anhaltend hohen Arbeitslosenquoten von rund zehn Prozent zu kämpfen. Das Flexicurity System wurde schrittweise seit den 1990er Jahren implementiert und hat das Ziel, die Arbeitslosigkeit nachhaltig zu senken [@bjorkling2000going].
+Seit Ausbruch der Ölkrise hatte Dänemark mit anhaltend hohen Arbeitslosenquoten von rund zehn Prozent zu kämpfen. Das Flexicurity System wurde schrittweise seit den 1990er Jahren implementiert und hat das Ziel, die Arbeitslosigkeit nachhaltig zu senken [@bjorklund2000going].
 
-
-
-### Arbeitslosenunterstützung
-
+## Arbeitslosenunterstützung
 Vor den Reformen der 1990er Jahre gab es in Dänemark de facto keine zeitliche Beschränkung der Arbeitslosenunterstützung. Im ersten Schritt wurde eine maximale Bezugsdauer von sieben Jahren eingeführt. Diese wurde in weiteren Schritten gesenkt. Seit dem Jahr 2016 beträgt die maximale Bezugsdauer zwei Jahre und kann im Ausnahmefall auf drei Jahre verlängert werden.
 Dies führte dazu, dass heute weniger Personen Arbeitslosenunterstützung beziehen, jedoch stieg gleichzeitig die Zahl der Sozialhilfeempfänger/-innen.
 Arbeitslose erhalten in Dänemark einen gewissen Prozentsatz ihres bisherigen Lohnes von der Versicherung ausbezahlt. Dieser Prozentsatz wird Replacement Rate genannt. Die Replacement Rate ist nach Einkommen gestaffelt und beträgt im Durchschnitt gut 60% und ist somit in der OECD am höchsten. Der Höchstsatz für Niedrigverdiener/-innen beträgt 90%. Diese beiden Werte sind die höchsten im OECD-Vergleich. 
 Die Ansprüche sind bei einer Höhe gedeckelt, die in etwa 60% des Durchschnitsslohns entspricht und sind somit für Bezieher/-innen höherer Einkommen im internationalen Vergleich eher niedrig [@gaard2005two, oecd2016survey].
 
-
-
-
-### Aktivierende Maßnahmen
-
+## Aktivierende Maßnahmen
 Ein weiteres Charakteristikum der Flexicurity-Politik stellen sogenannte aktivierende Maßnahmen dar. Innerhalb von drei Monaten haben Arbeitslose in Zusammenarbeit mit den Behörden einen Aktionsplan für den beruflichen Wiedereinstieg zu erstellen. Außerdem können Weiterbildungsprogramme und die Annahme vermittelter Stellen vorgeschrieben werden. Wird dies verweigert, so wird die Arbeitslosenunterstützung gekürzt oder gestrichen. Ziel dieser Maßnahmen ist es die Dauer der Arbeitslosigkeit zu senken und sicherzustellen, dass die Bezieher/-innen bereit sind am Arbeitsmarkt zu partizipieren [bjorklund2000going, @gaard2005two].
 
 Dänemark wendet rund 1,8% des BIP für aktive Arbeitsmarktpolitik auf. Auch in diesem Punkt ist Dänemark unter den OECD Staaten führend [@oecd2016survey].
 
-
-### Bezahlte Karenz
-
+## Bezahlte Karenz
 Zusätzlich zu den bereits genannten Reformen wurden vergleichsweise großzügige Karenzmodelle ins Leben gerufen. So können Arbeitnehmer/-innen nun bezahlte Bildungs- und Elternkarenz von bis zu einem Jahr in Anspruch nehmen. Außerdem wurde eine Sabbaticalsystem eingeführt bei dem Arbeitnehmer/-innen 80% der Arbeitslosenunterstützung erhalten. Die durch Karenzen freigeworden Stellen werden nach Möglichkeit zwischenzeitlich mit Arbeitslosen besetzt. Dadurch sollen diese wieder in den Arbeitsmarkt integriert werden [@bjorklund2000going, @gaard2005two].
 
-
-### Kollektivverträge
-
+## Kollektivverträge
 Verhandlungen zwischen den Sozialpartnern haben in Dänemark eine lange Tradition, jedoch wurde ihre Bedeutung im Rahmen der Flexicurity-Reformen geschwächt. Während die Kollektivvertragsverhandlungen früher auf nationaler Ebene durchgeführt wurden, finden die Verhandlungen seit Beginn der 1980er Jahre auf Branchenebene statt. In Dänemark wird außerdem zwischen einem Normal- und einem Mindestlohnsystem unterschieden. Im Normallohnsystem wird der Vertrag auf Branchenebene verhandelt und kann auf lokaler Ebene nur mehr geringfügig abgeändert werden, wohingegen das Ergebnis im Mindestlohnsystem als Untergrenze gilt. Der Anteil der vom Mindestlohnsystem abgedeckted Abeitnehmer/-innen stieg im Zuge der Reformen um rund 35 Prozentpunkte und lag 1194 bei 85%. Ein gewisses Maß an Koordination blieb bei den Verhandlungen dennoch erhalten, da das verarbeitende Gewerbe üblicherweise mit den Verhandlungen beginnt und diese als Maßstab für die restlichen Verhandlungen herangezogen werden.
+
 Die Quote der gewerkschaftlich organisierten Arbeiter/-innen blieb im Zuge der Reformen unverändert hoch bei rund 75% [@bjorklund2000going].
 
-
-
-
 ## Einkommenssteuer
-
 Das dänische Steuersystem unterscheidet drei Einkommenskategorien:
 
 **- Persönliches Einkommen:** Löhne und Gehälter, Einkommen aus selbstständiger Tätigkeit, Pensionen, Arbeitslosenunterstützung
@@ -183,9 +72,6 @@ Sämtliche Arbeitnehmer/-innen in Dänemark zahlen einen Arbeitsmarktbeitrag von
 Die steuerpflichtigen Einkommen werden auf nationaler Ebene besteuert Steuersätze. Für Einkommen unter 479600 Kronen gilt ein Satz von 10,8%, für jene darüber beträgt er 15%. Gemeinden sind ebenso bemächtigt, Einkommenssteuer einzuheben. Der Steuersatz der Gemeinden liegt zwischen 22% und 28%. Zusätzlich haben Arbeitgeber/-innen und Arbeitnehmer/-innen Sozialversicherungsbeiträge zu zahlen [@oecd2018taxing].
 
 Im OECD-Vergleich werden Einkommen relativ stark besteuert [@gaard2005two], was in Kombination mit einer progressiven Steuer eine starke Umverteilungswirkung der Fiskalpolitik nahelegt. Für Kapitaleinkommen existieren jedoch zahlreiche Ausnahmen, wodurch dieser Effekt jedoch abgeschwächt wird [@ganghof2007political]. 
-
-
-
 
 # Methodologie
 ## Daten 
@@ -305,7 +191,7 @@ Zusammenfassen reflektieren. -> in den Anhang alle Tabellen
 
 &nbsp;
 
-**Gesamtübersicht Mittelwert**
+**Gesamtübersichten der Indikatoren**
 ```{r echo=FALSE, message = F, warning=F}
 # Read CSV data, "../../" to look two levels upwards
 table <- read_csv("tables/mean.csv")
@@ -314,7 +200,7 @@ table <- table %>%
 knitr::kable(table, caption = "Gesamtübersicht Mittelwert")
 ```
 
-**Gesamtübersicht Median**
+
 ```{r echo=FALSE, message = F, warning=F}
 # Read CSV data, "../../" to look two levels upwards
 table <- read_csv("tables/median.csv")
@@ -323,7 +209,7 @@ table <- table %>%
 knitr::kable(table, caption = "Gesamtübersicht Median")
 ```
 
-**Gesamtübersicht Gini-Koeffizienten**
+
 ```{r echo=FALSE, message = F, warning=F}
 # Read CSV data, "../../" to look two levels upwards
 table <- read_csv("tables/gini.csv")
@@ -332,7 +218,7 @@ table <- table %>%
 knitr::kable(table, caption = "Gesamtübersicht Gini-Koeffizienten")
 ```
 
-**Gesamtübersicht P80/P20 Verhältnis**
+
 ```{r echo=FALSE, message = F, warning=F}
 # Read CSV data, "../../" to look two levels upwards
 table <- read_csv("tables/8020.csv")
@@ -341,7 +227,7 @@ table <- table %>%
 knitr::kable(table, caption = "Gesamtübersicht P80/P20 Verhältnis")
 ```
 
-**Gesamtübersicht Top 10% Anteil**
+
 ```{r echo=FALSE, message = F, warning=F}
 # Read CSV data, "../../" to look two levels upwards
 table <- read_csv("tables/t10.csv")
@@ -350,7 +236,7 @@ table <- table %>%
 knitr::kable(table, caption = "Gesamtübersicht Top 10% Anteil")
 ```
 
-**Gesamtübersicht Armutsgefährdungsquote**
+
 ```{r echo=FALSE, message = F, warning=F}
 # Read CSV data, "../../" to look two levels upwards
 table <- read_csv("tables/arpr.csv")
