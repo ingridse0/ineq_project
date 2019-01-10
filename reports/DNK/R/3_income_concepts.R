@@ -61,7 +61,7 @@ table(silc.prh$hy020/silc.prh$hx050 == silc.prh$i13)
 
 # remove unnecessary columns
 silc.prh <- silc.prh %>% 
-  select(-c(pi11, sum_pi11, pi12, sum_pi12, pi13, sum_pi13))
+  dplyr::select(-c(pi11, sum_pi11, pi12, sum_pi12, pi13, sum_pi13))
 
 
 # FINISH P1 -------------------------------------------------------------------
@@ -108,7 +108,7 @@ inflation <- get_eurostat("prc_hicp_aind", time_format = "raw")
 
 inflation <- inflation %>% filter(unit == "INX_A_AVG", coicop == "CP00", 
                                   geo == "DK", time %in% 2004:2017) %>% 
-  select(time, values) %>% arrange(time)
+  dplyr::select(time, values) %>% arrange(time)
 
 inflation
 
