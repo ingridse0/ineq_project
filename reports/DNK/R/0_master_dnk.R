@@ -47,7 +47,5 @@ source("reports/DNK/R/8_tables_full_anhang.R")
 # Calculate addidtional poverty indicators
 source("reports/DNK/R/9_poverty.R")
 
-# Create report
-source("reports/DNK/dnk_report.Rmd")
 
 # Fin -------------------------------------------------------------------------
