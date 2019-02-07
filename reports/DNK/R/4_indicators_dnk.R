@@ -37,14 +37,19 @@ i11_8020 <- data.frame(svyby(~i11, ~pb010, silc.p1.svy, svyqsr))
 
 # Top ten percent income share
 
-i11_t10s <- data.frame(
-  svyby(~i11, ~pb010, 
-        subset(silc.p1.svy, i11 >=
-                 svyby(~i11, ~pb010, silc.p1.svy, svyquantile, quantile = 0.9,
-                       keep.var = FALSE), 
-               svytotal, keep.var = FALSE),
-        svytotal, keep.var = FALSE) / 
-  svyby(~i11, ~pb010, silc.p1.svy, svytotal, keep.var = FALSE))
+
+share <- vector("numeric", length(2004:2017))
+j <- 1
+
+for(year in 2004:2017) {
+  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_top_10 <- subset(svy_subset, i11 >= as.numeric(
+    svyquantile(~i11, svy_subset, quantile=c(0.9))))
+  share[j] <- svytotal(~i11, svy_top_10) / svytotal(~i11, svy_subset)
+  j <- j + 1
+}
+
+i11_t10s <- data.frame(t10s = share)
 
 
 # At risk of poverty rate, requires laeken
@@ -85,14 +90,19 @@ i12_8020 <- data.frame(svyby(~i12, ~pb010, silc.p1.svy, svyqsr))
 
 # Top ten percent income share
 
-i12_t10s <- data.frame(
-  svyby(~i12, ~pb010, 
-        subset(silc.p1.svy, i12 >=
-                 svyby(~i12, ~pb010, silc.p1.svy, svyquantile, quantile = 0.9,
-                       keep.var = FALSE), 
-               svytotal, keep.var = FALSE),
-        svytotal, keep.var = FALSE) / 
-    svyby(~i12, ~pb010, silc.p1.svy, svytotal, keep.var = FALSE))
+
+share <- vector("numeric", length(2004:2017))
+j <- 1
+
+for(year in 2004:2017) {
+  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_top_10 <- subset(svy_subset, i12 >= as.numeric(
+    svyquantile(~i12, svy_subset, quantile=c(0.9))))
+  share[j] <- svytotal(~i12, svy_top_10) / svytotal(~i12, svy_subset)
+  j <- j + 1
+}
+
+i12_t10s <- data.frame(t10s = share)
 
 
 # At risk of poverty rate, requires laeken
@@ -129,14 +139,20 @@ i13_8020 <- data.frame(svyby(~i13, ~pb010, silc.p1.svy, svyqsr))
 
 # Top ten percent income share
 
-i13_t10s <- data.frame(
-  svyby(~i13, ~pb010, 
-        subset(silc.p1.svy, i13 >=
-                 svyby(~i13, ~pb010, silc.p1.svy, svyquantile, quantile = 0.9,
-                       keep.var = FALSE), 
-               svytotal, keep.var = FALSE),
-        svytotal, keep.var = FALSE) / 
-    svyby(~i13, ~pb010, silc.p1.svy, svytotal, keep.var = FALSE))
+share <- vector("numeric", length(2004:2017))
+j <- 1
+
+for(year in 2004:2017) {
+  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_top_10 <- subset(svy_subset, i13 >= as.numeric(
+    svyquantile(~i13, svy_subset, quantile=c(0.9))))
+  share[j] <- svytotal(~i13, svy_top_10) / svytotal(~i13, svy_subset)
+  j <- j + 1
+}
+
+
+i13_t10s <- data.frame(t10s = share)
+
 
 # At risk of poverty rate, requires laeken
 
@@ -183,14 +199,21 @@ i21_8020 <- data.frame(svyby(~i21, ~pb010, silc.p2.svy, svyqsr))
 
 # Top ten percent income share
 
-i21_t10s <- data.frame(
-  svyby(~i21, ~pb010, 
-        subset(silc.p2.svy, i21 >=
-                 svyby(~i21, ~pb010, silc.p2.svy, svyquantile, quantile = 0.9,
-                       keep.var = FALSE), 
-               svytotal, keep.var = FALSE),
-        svytotal, keep.var = FALSE) / 
-    svyby(~i21, ~pb010, silc.p2.svy, svytotal, keep.var = FALSE))
+
+share <- vector("numeric", length(2004:2017))
+j <- 1
+
+for(year in 2004:2017) {
+  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_top_10 <- subset(svy_subset, i21 >= as.numeric(
+    svyquantile(~i21, svy_subset, quantile=c(0.9))))
+  share[j] <- svytotal(~i21, svy_top_10) / svytotal(~i21, svy_subset)
+  j <- j + 1
+}
+
+
+i21_t10s <- data.frame(t10s = share)
+
 
 
 # At risk of poverty rate, requires laeken
@@ -230,14 +253,21 @@ i22_8020 <- data.frame(svyby(~i22, ~pb010, silc.p2.svy, svyqsr))
 
 # Top ten percent income share
 
-i22_t10s <- data.frame(
-  svyby(~i22, ~pb010, 
-        subset(silc.p2.svy, i22 >=
-                 svyby(~i22, ~pb010, silc.p2.svy, svyquantile, quantile = 0.9,
-                       keep.var = FALSE), 
-               svytotal, keep.var = FALSE),
-        svytotal, keep.var = FALSE) / 
-    svyby(~i22, ~pb010, silc.p2.svy, svytotal, keep.var = FALSE))
+
+share <- vector("numeric", length(2004:2017))
+j <- 1
+
+for(year in 2004:2017) {
+  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_top_10 <- subset(svy_subset, i22 >= as.numeric(
+    svyquantile(~i22, svy_subset, quantile=c(0.9))))
+  share[j] <- svytotal(~i22, svy_top_10) / svytotal(~i22, svy_subset)
+  j <- j + 1
+}
+
+
+i22_t10s <- data.frame(t10s = share)
+
 
 
 # At risk of poverty rate, requires laeken
@@ -277,14 +307,21 @@ i23_8020 <- data.frame(svyby(~i23, ~pb010, silc.p2.svy, svyqsr))
 
 # Top tne percent income share
 
-i23_t10s <- data.frame(
-  svyby(~i23, ~pb010, 
-        subset(silc.p2.svy, i23 >=
-                 svyby(~i23, ~pb010, silc.p2.svy, svyquantile, quantile = 0.9,
-                       keep.var = FALSE), 
-               svytotal, keep.var = FALSE),
-        svytotal, keep.var = FALSE) / 
-    svyby(~i23, ~pb010, silc.p2.svy, svytotal, keep.var = FALSE))
+
+share <- vector("numeric", length(2004:2017))
+j <- 1
+
+for(year in 2004:2017) {
+  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_top_10 <- subset(svy_subset, i23 >= as.numeric(
+    svyquantile(~i23, svy_subset, quantile=c(0.9))))
+  share[j] <- svytotal(~i23, svy_top_10) / svytotal(~i23, svy_subset)
+  j <- j + 1
+}
+
+
+i23_t10s <- data.frame(t10s = share)
+
 
 
 # At risk of poverty rate, requires laeken
