@@ -68,7 +68,8 @@ silc.prh <- silc.prh %>%
 
 # include only positive incomes
 
-silc.p1 <- silc.prh %>% filter(i11 > 0, i12 > 0, i13 > 0)
+silc.p1 <- silc.prh
+#%>% filter(i11 > 0, i12 > 0, i13 > 0)
 
 
 # P2 --------------------------------------------------------------------------
@@ -98,7 +99,9 @@ silc.prh20 <- silc.prh20 %>%
 
 
 # FINISH P2 -------------------------------------------------------------------
-silc.p2 <- silc.prh20 %>% filter(i21 > 0, i22 > 0, i23 > 0)
+
+silc.p2 <- silc.prh20
+#%>% filter(i21 > 0, i22 > 0, i23 > 0)
 
 
 
