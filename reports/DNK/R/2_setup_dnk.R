@@ -19,8 +19,9 @@ silc.p <- tbl(pg, "pp") %>%
 silc.h <- tbl(pg, "hh") %>%
   filter(hb020 %in% country) %>%
   dplyr::select(hb010, hb020, hb030, hy020, hy030g, hy040g, hy050g, hy060g, hy070g, 
-         hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx040, hx050) %>%
+         hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx040, hx050, hs110, hh050, hs040, hs050, hs060, hs070, hs080, hs100) %>%
   collect(n = Inf)
+# ATTENTION: hs011 not found
 
 silc.d <- tbl(pg, "dd") %>%
   filter(db020 %in% country) %>%
@@ -87,28 +88,49 @@ silc.p$car <- ifelse(silc.p$pb010 > 2006, silc.p$py021g, silc.p$py020g)
 
 # H ---------------------------------------------------------------------------
 
+c06h <- tbl(pg, "c06h") %>% filter(hb020 %in% country) %>% dplyr::select(hb010, hb020, hb030, hs010, hx040, hx050) %>% collect(n = Inf)
+c06h <- c06h %>% rename(hs011=hs010)
+
+c07h <- tbl(pg, "c07h") %>% filter(hb020 %in% country) %>% dplyr::select(hb010, hb020, hb030, hs010, hx040, hx050) %>% collect(n = Inf)
+c07h <- c07h %>% rename(hs011=hs010)
+
+c08h <- tbl(pg, "c08h") %>% filter(hb020 %in% country) %>% dplyr::select(hb010, hb020, hb030, hs010, hx040, hx050) %>% collect(n = Inf)
+c08h <- c08h %>% rename(hs011=hs010)
+
+c09h <- tbl(pg, "c09h") %>% filter(hb020 %in% country) %>% dplyr::select(hb010, hb020, hb030, hs010, hx040, hx050) %>% collect(n = Inf)
+c09h <- c09h %>% rename(hs011=hs010)
+
+c10h <- tbl(pg, "c10h") %>% filter(hb020 %in% country) %>% dplyr::select(hb010, hb020, hb030, hs010, hx040, hx050) %>% collect(n = Inf)
+c10h <- c10h %>% rename(hs011=hs010)
+
+c11h <- tbl(pg, "c11h") %>% filter(hb020 %in% country) %>% dplyr::select(hb010, hb020, hb030, hs011, hx040, hx050) %>% collect(n = Inf)
+
+c12h <- tbl(pg, "c12h") %>% filter(hb020 %in% country) %>%dplyr::select(hb010, hb020, hb030, hs011, hx040, hx050) %>% collect(n = Inf)
+
+c13h <- tbl(pg, "c13h") %>% filter(hb020 %in% country) %>% dplyr::select(hb010, hb020, hb030, hs011, hx040, hx050) %>% collect(n = Inf)
+
 c14h <- tbl(pg, "c14h") %>% filter(hb020 %in% country) %>% 
   dplyr::select(hb010, hb020, hb030, hy020, hy030g, hy040g, hy050g, hy060g, hy070g, 
          hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx040, 
-         hx050) %>% collect(n = Inf)
+         hx050, hs110, hh050, hs040, hs050, hs060, hs070, hs080, hs100, hs011) %>% collect(n = Inf)
 
 c15h <- tbl(pg, "c15h") %>% filter(hb020 %in% country) %>% 
   dplyr::select(hb010, hb020, hb030, hy020, hy030g, hy040g, hy050g, hy060g, hy070g, 
          hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx040, 
-         hx050) %>% collect(n = Inf)
+         hx050, hs110, hh050, hs040, hs050, hs060, hs070, hs080, hs100, hs011) %>% collect(n = Inf)
 
 c16h <- tbl(pg, "c16h") %>% filter(hb020 %in% country) %>% 
   dplyr::select(hb010, hb020, hb030, hy020, hy030g, hy040g, hy050g, hy060g, hy070g, 
          hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx040, 
-         hx050) %>% collect(n = Inf)
+         hx050, hs110, hh050, hs040, hs050, hs060, hs070, hs080, hs100, hs011) %>% collect(n = Inf)
 
 c17h <- tbl(pg, "c17h") %>% filter(hb020 %in% country) %>% 
   dplyr::select(hb010, hb020, hb030, hy020, hy030g, hy040g, hy050g, hy060g, hy070g, 
          hy080g, hy090g, hy110g, hy120g, hy130g, hy140g, hx040, 
-         hx050) %>% collect(n = Inf)
+         hx050, hs110, hh050, hs040, hs050, hs060, hs070, hs080, hs100, hs011) %>% collect(n = Inf)
 
 # Binding dataframes to one & merge to silc.h
-cyearh <- bind_rows(c14h, c15h, c16h, c17h)
+cyearh <- bind_rows(c06h, c07h, c08h, c09h, c10h, c11h, c12h, c13h, c14h, c15h, c16h, c17h)
 silc.h <- full_join(silc.h, cyearh)
 
 

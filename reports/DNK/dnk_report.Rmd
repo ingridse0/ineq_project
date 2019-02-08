@@ -1,17 +1,32 @@
 ---
-title: ""
-subtitle: ""
-author: ""
-keywords: ""
+title: "Einkommensverteilung in Dänemark"
+subtitle: "Ökonomie der Verteilung"
+author: "Daniel Rosenlechner & Ingrid Setz"
+abstract: "XXX"
+keywords: "Dänemark, Einkommensverteilung, Armut, soziale Eingliederung"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
+lang: de-DE
 output: 
   pdf_document:
-    toc: true
+    
     includes: 
       in_header: header.tex
 bibliography: references.bib
-lang: de-DE
+fontsize: 12pt
+header-includes:
+- \usepackage{placeins}
+- \usepackage{setspace}
+- \usepackage{chngcntr}
+- \onehalfspacing
+
 ---
+\newpage 
+\tableofcontents
+\newpage 
+\listoffigures
+\listoftables
+\newpage
+
 
 ```{r setup, include=FALSE, message = F}
 knitr::opts_chunk$set(echo = TRUE)
@@ -61,8 +76,11 @@ Die steuerpflichtigen Einkommen werden auf nationaler Ebene besteuert. Für Eink
 
 Im OECD-Vergleich werden Einkommen relativ stark besteuert [@gaard2005two], was in Kombination mit einer progressiven Steuer eine starke Umverteilungswirkung der Fiskalpolitik nahelegt. Für Kapitaleinkommen existieren jedoch zahlreiche Ausnahmen, die diesen Effekt abschwächen [@ganghof2007political]. 
 
-# 3 Methodologie
-## 3.1 Daten 
+# 3 Armut und soziale Eingliederung
+Schreiben
+
+# 4 Methodologie
+## 4.1 Daten 
 Für eine Analyse der Verteilung der Einkommen aus Erwerbstätigkeit in  Dänemark liefert die   Erhebungen  „European  Union  Statistics  on  Income  and  Living
 Conditions“ (SILC) hinreichend detaillierte Daten. Ausschließlich für die Inflationsbereinigung werden Daten von EUROSTAT herangezogen.
 
@@ -77,7 +95,7 @@ Anzumerken ist, dass aufgrund der engen Definition von Haushalten, Personen, die
 
 Wie bereits angeführt, nimmt Dänemark seit der Erstherbung teil. Hervorzuheben ist, dass Dänemark sowie die restlichen nordischen Länder, Holland und Slowenien zu den einzigen Ländern gehören, in welchen die Einkommensstatistiken auf vollständigen Registern basieren [@statdenm]. Die von Statistics Denmark durchgeführte primärstatistische Erhebung wird sowohl mit Hilfe von persönlichen (CAPI - Computer Assisted Personal Interview) und telefonischen (CATI - Computer Assisted Telephone Interview) Interviews als auch computergestützte (CAWI - Computer Assisted Web Interviews) Webinterviews realisiert. In 2012 präsentierte Statistics Denmark erstmals seine Erfahrung mit der Verwendung von CAWI für subjektive Variablen (objektive Informationen werden aus Registern abgerufen) in EU-SILC [@cawi]. Vorteilhaft an diesem Modus der Datenerhebung ist, dass dieser kosteneffizienter sein kann und die Befragten gemäß ihrer eigenen Geschwindigkeit antworten können, was wiederum zu höheren Antwortquoten führen kann. Auf der anderen Seite, kann dieses selbstverwaltende System natürlich zu missverstandenen Antworten führen, da keine Möglichkeit nach Nachfrage besteht. Für diese Arbeit sind diese erhobenen Daten jedoch nicht relevant, da sie in der Pilotphase nur PW010, HS120, HS040 und HS060 betroffen haben [@cawistat].
 
-## 3.2 Einkommenskonzepte
+## 4.2 Einkommenskonzepte
 Im Rahmen der Analyse der Einkommensverteilung in Dänemark werden folgende drei Einkommenskonzepte verwendet, um etwaige Unterschiede in der Entwicklung der Indikatoren besser zu verfolgen und Rückschlüsse auf die Herkunft etwaiger Veränderungen der Lebensbedingungen zu ziehen:
 
 **1. Faktoreinkommen vor Steuern**
@@ -91,7 +109,7 @@ Das Nationaleinkommen vor Steuern inkludiert neben den Komponenten des Faktorein
 **3. Verfügbares Einkommen nach Steuern**
 Das verfügbare Einkommen nach Steuern inkludiert neben den Komponenten des Nationaleinkommens vor Steuern alle anderen erhaltenen Transferzahlungen (PY110G, PY120G, PY130G, PY140G, HY050G, HY060G, HY070G, HY080G) abzüglich aller direkten Steuern und Sozialversicherungsabgaben (HY120G, HY130G, HY140G). Schließlich zeigt das verfügbare Einkommen nach Steuern wie der Staat die Höhe und Verteilung der verfügbaren Einkommen durch (weitere) monetäre Transfers beeinflussen kann. 
 
-## 3.3 Allokation der Haushaltskomponenten
+## 4.3 Allokation der Haushaltskomponenten
 Wie aus den oberen Konzepten erkenntlich ist, gibt es sowohl Variablen auf Personen- (PY010G) als auch Haushaltsebene (HY110G). Die Einkommenskomponenten beziehungsweise Steuern, die nur auf Haushaltsebene verfügbar sind, werden auf die einzelnen Haushaltsmitgleider aufgeteilt. Die Allokation erfolgt nach folgenden zwei Aufschlüsselungsmethoden:
 
 **1. P1 Eurostat ** Hierbei werden alle Einkommen eines Haushaltes in einem gleichem Maß auf die äquivalten Haushaltsmitglieder aufgeteilt.
@@ -99,12 +117,12 @@ Wie aus den oberen Konzepten erkenntlich ist, gibt es sowohl Variablen auf Perso
 **2.  P2 wid.world ** Im Gegensatz zu der vorhergehenden Variante, werden hier nicht mehr alle in einem Haushalt lebenden Personen in das Sample genommen. Hier erfolgt eine Ausschließung von Personen unter 20 Jahren. Außerdem wird lediglich die Einkommensvariable, die nur auf Haushaltsebene verfügbar ist durch die Anzahl der Haushaltsmitglieder (>20) gleichmäßig auf alle Haushaltsmitgleider aufgeteilt; die persönlichen Einkommen bleiben den jeweiligen Personen vorbehalten. 
 
 
-# 4 Ungleichheitsindikatoren
+# 5 Ungleichheitsindikatoren
 Im Folgenden wird die Einkommensverteilung in Dänemark  anhand von mehreren standardisierten Indikatoren für den Zeitraum 2004-2017 analysiert, um Rückschlüsse über die Ungleichheit des Landes zu geben. 
 
 In diesem Abschnitt liegt der Fokus der Auswertung auf P1. Begründet wird dies dadurch, dass die Daten über Steuern nur auf Haushaltsebene verfügbar sind. Würden wir beispielsweise die Variante P2 heranziehen, wenn wir eine geringverdienende Frau mit sehr gut verdienenden Mann betrachten, stellt sich heraus, dass sie neben ihrem geringen Einkommen die Steuerlast ihres Mannes in der Einkommensverteilung mitträgt. Sämtliche Gesamtübersichten der berechneten Indikatoren befinden sich für beide Allokationsvarianten, sprich P1 und P2, im Appendix.
 
-## 4.1 Mittelwert und Median
+## 5.1 Mittelwert und Median
 Für einen ersten Eindruck, werden Mittelwert und Median Einkommen näher betrachtet, da diese Aufschluss über die Schiefe der Verteilungsfunktion geben. Die Abbildung 1 zeigt die Entwicklung des Median- und Durchschnittseinkommens nach Steuern (Einkommenskonzept 3) seit 2004.
 
 ![Median und Mittelwert, 2004-2017](img/medmit.png){width=65%}
@@ -115,7 +133,7 @@ Es  fällt  sofort  ins  Auge, dass beide Werte über den Zeitverlauf stark gest
 Da das Durchschnittseinkommen deutlich unter dem Medianeinkommen liegt, kann man daraus schließen, dass die Einkommensverteilung eine rechtsschiefe Dichtefunktion ausweist. Dies ist charakteristisch für eine Einkommensverteilung. Aus der Grafik ist gut ersichtlich, dass Dänemark nicht unverschohnt von der Wirtschafts- und Finanzkrise 2008 geblieben ist und sich diese auf die Einkommen privater Haushalte negativ ausgewirkt hat. Diese Annahme wird durch @statdenm2 bestätigt, die auch zeigen, dass Dänemark die Folgen der Krise langsamer kompensiert hat als dessen Nachbarländer.  
 
 
-## 4.2 Gini Koeffizient
+## 5.2 Gini Koeffizient
 Durch den Vergleich von Median und Mittelwert lassen sich nur beschränkt Schlüsse auf die Einkommensverteilung ziehen. Ein detaillierteres Bild liefert der Gini Koeffizient. Entspricht der Gini einem Wert von Null, liegt vollständige Gleichverteilung vor, nimmt er 1 an, so gehört einer Person das ganze Vermögen in der Gesellschaft. 
 
 ![Gini-Index, 2004-2017](img/gini.png){width=65%}
@@ -124,7 +142,7 @@ Abbildung 2 zeigt die Entwicklung des Gini Koeffizienten nach den drei Einkommen
 Einkommensungleichheit stark sinken lassen. Dies sieht man beim Vergleich des Ginis für das verfügbare Einkommen nach Steuern mit den beiden anderen Einkommenskonzepten. Sowohl Arbeitslosenunterstützung und Pensionen als auch Steuer- und Transfersysteme lassen die Ungleichheit in einem größeren Ausmaß sinken. Für das Jahr 2017 bedeutet dies eine Senkung von insgesamt 20%. Insgesamt ist im Zeitverlauf die Ungleichheit in Dänemark gestiegen. Außerdem zeigt Tabelle 5 aus dem Appendix, dass der Gini-Koeffizient nach der Berechnung P2 für alle Zeitpunkte deutlich höher ist. Dies erfolgt aus der Konstruktion der Allokationsvariante.
 
 
-## 4.3 P80/P20 Verhältnis
+## 5.3 P80/P20 Verhältnis
 Das P80/P20 Verhältnis stellt den Mittelwert der oberen 20% relativ zu den unteren 20% der EinkommensbezieherInnen gegenüber.
 
 ![P80/P20 Verhältnis, 2004-2017](img/8020.png){width=65%}
@@ -132,7 +150,7 @@ Das P80/P20 Verhältnis stellt den Mittelwert der oberen 20% relativ zu den unte
 Um das P80/P20 Verhältnis für Dänemark zu illustrieren, werden die drei verschiedenen Einkommenskonzepte über den Zeitrahmen 2004-2017 in Abildung 3 betrachtet. Unter der Annahme, dass der mittlere Einkommensteil in diesem Verhältnis ausgeblendet wird, ist dieses Maß wesentlich sensitives bei Veränderungen an den Rändern der Verteilung. Für die Auswertung von Dänemark sieht man, dass der Unterschied zwischen Faktoreinkommen vor Steuern und dem verfügbaren Einkommen nach Steuern zu einem größeren Teil durch das progressive Steuersystem erklärbar ist. Dieses Verteilungsmaß zeigt einen leicht steigenden Trend zu mehr Ungleichheit. Für die verfügbaren Einkommen beträgt das P80/P20 Verhältnis rund 4%. Dies bedeutet, dass eine Person aus den top 20% im Durchschnitt das vier-fache des Einkommens einer Person der unteren 20% verdient.
 
 
-## 4.4 Top 10% Anteil
+## 5.4 Top 10% Anteil
 Der Top 10% Anteil gibt Auskunft  ob die Einkommen an der Spitze davon laufen.
 
 ![Top 10% Anteil nach P1 und P2, 2004-2017](img/toptenfull.png){width=100%}
@@ -140,17 +158,17 @@ Der Top 10% Anteil gibt Auskunft  ob die Einkommen an der Spitze davon laufen.
 Abbildung 4 zeigt die Entwicklung des Top 10% Anteils nach den drei Einkommenskonzepten für beide Allokationsvarianten. Der Anteil der Top 10% ist für die jeweiligen Einkommenskonzepte im Zeitverlauf konstant. Für die verfügbaren Einkommen liegt dieser Wert für P1 im Durchschnitt bei 0,57 und bei P2 0,50. Dies bedeutet, dass die Top-Verdiener die Hälfte des Gesamteinkommens beziehen. Die Einkommenskonzepte Nationaleinkommen vor Steuern und das verfügbare Einkommen nach sind in beiden Varianten P1 und P2, wie zu erwarten, nahezu ident. Da die Werte der Top-10% über den Zeitverlauf konstant erscheinen, lässt ich daraus schließen, dass die Umverteilungslast von anderen Einkommensschichten getragen wird.
 
 
-# 5 Armut in Dänemark
+# 6 Armut in Dänemark
 Die Strategie Europa 2020 hat es sich zum Ziel gesetzt, mindestens 20 Millionen Menschen vor dem Risiko der Armut zu bewahren. Dementsprechend stehen die jeweiligen Staaten mit ihren abgestimmten nationalen Benchmarks vor einer großen gemeinschaftlichen Herausforderung . Im folgenden wird analysiert, in wie weit sich Dänemark Richtung dem Ziel der Armutsbekämpfung von der Strategie Europa 2020 bewegt und ob eine positive Tendenz erkennbar ist.
  
-## 5.1 Armutsgefährdungsquote
+## 6.1 Armutsgefährdungsquote
 Ein wertvoller Indikator hierbei ist die Armutsgefährdungsquote. Diese zeigt den Anteil jener, die  aufgrund ihres relativ geringen Einkommens von Armut und sozialer Ausgrenzung bedroht sind. Nach dem EU-Standard entspricht diese Quote dem Anteil der Personen, deren Äquivalenzeinkommen weniger als 60% des Medians der Äquivalenzeinkommen der Bevölkerung beträgt. Daraus ist ersichtlich, dass die Armutsgefährdungsquote nur relativ betrachtet werden kann und häufig (nicht zwanghaft) auf einen niedrigen Lebensstandard der Betroffenen hindeutet.
 
 ![Armutsgefährdungsquote, 2004-2017](img/arpr.png){width=90%}
 
 Abbildung 4 zeigt die Entwicklung der Armutsgefährdungsquote nach den drei Einkommenskonzepten für P1. Insgesamt ist die Armutsgefährdungsquote über den Zeitverlauf gestiegen. Unter alleiniger Betrachtung des verfügbaren Einkommens nach Steuern ist hier ein Anstieg von 1,95% in dem Zeitraum 2004-2017 beobachtbar. Zwar kann Dänemark im EU-Vergleich eine gerine Armutsgefährdungsquote per se aufweisen, dennoch bewegt sich das Land noch nicht in die richtige Richtung für die Strategie Europa2020. Dies bedeutet, dass die 2010 von Europäischen Rat verabschiedeten Zielvorgaben die bis 2020 erfüllt werden sollten, in weitere Ferne rücken. Vergleichen wir 2010 mit den neuesten Werten von 2017 (im Detail siehe Appendix) ist kaum eine Veränderung der Rate beobachtbar.
 
-## 5.2 Zerlegung der Armutsgefährdungsquote
+## 6.2 Zerlegung der Armutsgefährdungsquote
 Die Zerlegung der Armutsgefährdungsquote nach Geschlecht zeigt folgendes Bild:
 
 ```{r echo=FALSE, message = F, warning=F}
@@ -175,7 +193,7 @@ knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Alter (201
 
 Diese Tabelle zeigt nur auf den ersten Blick ein uneindeutiges Bild. Zwar ist je nach Berechnungsmethode eine Gruppe innerhalb der Armutsgefährdeten in der Mehrheit, jedoch sind die Unter-Dreißig-Jährigen in der Grundgesamtheit stark unterrepräsentiert. Daraus können wir schließen, dass Unter-Dreißig-Jährige in Dänemark besonders von Armut gefährdet sind.
 
-# 6 Conclusio
+# 7 Conclusio
 Insgesamt zeigen sämtliche Ergebnisse die starke umverteilende Wirkung des dänischen Transfer- und Steuersystems. Ohne diesen Mechanismus wären die Einkommen in Dänemark deutlich ungleicher verteilt. Zusammenfassend lässt sich sagen, dass die Ungleichheit in Dänemark grundsätzlich niedrig, im speziellen Beobachtungszeitraum, 2004-2017, jedoch leicht gestiegen ist. Dieses Ergebnis ist im Einklang mit dem aktuellen Stand der Forschung und dem internationalen Trend [@oecd2016survey, @causa2016inequality]. Die genauen Ursachen für diese Entwicklung lassen sich mit den vorliegenden Daten vermutlich nicht identifizieren. Fest steht jedoch, dass die schrittweise Verschärfung der Bestimmungen zur Arbeitslosenunterstützung und damit der Rückgang der BezieherInnen von Arbeitslosenunterstützung mit einem Anstieg an SozialhilfeempfängerInnen und FrühpensionistInnen einherging [@gaard2005two, @oecd2016survey]. Für uns lässt sich daraus schließen, dass das Flexicurity-System Dänemarks, das Problem der Arbeitslosigkeit nur oberflächlich zu lösen scheint.
 
 Des weiteren konnten wir einen Anstieg der Armutsgefährungsquote in Dänemark über den Beobachtungszeitraum feststellen, wobei Frauen und Unter-Dreißig-Jährige in dieser Gruppe überrepräsentiert sind. Anzumerken ist, dass dieser Effekt für Frauen nicht eindeutig ist. Auch dieses Ergebnis deckt sich mit der bestehenden Literatur (@oecd2016society). Für die Agenda der EU, Europa2020, ist dies kein Fortschritt von Dänemark im Bereich Armutsbekämpfung.

@@ -1,5 +1,5 @@
 # This script creates the poverty data
-
+# Zerlegung At risk of poverty rate -------------------------------------------
 # P1 --------------------------------------------------------------------------
 
 # Gender
@@ -105,4 +105,27 @@ write.csv(gender_tab, file="reports/DNK/tables/gender_tab.csv")
 age_tab <- rbind(age_tab_p1, age_tab_p2)
 
 write.csv(age_tab, file="reports/DNK/tables/age_tab.csv")
+
+
+# Severely materially deprived people ------------------------------------------
+
+#Severe material deprivation rate - pay for at least 4 -------------------------
+#hs011 pay their rent, mortgage or utility bills;
+#hh050 keep their home adequately warm;
+#hs060 unexpected expenses;
+#hs050 eat meat or proteins regularly
+#hs040 holiday
+#hs080 television set
+#hs100 washing machine
+#hs110 car
+#hs070 telephone
+
+
+
+
+#Persistent material deprivation rate -----------------------------------------
+#pay for at 3 three (material deprivation) 
+#or 4 (severe material deprivation) in 2015
+#and at least 2 out of the preceding three years
+
 
