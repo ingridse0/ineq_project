@@ -60,7 +60,7 @@ frame_mediana <- round(frame_mediana, digits = 2)
 
 # Top ten share
 
-frame_t10sa <- data.frame(i11_t10s[2], i12_t10s[2], i13_t10s[2],
-                           i21_t10s[2], i22_t10s[2], i23_t10s[2]
+frame_t10sa <- data.frame(i11_t10s[1], i12_t10s[1], i13_t10s[1],
+                           i21_t10s[1], i22_t10s[1], i23_t10s[1]
 )
 frame_t10sa <- round(frame_t10sa, digits = 2)

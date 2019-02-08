@@ -49,6 +49,7 @@ for(year in 2004:2017) {
   j <- j + 1
 }
 
+
 i11_t10s <- data.frame(t10s = share)
 
 
@@ -204,7 +205,7 @@ share <- vector("numeric", length(2004:2017))
 j <- 1
 
 for(year in 2004:2017) {
-  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_subset <- subset(silc.p2.svy, pb010 == year)
   svy_top_10 <- subset(svy_subset, i21 >= as.numeric(
     svyquantile(~i21, svy_subset, quantile=c(0.9))))
   share[j] <- svytotal(~i21, svy_top_10) / svytotal(~i21, svy_subset)
@@ -258,7 +259,7 @@ share <- vector("numeric", length(2004:2017))
 j <- 1
 
 for(year in 2004:2017) {
-  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_subset <- subset(silc.p2.svy, pb010 == year)
   svy_top_10 <- subset(svy_subset, i22 >= as.numeric(
     svyquantile(~i22, svy_subset, quantile=c(0.9))))
   share[j] <- svytotal(~i22, svy_top_10) / svytotal(~i22, svy_subset)
@@ -312,7 +313,7 @@ share <- vector("numeric", length(2004:2017))
 j <- 1
 
 for(year in 2004:2017) {
-  svy_subset <- subset(silc.p1.svy, pb010 == year)
+  svy_subset <- subset(silc.p2.svy, pb010 == year)
   svy_top_10 <- subset(svy_subset, i23 >= as.numeric(
     svyquantile(~i23, svy_subset, quantile=c(0.9))))
   share[j] <- svytotal(~i23, svy_top_10) / svytotal(~i23, svy_subset)
