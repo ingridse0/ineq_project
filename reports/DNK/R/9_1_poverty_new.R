@@ -1,3 +1,8 @@
+# This script creates tables with poverty data and a barplot
+
+
+library(reshape2) # needed for melt function
+
 # P1 #######################################################
 
 
@@ -83,10 +88,51 @@ share_female_over64.p1 <- sum(subset(silc.p1.15,
   sum(subset(silc.p1.15, gender == "Female" & age > 64)$rb050)
 
 # Share male over 64
+
 share_male_over64.p1 <- sum(subset(silc.p1.15,
                               gender == "Male" & silc.p1.15$arp == 1
                               & age > 64)$rb050) /
   sum(subset(silc.p1.15, gender == "Male" & age > 64)$rb050)
+
+# Plot
+
+Altersgruppe <- c("Gesamt", "Gesamt",
+                "Unter 18", "Unter 18",
+                "18-24", "18-24",
+                "25-49", "25-49",
+                "50-64", "50-64",
+                "Über 64", "Über 64")
+
+Geschlecht <- c("Männlich", "Weiblich",
+                "Männlich", "Weiblich",
+                "Männlich", "Weiblich",
+                "Männlich", "Weiblich",
+                "Männlich", "Weiblich",
+                "Männlich", "Weiblich"
+)
+
+
+Armutsgefährdungsquote = c(share_male.p1, share_female.p1,
+                           share_male_under18.p1, share_female_under18.p1,
+                           share_male_1924.p1, share_female_1924.p1,
+                           share_male_2549.p1, share_female_2549.p1,
+                           share_male_5064.p1, share_female_5064.p1,
+                           share_male_over64.p1, share_female_over64.p1)
+id = c(1:12)
+
+new_pov_frame = data.frame(id, Armutsgefährdungsquote, Geschlecht, Altersgruppe)
+
+new_pov_frame_m = melt(new_pov_frame, id.vars = c("id", "Geschlecht", "Altersgruppe"))
+
+ggplot(new_pov_frame) +
+  geom_bar(
+    aes(x=reorder(Altersgruppe, id),
+        y=Armutsgefährdungsquote, fill = Geschlecht), position = "dodge", stat = "identity") +
+  labs(title="Armutsgefährdnungsquote Dänemark (2015), Quelle: Eigene Berechnung", x=("Altersgruppe")) + scale_fill_grey() + theme_classic()
+
+ggsave("reports/DNK/img/arpr_barplot.png")
+
+
 
 # P2 #######################################################
 
@@ -106,8 +152,6 @@ p2.15.arpr <- arpr(inc = silc.p2.15$i23, weights = silc.p2.15$rb050)[["value"]]
 
 # Create Dummy for arp
 silc.p2.15$arp <- ifelse(silc.p2.15$i23 < threshold.p2, 1, 0)
-
-
 
 # Share female
 share_female.p2 <- sum(subset(silc.p2.15,
