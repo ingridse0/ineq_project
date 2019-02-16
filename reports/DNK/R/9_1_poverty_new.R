@@ -118,9 +118,15 @@ Armutsgefährdungsquote = c(share_male.p1, share_female.p1,
                            share_male_2549.p1, share_female_2549.p1,
                            share_male_5064.p1, share_female_5064.p1,
                            share_male_over64.p1, share_female_over64.p1)
+Armutsgefährdungsquote = round(Armutsgefährdungsquote * 100, digits = 1)
+
 id = c(1:12)
 
 new_pov_frame = data.frame(id, Armutsgefährdungsquote, Geschlecht, Altersgruppe)
+
+arpr_sex_age <- new_pov_frame[2:4]
+save(arpr_sex_age, file = "reports/DNK/tables/arpr_sex_age.Rda")
+
 
 new_pov_frame_m = melt(new_pov_frame, id.vars = c("id", "Geschlecht", "Altersgruppe"))
 
@@ -128,7 +134,7 @@ ggplot(new_pov_frame) +
   geom_bar(
     aes(x=reorder(Altersgruppe, id),
         y=Armutsgefährdungsquote, fill = Geschlecht), position = "dodge", stat = "identity") +
-  labs(title="Armutsgefährdnungsquote Dänemark (2015), Quelle: Eigene Berechnung", x=("Altersgruppe")) + scale_fill_grey() + theme_classic()
+  labs(title="Armutsgefährdnungsquote Dänemark (2015), Quelle: Eigene Berechnung", x=("Altersgruppe"))
 
 ggsave("reports/DNK/img/arpr_barplot.png")
 
@@ -221,3 +227,31 @@ share_male_over64.p2 <- sum(subset(silc.p2.15,
                                 gender == "Male" & silc.p2.15$arp == 1
                                 & age > 64)$rb050) /
   sum(subset(silc.p2.15, gender == "Male" & age > 64)$rb050)
+
+##### Eurostat
+
+mtot <- 12.5
+m18 <- 10.1
+m1824 <- 36.3
+m2549 <- 13.5
+m5064 <- 6.3
+m65 <- 8.0
+
+ftot <- 11.9
+f18 <- 10.6
+f1824 <- 38.7
+f2549 <- 11.2
+f5064 <- 4.4
+f65 <- 10
+
+arpr_sex_age_es <- c(mtot, ftot, m18, f18, m1824, f1824, m2549, f2549, m5064,
+                     f5064, m65, f65)
+
+arpr_tab_appendix <- data.frame(Armutsgefährdungsquote,
+                                arpr_sex_age_es, Geschlecht,
+                                Altersgruppe)
+
+names(arpr_tab_appendix)[1:2] <- c("Armutsgefährdungsquote, eigene Berechnung",
+                                   "Armutsgefährdungsquote Eurostat")
+
+save(arpr_tab_appendix, file = "reports/DNK/tables/arpr_tab_appendix.Rda")
