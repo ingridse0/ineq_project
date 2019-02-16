@@ -51,7 +51,7 @@ write.csv(frame_mean, "reports/DNK/tables/frame_mean.csv")
 
 # Median
 
-frame_median <- data.frame(i11_median[2], i12_median[2], i13_median[2],
+frame_median <- data.frame(year, i11_median[2], i12_median[2], i13_median[2],
                          i21_median[2], i22_median[2], i23_median[2],
                          eurostat_median
 )
