@@ -213,13 +213,7 @@ Anzumerken ist, dass die Ergebnisse dieser Arbeit nur einen kleinen Teil der Ein
 &nbsp;
 
 **Gesamtübersichten der Indikatoren**
-```{r echo=FALSE, message = F, warning=F}
-# Read CSV data, "../../" to look two levels upwards
-table <- read_csv("tables/frame_meana.csv")
-table <- table %>%
-  rename(Jahr = X1, ES = avg_inc_real)
-knitr::kable(table, caption = "Gesamtübersicht Mittelwert")
-```
+
 
 
 ```{r echo=FALSE, message = F, warning=F}
