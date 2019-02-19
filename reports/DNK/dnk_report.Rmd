@@ -70,7 +70,27 @@ Im OECD-Vergleich werden Einkommen relativ stark besteuert [@gaard2005two], was 
 
 # 3 Armut und soziale Eingliederung
 
+Wie bereits angesprochen stellt die Reduktion von Armut und sozialer Ausgrenzung eines der zentralen Ziele der Strategie Europa 2020 dar. Im Jahr 2016 waren in der EU 118 Millionen Personen von Armut oder sozialer Ausgrenzung betroffen, das entspricht rund einem Viertel der Bevölkerung. In Dänemark lag dieser Wert bei einer Million, oder rund 17% der Bevölkerung. Ziel der EU ist es, die Zahl der von Armut oder sozialer Ausgrenzung gefährdeten Personen bis 2020 um 20 Millionen zu senken [@eurostatweb].
 
+Da verschiedene Faktoren in Bezug auf Armut und soziale Ausgrenzung eine Rolle spielen ist ein mehrdimensionaler Ansatz notwendig, um sie zu messen.
+Gewiss hat das Einkommen einen starken Einfluss auf die Lebensbedingungen und die Möglichkeit zur sozialen Teilhabe, jedoch müssen noch weitere Faktoren berücksichtigt werden um ein differenziertes Bild von Armut und sozialer Ausgrenzung zu erhalten.
+Die EU definiert Personen als von Armut oder sozialer Ausgrenzung gefährdet, wenn sie von einem der folgenden drei Umstände betroffen sind: Monetäre Armut, soziale Deprivation oder sehr niedrige Erwerbsintensität [@europe2020].
+
+Monetäre Armut stellt wohl die offensichtlichste Form von Armut dar. Personen gelten nach EU-Definition als monetär arm, wenn ihr Einkommen nach Sozialleistungen weniger als 60% des Medians beträgt.
+Nur monetäre Armut zu berücksichtigen, wäre jedoch zu kurz gegriffen.
+Es ist durchaus denkbar, dass eine Person nicht als monetär arm gilt und dennoch nicht in der Lage ist, einen gewissen Mindeststandard an materiellem Wohlstand zu bestreiten.
+Ist dieser Mindeststandard nicht finanzierbar,  so spricht man von materieller Deprivation. 
+Konkret gilt als materiell depriviert, wer vier der folgen Punkte nicht finanzieren kann: Miete,  Betriebskosten, Reparaturen, Kreditraten; sein oder ihr Zuhause warm zu halten; unerwartete Ausgaben; jeden zweiten Tag Fleisch, Fisch oder ein anderes proteinreiches Nahrungsmittel zu essen; einen einwöchigen Urlaub pro Jahr; ein Auto; eine Waschmashine; einen Farbfernseher; ein Telefon.
+Da sich aber auch der Zugang zum Arbeitsmarkt auf die Möglichkeit zur sozialen Teilhabe auswirkt, werden ebenso Personen berücksichtigt, welche in einem Haushalt mit sehr niedriger Erwerbsintensität leben. Als solche bezeichnet man Haushalte, in denen Personen im erwerbsfähigen Alter weniger als 20% der potenziellen Zeit arbeiteten [@europe2020].
+
+Um den nationalen Besonderheiten gerecht zu werden, können einzelne Staaten besondere Schwerpunkte setzen. Dänemark legt dabei ein besonderes Augenmerk auf Personen, die in Haushalten mit sehr niedriger Erwerbsintensität leben und möchte die Zahl dieser bis 2020 um 22000 senken [@europe2020]. Im Jahr 2016 lebten noch eine Million der Däninen und Dänen in Haushalten mit sehr niedriger Erwerbsintensität [@eurostatweb]. Hier spiegelt sich in unseren Augen das Fexicurity-Modell wider, welches darauf Abzielt einen möglichst großen Teil der Bevölkerung in den Arbeitsmarkt zu integrieren.
+
+Ein weiteres konkretes Ziel, das sich die Dänische Regierung im Rahmen von Europa 2020 gesetzt hat und welches eng mit Armut und sozialer Eingliederung in Verbindung steht, besteht darin, die Chancengleichheit in Dänemark zu erhöhen, um den sozialen Zusammenhalt in der Gesellschaft zu stärken.
+Zu diesem Zweck wurde bereits 2001 ein Sozialfonds eingeführt, der sozialer Vererbung entgegenwirken und sozial schwache Gruppen unterstützen soll.
+Zu diesen Gruppen zählen Alkohol- und Drogenabhängige, Prostituierte, Obdachlose, psychisch Kranke, sowie Kinder und Jugendliche in präkerer Lage. Um dieses Ziel zu erreichen plant die dänische Regierung die Zivilgesellschaft und den Einsatz von Freiwilligenarbeit zu stärken und finanziell zu unterstützen, Obdachlosigkeit zu bekämpfen, präzise Armutsindikatoren zu entwickeln, sowie Strategien in Bezug auf Ghettoisierung und Drogenmissbrauch zu entwickeln.
+Diese Maßnahmen werden vom dänischen Sozialfonds finanziert, in welchen jährlich rund eine Milliarde Dänische Kronen fließen . Das entspricht rund 130 Millionen Euro oder knapp 5 Prozent des dänischen Bruttoinlandsprodukts [@denmark2020].
+
+Im internationalen Vergleich kann gesagt werden, der Anteil der von Armut oder sozialer Ausgrenzung betroffenen Personen an der Bevölkerung in Dänemark sehr niedrig ist. Außerdem ist Dänemark sehr erfolgreich darin, durch Sozialausgaben monetäre Armut zu beseitigen. Dies wird an der Differenz der Armutsgefährdungsquoten vor und nach Steuern eruiert. In Dänemark lag dieser Wert 2014 bei knapp 15%, der EU-weite Wert lag bei knapp 9% [@europe2020].
 
 
 
@@ -164,6 +184,11 @@ Die Strategie Europa 2020 hat es sich zum Ziel gesetzt, mindestens 20 Millionen 
 Abbildung 4 zeigt die Entwicklung der Armutsgefährdungsquote nach den drei Einkommenskonzepten für P1. Insgesamt ist die Armutsgefährdungsquote über den Zeitverlauf gestiegen. Unter alleiniger Betrachtung des verfügbaren Einkommens nach Steuern ist hier ein Anstieg von 1,95% in dem Zeitraum 2004-2017 beobachtbar. Zwar kann Dänemark im EU-Vergleich eine gerine Armutsgefährdungsquote per se aufweisen, dennoch bewegt sich das Land noch nicht in die richtige Richtung für die Strategie Europa2020. Dies bedeutet, dass die 2010 von Europäischen Rat verabschiedeten Zielvorgaben die bis 2020 erfüllt werden sollten, in weitere Ferne rücken. Vergleichen wir 2010 mit den neuesten Werten von 2017 (im Detail siehe Appendix) ist kaum eine Veränderung der Rate beobachtbar.
 
 ## 5.5.1 Zerlegung der Armutsgefährdungsquote
+
+
+Um einen besseren Eindruck davon zu gewinnen, welche Personengruppen besonders von Armut gefährdet sind, wurden außerdem Armutsgefähdrungsquoten nach Alter und Geschlecht für 2015 berechnet. Die Grafik zeigt die Ergebnisse dieser Aufschlüsselung und im Anhang findet sich eine Tabelle mit den exakten Werten. Aus der Aufschlüsselung ist ersichtlich, dass insbesondere  Personen zwischen 18 und 24 Jahren von Armut gefährdet sind. Nach unseren Berechnungen ist dies bei 28,9 der Frauen und 35,7% der Männer im Alter zwischen 18 und 24 Jahren der Fall. Hierbei ist festzuhalten dass diese Kennzahlen mit äquivalisierten Einkommen berechnet wurden, wodurch in einem Haushalt entweder alle Personen Armutsgefährdet sind oder niemand. Eurostat verwendet hierfür Personeneinkommen. Bei dieser vorgehensweise können auch einzelne Personen in einem Haushalt als armutsgefährdet eingestuft werden. Dieser methodische Unterschied spiegelt sich auch in den Resultaten wider. Besonders groß ist er bei Männern zwischen 18 und 24 Jahren; die von Eurostat berechnete Armutsgefährdungsquote beträgt für diese Gruppe 36,3%. (Daten kontrollieren!!!)
+
+
 Die Zerlegung der Armutsgefährdungsquote nach Geschlecht zeigt folgendes Bild:
 
 ```{r, echo=FALSE, message = F, warning=F}
