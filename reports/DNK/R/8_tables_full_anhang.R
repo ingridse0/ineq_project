@@ -58,7 +58,7 @@ frame_ginia <- data.frame(year, i11_gini[2], i12_gini[2], i13_gini[2],
 )
 frame_ginia <- round(frame_ginia, digits = 2)
 new_name_vector <- c(name_vector[1:7], "E1", "E2")
-names(frame_ginia) <- name_vector
+names(frame_ginia) <- new_name_vector
 save(frame_ginia, file="reports/DNK/tables/frame_ginia.Rda")
 
 
