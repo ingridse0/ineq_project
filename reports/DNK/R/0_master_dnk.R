@@ -32,8 +32,8 @@ source("reports/DNK/R/3_income_concepts.R")
 # indicators
 source("reports/DNK/R/4_indicators_dnk.R")
 
-# Read the statbank data
-source("reports/DNK/R/5_read_statbank.R")
+# Read the eurostat data
+source("reports/DNK/R/5_1_eurostat_data.R")
 
 # Create tables with indicators
 source("reports/DNK/R/6_tables.R")
@@ -45,7 +45,9 @@ source("reports/DNK/R/7_visualisation_dnk.R")
 source("reports/DNK/R/8_tables_full_anhang.R")
 
 # Calculate addidtional poverty indicators
-source("reports/DNK/R/9_poverty.R")
+source("reports/DNK/R/9_1_poverty_new.R")
 
+# Wiki stuff
+source("reports/DNK/R/10_wiki_graphics.R")
 
 # Fin -------------------------------------------------------------------------
