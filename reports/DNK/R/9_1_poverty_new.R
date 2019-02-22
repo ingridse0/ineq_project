@@ -134,7 +134,8 @@ ggplot(new_pov_frame) +
   geom_bar(
     aes(x=reorder(Altersgruppe, id),
         y=Armutsgefaehrdungsquote, fill = Geschlecht), position = "dodge", stat = "identity") +
-  labs(title="Armutsgefährdnungsquote Dänemark (2015), Quelle: Eigene Berechnung", x=("Altersgruppe"), y = ("Armutsgefährdungsquote"))
+  labs(title="Armutsgefährdnungsquote Dänemark (2015), Quelle: Eigene Berechnung", x=("Altersgruppe"), y = ("Armutsgefährdungsquote")) + scale_fill_discrete(labels=c("Männlich", "Weiblich")) + scale_x_discrete(c("Gesamt", "Unter 18", "18-24", "25-49", "50-64", "Über 64"))
+
 
 ggsave("reports/DNK/img/arpr_barplot.png")
 
