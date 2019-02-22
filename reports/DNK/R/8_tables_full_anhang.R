@@ -43,9 +43,10 @@ save(frame_arpra, file="reports/DNK/tables/frame_arpra.Rda")
 
 frame_ginia <- data.frame(year, i11_gini[2], i12_gini[2], i13_gini[2],
                          i21_gini[2], i22_gini[2], i23_gini[2],
-                         eurostat_gini, row.names = NULL
+                         eurostat_gini_pretax, eurostat_gini, row.names = NULL
 )
 frame_ginia <- round(frame_ginia, digits = 2)
+new_name_vector <- c(name_vector[1:7], "E1", "E2")
 names(frame_ginia) <- name_vector
 save(frame_ginia, file="reports/DNK/tables/frame_ginia.Rda")
 
