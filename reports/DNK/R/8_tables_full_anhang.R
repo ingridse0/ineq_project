@@ -43,7 +43,7 @@ save(frame_arpra, file="reports/DNK/tables/frame_arpra.Rda")
 
 frame_ginia <- data.frame(year, i11_gini[2], i12_gini[2], i13_gini[2],
                          i21_gini[2], i22_gini[2], i23_gini[2],
-                         eurostat_gini/100, row.names = NULL
+                         eurostat_gini, row.names = NULL
 )
 frame_ginia <- round(frame_ginia, digits = 2)
 names(frame_ginia) <- name_vector
