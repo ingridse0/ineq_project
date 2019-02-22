@@ -252,7 +252,7 @@ arpr_tab_appendix <- data.frame(Armutsgefaehrdungsquote,
                                 arpr_sex_age_es, Geschlecht,
                                 Altersgruppe)
 
-names(arpr_tab_appendix)[1:2] <- c("Armutsgefährdungsquote, eigene Berechnung",
-                                   "Armutsgefährdungsquote Eurostat")
+names(arpr_tab_appendix)[1:2] <- c("Eigene Berechnung",
+                                   "Eurostat")
 
 save(arpr_tab_appendix, file = "reports/DNK/tables/arpr_tab_appendix.Rda")
