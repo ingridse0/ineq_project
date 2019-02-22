@@ -25,7 +25,7 @@ frame_8020a <- data.frame(year, i11_8020[2], i12_8020[2], i13_8020[2],
 )
 frame_8020a <- round(frame_8020a, digits = 2)
 names(frame_8020a) <- name_vector
-write.csv2(frame_8020a, file="reports/DNK/tables/frame_8020a.csv")
+save(frame_8020a, file="reports/DNK/tables/frame_8020a.Rda")
 
 
 # At risk of poverty rate
@@ -36,7 +36,7 @@ frame_arpra <- data.frame(year, i11_arpr[2], i12_arpr[2], i13_arpr[2],
 )
 frame_arpra <- round(frame_arpra, digits = 2)
 names(frame_arpra) <- name_vector
-write.csv(frame_arpra, file="reports/DNK/tables/frame_arpra.csv")
+save(frame_arpra, file="reports/DNK/tables/frame_arpra.Rda")
 
 
 # Gini
@@ -47,7 +47,7 @@ frame_ginia <- data.frame(year, i11_gini[2], i12_gini[2], i13_gini[2],
 )
 frame_ginia <- round(frame_ginia, digits = 2)
 names(frame_ginia) <- name_vector
-write.csv(frame_ginia, file="reports/DNK/tables/frame_ginia.csv")
+save(frame_ginia, file="reports/DNK/tables/frame_ginia.Rda")
 
 
 # Mean
@@ -59,7 +59,7 @@ frame_meana <- data.frame(year, i11_mean[2], i12_mean[2], i13_mean[2],
 
 frame_meana <- round(frame_meana, digits = 2)
 names(frame_meana) <- name_vector
-write.csv(frame_meana, file="reports/DNK/tables/frame_meana.csv")
+save(frame_meana, file="reports/DNK/tables/frame_meana.Rda")
 
 
 # Median
@@ -70,7 +70,7 @@ frame_mediana <- data.frame(year, i11_median[2], i12_median[2], i13_median[2],
 )
 frame_mediana <- round(frame_mediana, digits = 2)
 names(frame_mediana) <- name_vector
-write.csv(frame_mediana, file="reports/DNK/tables/frame_mediana.csv")
+save(frame_mediana, file="reports/DNK/tables/frame_mediana.Rda")
 
 
 # Top ten share
@@ -80,4 +80,4 @@ frame_t10sa <- data.frame(year, i11_t10s[1], i12_t10s[1], i13_t10s[1],
                           )
 frame_t10sa <- round(frame_t10sa, digits = 2)
 names(frame_t10sa) <- name_vector[1:6]
-write.csv(frame_t10sa, file="reports/DNK/tables/frame_t10sa.csv")
+save(frame_t10sa, file="reports/DNK/tables/frame_t10sa.Rda")

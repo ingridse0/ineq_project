@@ -242,51 +242,32 @@ Anzumerken ist, dass die Ergebnisse dieser Arbeit nur einen kleinen Teil der Ein
 
 
 ```{r echo=FALSE, message = F, warning=F}
-# Read CSV data, "../../" to look two levels upwards
-table <- read_csv("tables/frame_mediana.csv")
-table <- table %>%
-  rename(Jahr = X1, ES = med_inc_real, i11 = statistic, i12 = statistic.1,
-         i13 = statistic.2, i21 = statistic.3,i22 = statistic.4,
-         i23 = statistic.5)
-knitr::kable(table, caption = "Gesamtübersicht Median")
+load("tables/frame_mediana.Rda")
+knitr::kable(frame_mediana, caption = "Gesamtübersicht Median")
 ```
 
 
 ```{r echo=FALSE, message = F, warning=F}
-# Read CSV data, "../../" to look two levels upwards
-table <- read_csv("tables/frame_ginia.csv")
-table <- table %>%
-  rename(Jahr = X1, ES1 = gini_pre_tax, ES2 = Gini) 
-knitr::kable(table, caption = "Gesamtübersicht Gini-Koeffizienten")
+load("tables/frame_ginia.Rda")
+knitr::kable(frame_ginia, caption = "Gesamtübersicht Gini-Koeffizienten")
 ```
 
 
 ```{r echo=FALSE, message = F, warning=F}
-# Read CSV data, "../../" to look two levels upwards
-table <- read_csv("tables/frame_8020a.csv")
-table <- table %>%
-  rename(Jahr = X1, ES = QSR8020)
-knitr::kable(table, caption = "Gesamtübersicht P80/P20 Verhältnis")
+load("tables/frame_8020a.Rda")
+knitr::kable(frame_8020a, caption = "Gesamtübersicht P80/P20 Verhältnis")
 ```
 
 
 ```{r echo=FALSE, message = F, warning=F}
-# Read CSV data, "../../" to look two levels upwards
-table <- read_csv("tables/frame_t10sa.csv")
-table <- table %>%
-  rename(Jahr = X1, i11 = t10s, i12 = t10s.1, i13 = t10s.2, i21 = t10s.3,
-         i22 = t10s.4, i23 = t10s.5, ES = t10s.6)
-knitr::kable(table, caption = "Gesamtübersicht Top 10% Anteil")
+load("tables/frame_t10sa.Rda")
+knitr::kable(frame_t10sa, caption = "Gesamtübersicht Top 10% Anteil")
 ```
 
 
 ```{r echo=FALSE, message = F, warning=F}
-# Read CSV data, "../../" to look two levels upwards
-table <- read_csv("tables/frame_arpra.csv")
-table <- table %>%
-  rename(Jahr = X1, i11 = i11_arpr, i12 = i12_arpr, i13 = i13_arpr, i21 = i21_arpr,i22 = i22_arpr, i23 = i23_arpr, ES = arpr)
-table$Jahr <- 2004:2017
-knitr::kable(table, caption = "Gesamtübersicht Armutsgefährdungsquote")
+load("tables/frame_arpra.Rda")
+knitr::kable(frame_arpra, caption = "Gesamtübersicht Armutsgefährdungsquote")
 ```
 
 \newpage
