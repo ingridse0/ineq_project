@@ -6,14 +6,25 @@
 #
 # -----------------------------------------------------------------------------
 
+# name_vector <- c("Jahr",
+#                  "P1 Faktoreinkommen vor Steuern",
+#                  "P1 Nationaleinkommen vor Steuern",
+#                  "P1 Verfügbares Einkommen nach Steuern",
+#                  "P2 Faktoreinkommen vor Steuern",
+#                  "P2 Nationaleinkommen vor Steuern",
+#                  "P2 Verfügbares Einkommen nach Steuern",
+#                  "Eurostat Verfügbares Einkommen")
+
 name_vector <- c("Jahr",
-                 "P1 Faktoreinkommen vor Steuern",
-                 "P1 Nationaleinkommen vor Steuern",
-                 "P1 Verfügbares Einkommen nach Steuern",
-                 "P2 Faktoreinkommen vor Steuern",
-                 "P2 Nationaleinkommen vor Steuern",
-                 "P2 Verfügbares Einkommen nach Steuern",
-                 "Eurostat Verfügbares Einkommen")
+                 "i11",
+                 "i12",
+                 "i13",
+                 "i21",
+                 "i22",
+                 "i23",
+                 "E")
+
+
 
 #a für anhang
 
