@@ -32,7 +32,7 @@ write.csv2(frame_8020a, file="reports/DNK/tables/frame_8020a.csv")
 
 frame_arpra <- data.frame(year, i11_arpr[2], i12_arpr[2], i13_arpr[2],
                          i21_arpr[2], i22_arpr[2], i23_arpr[2],
-                         eurostat_arpr
+                         eurostat_arpr, row.names = NULL
 )
 frame_arpra <- round(frame_arpra, digits = 2)
 names(frame_arpra) <- name_vector
@@ -43,7 +43,7 @@ write.csv(frame_arpra, file="reports/DNK/tables/frame_arpra.csv")
 
 frame_ginia <- data.frame(year, i11_gini[2], i12_gini[2], i13_gini[2],
                          i21_gini[2], i22_gini[2], i23_gini[2],
-                         eurostat_gini/100
+                         eurostat_gini/100, row.names = NULL
 )
 frame_ginia <- round(frame_ginia, digits = 2)
 names(frame_ginia) <- name_vector
@@ -54,7 +54,8 @@ write.csv(frame_ginia, file="reports/DNK/tables/frame_ginia.csv")
 
 frame_meana <- data.frame(year, i11_mean[2], i12_mean[2], i13_mean[2],
                          i21_mean[2], i22_mean[2], i23_mean[2],
-                         eurostat_mean)
+                         eurostat_mean, row.names = NULL
+                         )
 
 frame_meana <- round(frame_meana, digits = 2)
 names(frame_meana) <- name_vector
@@ -65,7 +66,7 @@ write.csv(frame_meana, file="reports/DNK/tables/frame_meana.csv")
 
 frame_mediana <- data.frame(year, i11_median[2], i12_median[2], i13_median[2],
                          i21_median[2], i22_median[2], i23_median[2],
-                         eurostat_median
+                         eurostat_median, row.names = NULL
 )
 frame_mediana <- round(frame_mediana, digits = 2)
 names(frame_mediana) <- name_vector
@@ -75,8 +76,8 @@ write.csv(frame_mediana, file="reports/DNK/tables/frame_mediana.csv")
 # Top ten share
 
 frame_t10sa <- data.frame(year, i11_t10s[1], i12_t10s[1], i13_t10s[1],
-                           i21_t10s[1], i22_t10s[1], i23_t10s[1]
-)
+                           i21_t10s[1], i22_t10s[1], i23_t10s[1], row.names = NULL
+                          )
 frame_t10sa <- round(frame_t10sa, digits = 2)
 names(frame_t10sa) <- name_vector[1:6]
 write.csv(frame_t10sa, file="reports/DNK/tables/frame_t10sa.csv")
