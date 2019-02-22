@@ -179,13 +179,13 @@ Anzumerken ist, dass die Ergebnisse dieser Arbeit nur einen kleinen Teil der Ein
 # Appendix
 **Legende**
 
-- **P1fakt:** Faktoreinkommen vor Steuern nach P1 Eurostat
-- **P1nat.:** Nationaleinkommen vor Steuern nach P1 Eurostat
-- **P1verf.:** Verfügbares Einkommen nach Steuern nach P1 Eurostat
-- **P2fakt.:** Faktoreinkommen vor Steuern nach P2 wid.world
-- **P2nat.:** Nationaleinkommen vor Steuern nach P2 wid.world
-- **P2verf.:** Verfügbares Einkommen nach Steuern nach P2 wid.world
-- **ESfakt.:** Eurostat Faktoreinkommen vor Steuern
+- **P1fakt:** Faktoreinkommen vor Steuern nach P1 Eurostat (eigene Berechnung)
+- **P1nat.:** Nationaleinkommen vor Steuern nach P1 Eurostat (eigene Berechnung)
+- **P1verf.:** Verfügbares Einkommen nach Steuern nach P1 Eurostat (eigene Berechnung)
+- **P2fakt.:** Faktoreinkommen vor Steuern nach P2 wid.world (eigene Berechnung)
+- **P2nat.:** Nationaleinkommen vor Steuern nach P2 wid.world (eigene Berechnung)
+- **P2verf.:** Verfügbares Einkommen nach Steuern nach P2 wid.world (eigene Berechnung)
+- **ESfakt.:** Eurostat Faktoreinkommen vor Steuern 
 - **ESverf.:** Eurostat verfügbares Einkommen nach Steuern
 
 &nbsp;
