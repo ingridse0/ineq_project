@@ -13,6 +13,7 @@ library(convey)
 library(laeken) # needed for at risk of poverty rate
 library(ggplot2)
 library(xtable)
+library(kableExtra)
 
 # settings
 country <- "DK"
