@@ -184,6 +184,7 @@ Abbildung 4 zeigt die Entwicklung der Armutsgefährdungsquote nach den drei Eink
 
 ## 5.5.1 Zerlegung der Armutsgefährdungsquote
 
+![Armutsgefährdungsquote 2015](img/arpr_barplot.png){width=90%}
 
 Um einen besseren Eindruck davon zu gewinnen, welche Personengruppen besonders von Armut gefährdet sind, wurden außerdem Armutsgefähdrungsquoten nach Alter und Geschlecht für 2015 berechnet. Die Grafik zeigt die Ergebnisse dieser Aufschlüsselung und im Anhang findet sich eine Tabelle mit den exakten Werten. Aus der Aufschlüsselung ist ersichtlich, dass insbesondere  Personen zwischen 18 und 24 Jahren von Armut gefährdet sind. Nach unseren Berechnungen ist dies bei 28,9 der Frauen und 35,7% der Männer im Alter zwischen 18 und 24 Jahren der Fall. Hierbei ist festzuhalten dass diese Kennzahlen mit äquivalisierten Einkommen berechnet wurden, wodurch in einem Haushalt entweder alle Personen Armutsgefährdet sind oder niemand. Eurostat verwendet hierfür Personeneinkommen. Bei dieser vorgehensweise können auch einzelne Personen in einem Haushalt als armutsgefährdet eingestuft werden. Dieser methodische Unterschied spiegelt sich auch in den Resultaten wider. Besonders groß ist er bei Männern zwischen 18 und 24 Jahren; die von Eurostat berechnete Armutsgefährdungsquote beträgt für diese Gruppe 36,3%. (Daten kontrollieren!!!)
 
