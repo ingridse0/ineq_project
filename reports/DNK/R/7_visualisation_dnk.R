@@ -51,7 +51,7 @@ plot_median1 <- ggplot() +
                           color = "Faktoreinkommen vor Steuern"), size = 1 ) +
   geom_line(mapping = aes(y = frame_median$statistic.1,x = frame_median$year,
                           color = "Nationaleinkommen vor Steuern"), size = 1) +
-  geom_line(mapping = aes(y = frame_median$statistic.3,x = frame_median$year,
+  geom_line(mapping = aes(y = frame_median$statistic.2,x = frame_median$year,
                           color = "Verfügbares Einkommen nach Steuern"), size = 1) +
   scale_color_manual(values = c('Faktoreinkommen vor Steuern' = 'darkred', 
                                 'Nationaleinkommen vor Steuern' = 'darkblue',
@@ -84,7 +84,7 @@ ggsave("reports/DNK/img/median2.png")
 
 #P1
 plot_medmit <- ggplot() +
-  geom_line(mapping = aes(y = frame_median$statistic.3,x = frame_median$year,
+  geom_line(mapping = aes(y = frame_median$statistic.2,x = frame_median$year,
                           color = "Median"), size = 1 ) +
   geom_line(mapping = aes(y = frame_mean$i13,x = frame_median$year,
                           color = "Mittelwert"), size = 1) +
@@ -115,6 +115,7 @@ plot_gini <- ggplot() +
        subtitle = "P1 Eurostat (eigene Berechnung)")
 plot_gini
 ggsave("reports/DNK/img/gini.png")
+
 
 
 # P80/P20 ---------------------------------------------------------------------
