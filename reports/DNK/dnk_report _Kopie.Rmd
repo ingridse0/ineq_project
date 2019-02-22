@@ -269,6 +269,12 @@ load("tables/frame_arpra.Rda")
 knitr::kable(frame_arpra, caption = "Gesamtübersicht Armutsgefährdungsquote")
 ```
 
+
+```{r echo=FALSE, message = F, warning=F}
+load("tables/arpr_tab_appendix.Rda")
+knitr::kable(arpr_tab_appendix, caption = "Vergleich Armutsgefährdungsquote")
+```
+
 \newpage
 # Literatur
 <!-- Leer lassen -->
