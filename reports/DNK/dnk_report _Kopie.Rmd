@@ -164,25 +164,7 @@ Um einen besseren Eindruck davon zu gewinnen, welche Personengruppen besonders v
 
 Die Zerlegung der Armutsgefährdungsquote nach Geschlecht zeigt folgendes Bild:
 
-```{r, echo=FALSE, message = F, warning=F}
-# Read CSV data, "../../" to look two levels upwards
-table <- read_csv("tables/gender_tab.csv")
-table <- table %>%
-  rename(Einkommenskonzept = X1)
-knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Geschlecht (2015)")
-```
-
 Die Tabelle zeigt welcher Prozentsatz an Armutsgefährdeten nach den beide Berechnungsmethoden weiblich, bzw. männlich ist. Auch hier ist ein klarer Unterschied zwischen P1 und P2 erkennbar. Nach P2 ist die Mehrheit der Armutsgefährdeten weiblich, während das Ergbnis von P2 diesen Schluss nicht zulässt.
-
-
-Die Zerlegung der Armutsgefährdungsquote nach Alter zeigt folgendes Bild:
-```{r echo=FALSE, message = F, warning=F}
-# Read CSV data, "../../" to look two levels upwards
-table <- read_csv("tables/age_tab.csv")
-table <- table %>%
-  rename( Einkommenskonzept = X1)
-knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Alter (2015)")
-```
 
 Diese Tabelle zeigt nur auf den ersten Blick ein uneindeutiges Bild. Zwar ist je nach Berechnungsmethode eine Gruppe innerhalb der Armutsgefährdeten in der Mehrheit, jedoch sind die Unter-Dreißig-Jährigen in der Grundgesamtheit stark unterrepräsentiert. Daraus können wir schließen, dass Unter-Dreißig-Jährige in Dänemark besonders von Armut gefährdet sind.
 

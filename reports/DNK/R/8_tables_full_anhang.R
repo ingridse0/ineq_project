@@ -16,13 +16,13 @@
 #                  "Eurostat Verfügbares Einkommen")
 
 name_vector <- c("Jahr",
-                 "i11",
-                 "i12",
-                 "i13",
-                 "i21",
-                 "i22",
-                 "i23",
-                 "E")
+                 "P1fakt.",
+                 "P1nat.",
+                 "P1verf.",
+                 "P2fakt.",
+                 "P2nat.",
+                 "P2verf.",
+                 "ESverf.")
 
 
 
@@ -57,7 +57,7 @@ frame_ginia <- data.frame(year, i11_gini[2], i12_gini[2], i13_gini[2],
                           eurostat_gini_pretax, eurostat_gini, row.names = NULL
 )
 frame_ginia <- round(frame_ginia, digits = 2)
-new_name_vector <- c(name_vector[1:7], "E1", "E2")
+new_name_vector <- c(name_vector[1:7], "ESfakt.", "ESverf.")
 names(frame_ginia) <- new_name_vector
 save(frame_ginia, file="reports/DNK/tables/frame_ginia.Rda")
 
