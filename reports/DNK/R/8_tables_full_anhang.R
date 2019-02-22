@@ -76,7 +76,8 @@ save(frame_mediana, file="reports/DNK/tables/frame_mediana.Rda")
 # Top ten share
 
 frame_t10sa <- data.frame(year, i11_t10s[1], i12_t10s[1], i13_t10s[1],
-                           i21_t10s[1], i22_t10s[1], i23_t10s[1], row.names = NULL
+                           i21_t10s[1], i22_t10s[1], i23_t10s[1], 
+                          eurostat_t10s, row.names = NULL
                           )
 frame_t10sa <- round(frame_t10sa, digits = 2)
 names(frame_t10sa) <- name_vector[1:6]
