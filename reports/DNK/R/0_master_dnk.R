@@ -24,7 +24,7 @@ year <- c(startyear:endyear)
 source("R/_connection.R")
 
 # data collection - transformation
-source("reports/DNK/R/2_setup_dnk.R")
+source("reports/DNK/R/2_setup_dnk_new.R")
 
 # income concepts
 source("reports/DNK/R/3_income_concepts.R")
