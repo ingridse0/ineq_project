@@ -112,7 +112,7 @@ Geschlecht <- c("Männlich", "Weiblich",
 )
 
 
-Armutsgefährdungsquote = c(share_male.p1, share_female.p1,
+Armutsgefaehrdungsquote = c(share_male.p1, share_female.p1,
                            share_male_under18.p1, share_female_under18.p1,
                            share_male_1924.p1, share_female_1924.p1,
                            share_male_2549.p1, share_female_2549.p1,
