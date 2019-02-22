@@ -112,17 +112,17 @@ Geschlecht <- c("Männlich", "Weiblich",
 )
 
 
-Armutsgefährdungsquote = c(share_male.p1, share_female.p1,
+Armutsgefaehrdungsquote = c(share_male.p1, share_female.p1,
                            share_male_under18.p1, share_female_under18.p1,
                            share_male_1924.p1, share_female_1924.p1,
                            share_male_2549.p1, share_female_2549.p1,
                            share_male_5064.p1, share_female_5064.p1,
                            share_male_over64.p1, share_female_over64.p1)
-Armutsgefährdungsquote = round(Armutsgefährdungsquote * 100, digits = 1)
+Armutsgefaehrdungsquote = round(Armutsgefaehrdungsquote * 100, digits = 1)
 
 id = c(1:12)
 
-new_pov_frame = data.frame(id, Armutsgefährdungsquote, Geschlecht, Altersgruppe)
+new_pov_frame = data.frame(id, Armutsgefaehrdungsquote, Geschlecht, Altersgruppe)
 
 arpr_sex_age <- new_pov_frame[2:4]
 save(arpr_sex_age, file = "reports/DNK/tables/arpr_sex_age.Rda")
@@ -133,8 +133,9 @@ new_pov_frame_m = melt(new_pov_frame, id.vars = c("id", "Geschlecht", "Altersgru
 ggplot(new_pov_frame) +
   geom_bar(
     aes(x=reorder(Altersgruppe, id),
-        y=Armutsgefährdungsquote, fill = Geschlecht), position = "dodge", stat = "identity") +
-  labs(title="Armutsgefährdnungsquote Dänemark (2015), Quelle: Eigene Berechnung", x=("Altersgruppe"))
+        y=Armutsgefaehrdungsquote, fill = Geschlecht), position = "dodge", stat = "identity") +
+  labs(title="Armutsgefährdnungsquote Dänemark (2015), Quelle: Eigene Berechnung", x=("Altersgruppe"), y = ("Armutsgefährdungsquote")) + scale_fill_discrete(labels=c("Männlich", "Weiblich")) + scale_x_discrete(c("Gesamt", "Unter 18", "18-24", "25-49", "50-64", "Über 64"))
+
 
 ggsave("reports/DNK/img/arpr_barplot.png")
 
@@ -247,7 +248,7 @@ f65 <- 10
 arpr_sex_age_es <- c(mtot, ftot, m18, f18, m1824, f1824, m2549, f2549, m5064,
                      f5064, m65, f65)
 
-arpr_tab_appendix <- data.frame(Armutsgefährdungsquote,
+arpr_tab_appendix <- data.frame(Armutsgefaehrdungsquote,
                                 arpr_sex_age_es, Geschlecht,
                                 Altersgruppe)
 
