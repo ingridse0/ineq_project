@@ -49,7 +49,7 @@ Seit dem Ausbruch der Ölkrise hatte Dänemark mit anhaltend hohen Arbeitslosenq
 
 In Folge der Finanzkrise hatte Dänemark mit beträchtlichen wirtschaftlichen Kosten zu kämpfen, da der wirtschaftliche Abschwung von 2007-2009 der schwerste seit dem Zweiten Weltkrieg war [@causa2016inequality]. Einige Schätzungen gehen davon aus, dass der gesamte Produktionsausfall in den fünf Jahren nach dem Ausbruch der Krise 12 Prozent der Bruttoinlandsproduktion ausmachte [@Jespersen]. Trotz eines starken und anhaltenden Beschäftigungsrückgangs aufgrund der Rezession, wirkten eine hohe Arbeitsplatzfluktuation und Lohnanpassungen, sodass eine langfristige und damit strukturelle Arbeitslosigkeit nicht folgte. Dies zeigt auch eine tiefergehende Analyse: Die Zahl der von Arbeitslosigkeit Betroffenen war zwar hoch, jedoch die Dauer nur kurz, was die Auswirkungen auf die Langzeit- und Jugendarbeitslosigkeit gedämpft hatte. Dies spricht mitunter auch für das Wirken des Flexicurity Systems. Auch in den letzten Jahren gab es eine Reihe von Reformen, die es zum Ziel hatten das Arbeitskräfteangebot und die Beschäftigung, insbesondere durch Maßnahmen für junge und ältere Menschen sowie MigrantInnen, zu verbessern [@Jespersen; @causa2016inequality; @oecd2016survey]. Die Zielsetzung hierbei entspricht der zu Beginn erwähnten Analyse von @robling2018demographic. Insgesamt ist es angesichts der Probleme, die sich aus Jugendlichen und ZuwanderInnen ergeben, die mit schwachen Qualifikationen in den Arbeitsmarkt einsteigen, schwierig eine hohe Beschäftigungsquote mit einer relativ geringen Lohnstreuung zu erhalten. Da sich die meisten Jugendlichen im Sekundarbereich II, im postsekundären, nicht-tertiären oder tertiären Bereich einschreiben, besteht die Hauptherausforderung darin, die Quoten des Abschlusses zu erhöhen, um sicherzustellen, dass die Bildungsziele auch erreicht werden. Weiters konnte durch eine Reihe von Reformen, welche eine vorzeitige Möglichkeit der Pensionierung verschärft und das Rentenalter erhöht haben, die Tragfähigkeit des Systems, indem der relative Anteil des Lebens, in welchem die Menschen arbeiten, erhöht wird und so verstärkt zum Wohlfahrtsstaat beigetragen wird, sichergestellt werden.
 
-Wie bereits angesprochen, ist ein weiterer Einflussfaktor im Kontext der Einkommensverteilung Migration. Der Flüchtlingszustrom im Jahr 2015 stellt die größte Massenbewegung in Europa seit dem Zweiten Weltkrieg dar. Mehr als die Hälfte der Ankünfte beantragte Asyl am nördlichsten Rand des Kontinents: Hauptziel war bei weitem Deutschland, jedoch erhielt Schweden mehr Asylsuchende in Bezug auf die Bevölkerung. Die Niederlande, Norwegen und Dänemark nahmen ebenfalls unbedeutende Zahlen auf. Seit dem Jahr 2000 wurde die dänische Migrationspolitik restriktiver [@joyce2018inspiration]. Nach und nach wurden unterschiedliche Regeln eingeführt, um die Asylmigration und die Familienzusammenführung einzuschränken. Die Sozialleistungen für Flüchtlinge wurden ebenfalls gekürzt. Infolgedessen sank die Zahl der Asylsuchenden in Dänemark. Dennoch ist anzumerken, dass MigrantInnen eine deutlich niedrigere Beschäftigungsquote haben und insbesondere weibliche Migrantinnen stärker von Arbeitslosigkeit betroffen sind. Als Ursache hierfür wird auch die Ausgestaltung des dänischen Arbeitsmarkt, der durch hohen Mindestlöhne und eine Struktur die Erwerbsarmut ausschließt gekennzeichnet ist, genannt [@joyce2018inspiration]. Demenstsprechend sind hohe Qualifikationsanforderungen vorherrschend und niedrig qualifizierte Arbeitsplätze gelten als Mangelware. Weiters treten Sprachbarrieren, Probleme bei der Anerkennung ausländischer Bildungsabschlüsse und möglicherweise Diskriminierung auf dem Arbeitsmarkt verstärkt auf [@Jespersen]. Charakterisierend für die dänische Integrationspolitik ist die starke Involvierung von Gemeinden. Beispielsweise erhalten die Gemeinden für jeden Flüchtenden, der seine Arbeit oder eine frühzeitige Ausbildung beginnt, zusätzliche Zuschüsse [@integr; @joyce2018inspiration].
+Wie bereits angesprochen, ist ein weiterer Einflussfaktor im Kontext der Einkommensverteilung Migration. Der Flüchtlingszustrom im Jahr 2015 stellt die größte Massenbewegung in Europa seit dem Zweiten Weltkrieg dar. Mehr als die Hälfte der Ankünfte beantragte Asyl am nördlichsten Rand des Kontinents: Hauptziel war bei weitem Deutschland, jedoch erhielt Schweden mehr Asylsuchende in Bezug auf die Bevölkerung. Die Niederlande, Norwegen und Dänemark nahmen ebenfalls unbedeutende Zahlen auf. Seit dem Jahr 2000 wurde die dänische Migrationspolitik restriktiver [@joyce2018inspiration]. Nach und nach wurden unterschiedliche Regeln eingeführt, um die Asylmigration und die Familienzusammenführung einzuschränken. Die Sozialleistungen für Flüchtlinge wurden ebenfalls gekürzt. Infolgedessen sank die Zahl der Asylsuchenden in Dänemark. Dennoch ist anzumerken, dass MigrantInnen eine deutlich niedrigere Beschäftigungsquote haben und insbesondere weibliche Migrantinnen stärker von Armbeitslosigkeit betroffen sind. Als Ursache hierfür wird auch die Ausgestaltung des dänischen Arbeitsmarkt, der durch hohen Mindestlöhne und eine Struktur die Erwerbsarmut ausschließt gekennzeichnet ist, genannt [@joyce2018inspiration]. Demenstsprechend sind hohe Qualifikationsanforderungen vorherrschend und niedrig qualifizierte Arbeitsplätze gelten als Mangelware. Weiters treten Sprachbarrieren, Probleme bei der Anerkennung ausländischer Bildungsabschlüsse und möglicherweise Diskriminierung auf dem Arbeitsmarkt verstärkt auf [@Jespersen]. Charakterisierend für die dänische Integrationspolitik ist die starke Involvierung von Gemeinden. Beispielsweise erhalten die Gemeinden für jeden Flüchtenden, der seine Arbeit oder eine frühzeitige Ausbildung beginnt, zusätzliche Zuschüsse [@integr; @joyce2018inspiration].
 
 <!--
 ## 2.2 Arbeitslosenunterstützung
@@ -182,28 +182,33 @@ Die Strategie Europa 2020 hat es sich zum Ziel gesetzt, mindestens 20 Millionen 
 
 Abbildung 4 zeigt die Entwicklung der Armutsgefährdungsquote nach den drei Einkommenskonzepten für P1. Insgesamt ist die Armutsgefährdungsquote über den Zeitverlauf gestiegen. Unter alleiniger Betrachtung des verfügbaren Einkommens nach Steuern ist hier ein Anstieg von 1,95% in dem Zeitraum 2004-2017 beobachtbar. Zwar kann Dänemark im EU-Vergleich eine gerine Armutsgefährdungsquote per se aufweisen, dennoch bewegt sich das Land noch nicht in die richtige Richtung für die Strategie Europa2020. Dies bedeutet, dass die 2010 von Europäischen Rat verabschiedeten Zielvorgaben die bis 2020 erfüllt werden sollten, in weitere Ferne rücken. Vergleichen wir 2010 mit den neuesten Werten von 2017 (im Detail siehe Appendix) ist kaum eine Veränderung der Rate beobachtbar.
 
-<!-- ## 5.5.1 Zerlegung der Armutsgefährdungsquote -->
-<!-- Die Zerlegung der Armutsgefährdungsquote nach Geschlecht zeigt folgendes Bild: -->
+## 5.5.1 Zerlegung der Armutsgefährdungsquote
 
-<!-- ```{r, echo=FALSE, message = F, warning=F} -->
-<!-- # Read CSV data, "../../" to look two levels upwards -->
-<!-- table <- read_csv("tables/gender_tab.csv") -->
-<!-- table <- table %>% -->
-<!--   rename(Einkommenskonzept = X1) -->
-<!-- knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Geschlecht (2015)") -->
-<!-- ``` -->
+
+Um einen besseren Eindruck davon zu gewinnen, welche Personengruppen besonders von Armut gefährdet sind, wurden außerdem Armutsgefähdrungsquoten nach Alter und Geschlecht für 2015 berechnet. Die Grafik zeigt die Ergebnisse dieser Aufschlüsselung und im Anhang findet sich eine Tabelle mit den exakten Werten. Aus der Aufschlüsselung ist ersichtlich, dass insbesondere  Personen zwischen 18 und 24 Jahren von Armut gefährdet sind. Nach unseren Berechnungen ist dies bei 28,9 der Frauen und 35,7% der Männer im Alter zwischen 18 und 24 Jahren der Fall. Hierbei ist festzuhalten dass diese Kennzahlen mit äquivalisierten Einkommen berechnet wurden, wodurch in einem Haushalt entweder alle Personen Armutsgefährdet sind oder niemand. Eurostat verwendet hierfür Personeneinkommen. Bei dieser vorgehensweise können auch einzelne Personen in einem Haushalt als armutsgefährdet eingestuft werden. Dieser methodische Unterschied spiegelt sich auch in den Resultaten wider. Besonders groß ist er bei Männern zwischen 18 und 24 Jahren; die von Eurostat berechnete Armutsgefährdungsquote beträgt für diese Gruppe 36,3%. (Daten kontrollieren!!!)
+
+
+Die Zerlegung der Armutsgefährdungsquote nach Geschlecht zeigt folgendes Bild:
+
+```{r, echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/gender_tab.csv")
+table <- table %>%
+  rename(Einkommenskonzept = X1)
+knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Geschlecht (2015)")
+```
 
 Die Tabelle zeigt welcher Prozentsatz an Armutsgefährdeten nach den beide Berechnungsmethoden weiblich, bzw. männlich ist. Auch hier ist ein klarer Unterschied zwischen P1 und P2 erkennbar. Nach P2 ist die Mehrheit der Armutsgefährdeten weiblich, während das Ergbnis von P2 diesen Schluss nicht zulässt.
 
 
-<!-- Die Zerlegung der Armutsgefährdungsquote nach Alter zeigt folgendes Bild: -->
-<!-- ```{r echo=FALSE, message = F, warning=F} -->
-<!-- # Read CSV data, "../../" to look two levels upwards -->
-<!-- table <- read_csv("tables/age_tab.csv") -->
-<!-- table <- table %>% -->
-<!--   rename( Einkommenskonzept = X1) -->
-<!-- knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Alter (2015)") -->
-<!-- ``` -->
+Die Zerlegung der Armutsgefährdungsquote nach Alter zeigt folgendes Bild:
+```{r echo=FALSE, message = F, warning=F}
+# Read CSV data, "../../" to look two levels upwards
+table <- read_csv("tables/age_tab.csv")
+table <- table %>%
+  rename( Einkommenskonzept = X1)
+knitr::kable(table, caption = "Zerlegung Armutsgefährdungsquote nach Alter (2015)")
+```
 
 Diese Tabelle zeigt nur auf den ersten Blick ein uneindeutiges Bild. Zwar ist je nach Berechnungsmethode eine Gruppe innerhalb der Armutsgefährdeten in der Mehrheit, jedoch sind die Unter-Dreißig-Jährigen in der Grundgesamtheit stark unterrepräsentiert. Daraus können wir schließen, dass Unter-Dreißig-Jährige in Dänemark besonders von Armut gefährdet sind.
 
@@ -235,53 +240,40 @@ Anzumerken ist, dass die Ergebnisse dieser Arbeit nur einen kleinen Teil der Ein
 
 
 
-<!-- ```{r echo=FALSE, message = F, warning=F} -->
-<!-- # Read CSV data, "../../" to look two levels upwards -->
-<!-- table <- read_csv("tables/frame_mediana.csv") -->
-<!-- table <- table %>% -->
-<!--   rename(Jahr = X1, ES = med_inc_real, i11 = statistic, i12 = statistic.1, -->
-<!--          i13 = statistic.2, i21 = statistic.3,i22 = statistic.4, -->
-<!--          i23 = statistic.5) -->
-<!-- knitr::kable(table, caption = "Gesamtübersicht Median") -->
-<!-- ``` -->
+```{r echo=FALSE, message = F, warning=F}
+load("tables/frame_mediana.Rda")
+knitr::kable(frame_mediana, caption = "Gesamtübersicht Median")
+```
 
 
-<!-- ```{r echo=FALSE, message = F, warning=F} -->
-<!-- # Read CSV data, "../../" to look two levels upwards -->
-<!-- table <- read_csv("tables/frame_ginia.csv") -->
-<!-- table <- table %>% -->
-<!--   rename(Jahr = X1, ES1 = gini_pre_tax, ES2 = Gini)  -->
-<!-- knitr::kable(table, caption = "Gesamtübersicht Gini-Koeffizienten") -->
-<!-- ``` -->
+```{r echo=FALSE, message = F, warning=F}
+load("tables/frame_ginia.Rda")
+knitr::kable(frame_ginia, caption = "Gesamtübersicht Gini-Koeffizienten")
+```
 
 
-<!-- ```{r echo=FALSE, message = F, warning=F} -->
-<!-- # Read CSV data, "../../" to look two levels upwards -->
-<!-- table <- read_csv("tables/frame_8020a.csv") -->
-<!-- table <- table %>% -->
-<!--   rename(Jahr = X1, ES = QSR8020) -->
-<!-- knitr::kable(table, caption = "Gesamtübersicht P80/P20 Verhältnis") -->
-<!-- ``` -->
+```{r echo=FALSE, message = F, warning=F}
+load("tables/frame_8020a.Rda")
+knitr::kable(frame_8020a, caption = "Gesamtübersicht P80/P20 Verhältnis")
+```
 
 
-<!-- ```{r echo=FALSE, message = F, warning=F} -->
-<!-- # Read CSV data, "../../" to look two levels upwards -->
-<!-- table <- read_csv("tables/frame_t10sa.csv") -->
-<!-- table <- table %>% -->
-<!--   rename(Jahr = X1, i11 = t10s, i12 = t10s.1, i13 = t10s.2, i21 = t10s.3, -->
-<!--          i22 = t10s.4, i23 = t10s.5, ES = t10s.6) -->
-<!-- knitr::kable(table, caption = "Gesamtübersicht Top 10% Anteil") -->
-<!-- ``` -->
+```{r echo=FALSE, message = F, warning=F}
+load("tables/frame_t10sa.Rda")
+knitr::kable(frame_t10sa, caption = "Gesamtübersicht Top 10% Anteil")
+```
 
 
-<!-- ```{r echo=FALSE, message = F, warning=F} -->
-<!-- # Read CSV data, "../../" to look two levels upwards -->
-<!-- table <- read_csv("tables/frame_arpra.csv") -->
-<!-- table <- table %>% -->
-<!--   rename(Jahr = X1, i11 = i11_arpr, i12 = i12_arpr, i13 = i13_arpr, i21 = i21_arpr,i22 = i22_arpr, i23 = i23_arpr, ES = arpr) -->
-<!-- table$Jahr <- 2004:2017 -->
-<!-- knitr::kable(table, caption = "Gesamtübersicht Armutsgefährdungsquote") -->
-<!-- ``` -->
+```{r echo=FALSE, message = F, warning=F}
+load("tables/frame_arpra.Rda")
+knitr::kable(frame_arpra, caption = "Gesamtübersicht Armutsgefährdungsquote")
+```
+
+
+```{r echo=FALSE, message = F, warning=F}
+load("tables/arpr_tab_appendix.Rda")
+knitr::kable(arpr_tab_appendix, caption = "Vergleich Armutsgefährdungsquote")
+```
 
 \newpage
 # Literatur
