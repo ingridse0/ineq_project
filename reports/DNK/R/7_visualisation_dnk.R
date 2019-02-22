@@ -21,9 +21,11 @@ plot_mean1 <- ggplot() +
                                 'Nationaleinkommen vor Steuern' = 'darkblue',
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "Mittleres Einkommen", 
-       title = "Mittleres Einkommen nach Einkommenskonzepten",
-       subtitle = "P1 Eurostat")
+       title = "Mittelwert der Einkommen nach Einkommenskonzepten",
+       subtitle = "P1 Eurostat (eigene Berechnung)")
 plot_mean1
+ggsave("reports/DNK/img/mean1.png")
+
 
 #P2
 plot_mean2 <- ggplot() +
@@ -37,9 +39,10 @@ plot_mean2 <- ggplot() +
                                 'Nationaleinkommen vor Steuern' = 'darkblue',
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "Mittleres Einkommen", 
-       title = "Mittleres Einkommen nach Einkommenskonzepten",
-       subtitle = "P2 widworld")
+       title = "Mittelwert der Einkommen nach Einkommenskonzepten",
+       subtitle = "P2 widworld (eigene Berechnung)")
 plot_mean2
+ggsave("reports/DNK/img/mean2.png")
 
 # MEDIAN ----------------------------------------------------------------------
 #P1
@@ -54,9 +57,10 @@ plot_median1 <- ggplot() +
                                 'Nationaleinkommen vor Steuern' = 'darkblue',
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "Median Einkommen", 
-       title = "Median Einkommen nach Einkommenskonzepten",
-       subtitle = "P1 Eurostat")
+       title = "Medianeinkommen nach Einkommenskonzepten",
+       subtitle = "P1 Eurostat (eigene Berechnung)")
 plot_median1
+ggsave("reports/DNK/img/median1.png")
 
 #P2
 plot_median2 <- ggplot() +
@@ -70,9 +74,10 @@ plot_median2 <- ggplot() +
                                 'Nationaleinkommen vor Steuern' = 'darkblue',
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "Median Einkommen", 
-       title = "Median Einkommen nach Einkommenskonzepten",
-       subtitle = "P2 wirdworld")
+       title = "Medianeinkommen nach Einkommenskonzepten",
+       subtitle = "P2 wirdworld (eigene Berechnung)")
 plot_median2
+ggsave("reports/DNK/img/median2.png")
 
 
 # MEAN und MEDIAN -------------------------------------------------------------
@@ -87,8 +92,9 @@ plot_medmit <- ggplot() +
                                 'Mittelwert' = 'darkblue'))+
   labs(color = '', x = "Jahr", y = "Einkommen", 
        title = "Median und Mittelwert des Verfügbaren Einkommens nach Steuern",
-       subtitle = "P1 Eurostat")
+       subtitle = "P1 Eurostat (eigene Berechnung)")
 plot_medmit
+ggsave("reports/DNK/img/medmit.png")
 
 
 # GINI ------------------------------------------------------------------------
@@ -106,8 +112,9 @@ plot_gini <- ggplot() +
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "Gini", 
        title = "Gini Koeffizient nach Einkommenskonzepten",
-       subtitle = "P1 Eurostat")
+       subtitle = "P1 Eurostat (eigene Berechnung)")
 plot_gini
+ggsave("reports/DNK/img/gini.png")
 
 
 # P80/P20 ---------------------------------------------------------------------
@@ -125,8 +132,9 @@ plot_8020 <- ggplot() +
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "P80/P20", 
        title = "P80/P20 Verhältnis nach Einkommenskonzepten",
-       subtitle = "P1 Eurostat")
+       subtitle = "P1 Eurostat (eigene Berechnung)")
 plot_8020
+ggsave("reports/DNK/img/8020.png")
 
 # TOP 10 ----------------------------------------------------------------------
 
@@ -143,8 +151,9 @@ plot_101 <- ggplot() +
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "Top 10% Anteil", 
        title = "Top 10% Anteil nach Einkommenskonzepten",
-       subtitle = "P1 Eurostat")
+       subtitle = "P1 Eurostat (eigene Berechnung)")
 plot_101
+ggsave("reports/DNK/img/topten1.png")
 
 #P2
 plot_102 <- ggplot() +
@@ -159,8 +168,9 @@ plot_102 <- ggplot() +
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "Top 10% Anteil", 
        title = "Top 10% Anteil nach Einkommenskonzepten",
-       subtitle = "P2 wid.world")
+       subtitle = "P2 wid.world (eigene Berechnung)")
 plot_102
+ggsave("reports/DNK/img/topten2.png")
 
 # AT RISK OF POVERTY ----------------------------------------------------------
 
@@ -178,8 +188,9 @@ plot_arpr <- ggplot() +
                                 'Verfügbares Einkommen nach Steuern' = 'darkgreen'))+
   labs(color = '', x = "Jahr", y = "Armutsgefährdungsquote", 
        title = "Armutsgefährdungsquote nach Einkommenskonzepten",
-       subtitle = "P1 Eurostat")
+       subtitle = "P1 Eurostat (eigene Berechnung)")
 plot_arpr
+ggsave("reports/DNK/img/arpr.png")
 
 
 
