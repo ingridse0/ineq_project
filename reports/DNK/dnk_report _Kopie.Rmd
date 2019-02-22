@@ -193,9 +193,8 @@ Anzumerken ist, dass die Ergebnisse dieser Arbeit nur einen kleinen Teil der Ein
 **Gesamtübersichten der Indikatoren**
 ```{r echo=FALSE, message = F, warning=F}
 load("tables/frame_meana.Rda")
-knitr::kable(frame_meana.Rda, caption = "Gesamtübersicht Mittelwert")
+knitr::kable(frame_meana, caption = "Gesamtübersicht Mittelwert")
 ```
-
 
 ```{r echo=FALSE, message = F, warning=F}
 load("tables/frame_mediana.Rda")
